@@ -1,0 +1,30 @@
+[gd_scene format=4 uid="uid://5kekx6xc23xe"]
+
+[ext_resource type="PackedScene" uid="uid://dbiwv3rkaa64i" path="res://Scenes/systems/level_base.tscn" id="1_tjgfl"]
+[ext_resource type="PackedScene" uid="uid://ip0lqpb78yul" path="res://Scenes/items/strawb_gmo.tscn" id="2_u4prk"]
+[ext_resource type="PackedScene" uid="uid://brrrgckqfp8i0" path="res://Scenes/items/strawb_non_gmo.tscn" id="4_rsv82"]
+[ext_resource type="PackedScene" uid="uid://dqd6xdm3vvgqj" path="res://Scenes/items/basket_gmo_big.tscn" id="5_8j7el"]
+[ext_resource type="PackedScene" uid="uid://cgxixecylyq7" path="res://Scenes/items/basket_organic_l_shape.tscn" id="5_peptx"]
+
+[node name="level_2" unique_id=141087206 instance=ExtResource("1_tjgfl")]
+
+[node name="TileMapLayer" parent="." index="0"]
+tile_map_data = PackedByteArray("AAAFAAQAAAADAAEAAAAGAAQAAAABAAEAAAAKAAQAAAAFAAEAAAAHAAQAAAABAAEAAAAIAAQAAAABAAEAAAAJAAQAAAABAAEAAAAGAAMAAAABAAEAAAAHAAMAAAABAAEAAAAIAAMAAAABAAEAAAAJAAMAAAABAAEAAAAKAAMAAAAFAAEAAAAFAAIAAAADAAAAAAAGAAIAAAAEAAAAAAAHAAIAAAAEAAAAAAAIAAIAAAAEAAAAAAAJAAIAAAAEAAAAAAAKAAIAAAAFAAAAAAAKAAUAAAAFAAEAAAAKAAYAAAAFAAEAAAAKAAcAAAAFAAEAAAAJAAcAAAABAAEAAAAJAAYAAAABAAEAAAAJAAUAAAABAAEAAAAIAAUAAAABAAEAAAAIAAYAAAABAAEAAAAIAAcAAAABAAEAAAAHAAcAAAABAAEAAAAHAAYAAAABAAEAAAAHAAUAAAABAAEAAAAGAAUAAAABAAEAAAAGAAYAAAABAAEAAAAGAAcAAAABAAEAAAAFAAMAAAADAAEAAAAFAAUAAAADAAEAAAAFAAYAAAADAAEAAAAFAAcAAAADAAEAAAAFAAgAAAADAAIAAAAGAAgAAAAEAAIAAAAHAAgAAAAEAAIAAAAIAAgAAAAEAAIAAAAJAAgAAAAEAAIAAAAKAAgAAAAFAAIAAAA=")
+
+[node name="basket_gmo_big" parent="." index="1" unique_id=1807160052 instance=ExtResource("5_8j7el")]
+position = Vector2(578, 446)
+
+[node name="Strawb_non_Gmo" parent="." index="2" unique_id=1307258246 instance=ExtResource("4_rsv82")]
+position = Vector2(418, 477)
+
+[node name="Strawb_non_Gmo2" parent="." index="3" unique_id=543409046 instance=ExtResource("4_rsv82")]
+position = Vector2(481, 412)
+
+[node name="strawb_gmo" parent="." index="4" unique_id=663745261 instance=ExtResource("2_u4prk")]
+position = Vector2(543, 290)
+
+[node name="strawb_gmo2" parent="." index="5" unique_id=1818804402 instance=ExtResource("2_u4prk")]
+position = Vector2(608, 226)
+
+[node name="Basket_Organic_L_Shape" parent="." index="6" unique_id=730009735 instance=ExtResource("5_peptx")]
+position = Vector2(450, 257)

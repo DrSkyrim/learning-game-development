@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://iqkqmtwjm63a"]
+
+[ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_85nbm"]
+[ext_resource type="Texture2D" uid="uid://c15y22h88bueq" path="res://Assets/Graphics/Items/draft_1_game_assets_-_Copy.png" id="2_t5744"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhyd4"]
+atlas = ExtResource("2_t5744")
+region = Rect2(43, 26, 54, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8w061"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dhyd4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxemp"]
+size = Vector2(52, 119)
+
+[node name="item_base" unique_id=1284372011 instance=ExtResource("1_85nbm")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_8w061")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_vxemp")
