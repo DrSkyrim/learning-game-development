@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://dmiefsvvqhax0"]
+[gd_scene load_steps=6 format=4 uid="uid://dmiefsvvqhax0"]
 
 [ext_resource type="PackedScene" uid="uid://dbiwv3rkaa64i" path="res://Scenes/systems/level_base.tscn" id="1_cn7ie"]
 [ext_resource type="PackedScene" uid="uid://dqd6xdm3vvgqj" path="res://Scenes/items/basket_gmo_big.tscn" id="2_3l0ff"]
@@ -6,25 +6,25 @@
 [ext_resource type="PackedScene" uid="uid://brrrgckqfp8i0" path="res://Scenes/items/strawb_non_gmo.tscn" id="4_atycn"]
 [ext_resource type="PackedScene" uid="uid://cgxixecylyq7" path="res://Scenes/items/basket_organic_l_shape.tscn" id="5_njctx"]
 
-[node name="level_4" unique_id=443813976 instance=ExtResource("1_cn7ie")]
+[node name="level_4" instance=ExtResource("1_cn7ie")]
 
 [node name="TileMapLayer" parent="." index="0"]
 tile_map_data = PackedByteArray("AAAFAAIAAAADAAAAAAAFAAQAAAADAAEAAAAFAAUAAAADAAEAAAAFAAMAAAADAAEAAAAFAAYAAAADAAEAAAAFAAcAAAADAAEAAAAKAAcAAAAFAAEAAAAKAAYAAAAFAAEAAAAKAAUAAAAFAAEAAAAKAAQAAAAFAAEAAAAKAAMAAAAFAAEAAAAGAAgAAAAEAAIAAAAHAAgAAAAEAAIAAAAIAAgAAAAEAAIAAAAJAAgAAAAEAAIAAAAKAAgAAAAFAAIAAAAFAAgAAAADAAIAAAAKAAIAAAAFAAAAAAAGAAIAAAAEAAAAAAAHAAIAAAAEAAAAAAAIAAIAAAAEAAAAAAAJAAIAAAAEAAAAAAAGAAMAAAABAAEAAAAGAAQAAAABAAEAAAAGAAUAAAABAAEAAAAGAAYAAAABAAEAAAAGAAcAAAABAAEAAAAHAAcAAAABAAEAAAAIAAcAAAABAAEAAAAJAAcAAAABAAEAAAAJAAYAAAABAAEAAAAJAAUAAAABAAEAAAAIAAUAAAABAAEAAAAHAAUAAAABAAEAAAAHAAYAAAABAAEAAAAIAAYAAAABAAEAAAAIAAQAAAABAAEAAAAHAAQAAAABAAEAAAAHAAMAAAABAAEAAAAIAAMAAAABAAEAAAAJAAQAAAABAAEAAAAJAAMAAAABAAEAAAA=")
 
-[node name="strawb_gmo" parent="." index="1" unique_id=926199071 instance=ExtResource("3_qmkwd")]
+[node name="strawb_gmo" parent="." index="1" groups=["items"] instance=ExtResource("3_qmkwd")]
 position = Vector2(606, 225)
 
-[node name="strawb_gmo2" parent="." index="2" unique_id=1013818425 instance=ExtResource("3_qmkwd")]
+[node name="strawb_gmo2" parent="." index="2" groups=["items"] instance=ExtResource("3_qmkwd")]
 position = Vector2(607, 290)
 
-[node name="basket_gmo_big" parent="." index="3" unique_id=1405351193 instance=ExtResource("2_3l0ff")]
+[node name="basket_gmo_big" parent="." index="3" groups=["items"] instance=ExtResource("2_3l0ff")]
 position = Vector2(514, 449)
 
-[node name="Basket_Organic_L_Shape" parent="." index="4" unique_id=104399391 instance=ExtResource("5_njctx")]
+[node name="Basket_Organic_L_Shape" parent="." index="4" groups=["items"] instance=ExtResource("5_njctx")]
 position = Vector2(514, 321)
 
-[node name="Strawb_non_Gmo" parent="." index="5" unique_id=47082397 instance=ExtResource("4_atycn")]
+[node name="Strawb_non_Gmo" parent="." index="5" groups=["items"] instance=ExtResource("4_atycn")]
 position = Vector2(418, 477)
 
-[node name="Strawb_non_Gmo2" parent="." index="6" unique_id=1847205220 instance=ExtResource("4_atycn")]
+[node name="Strawb_non_Gmo2" parent="." index="6" groups=["items"] instance=ExtResource("4_atycn")]
 position = Vector2(417, 412)
