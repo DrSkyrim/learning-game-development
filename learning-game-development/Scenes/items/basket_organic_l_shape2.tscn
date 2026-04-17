@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cu32qy1kp24x1"]
+[gd_scene load_steps=6 format=3 uid="uid://cu32qy1kp24x1"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_45nfw"]
 [ext_resource type="Texture2D" uid="uid://csktuwclsh3kx" path="res://Assets/Graphics/Items/organic baskets draft.png" id="2_wyqur"]
@@ -21,7 +21,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hjlts"]
 size = Vector2(120, 114)
 
-[node name="Basket_Organic_L_Shape" unique_id=183622488 instance=ExtResource("1_45nfw")]
+[node name="Basket_Organic_L_Shape" instance=ExtResource("1_45nfw")]
+collision_layer = 2
+collision_mask = 11
 
 [node name="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_gh7t7")

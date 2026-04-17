@@ -22,6 +22,7 @@ position = Vector2(607, 225)
 
 [node name="Basket_Organic_L_Shape" parent="." index="4" groups=["items"] instance=ExtResource("5_1dosi")]
 position = Vector2(578, 452)
+type = 2
 
 [node name="basket_gmo_big" parent="." index="5" groups=["items"] instance=ExtResource("2_f852d")]
 position = Vector2(448, 252)
