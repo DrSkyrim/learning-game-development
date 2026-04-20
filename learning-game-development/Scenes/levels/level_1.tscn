@@ -20,13 +20,5 @@ position = Vector2(673, 543)
 [node name="Strawb_non_Gmo" parent="." index="3" groups=["items"] instance=ExtResource("5_tlryv")]
 position = Vector2(415, 538)
 
-[node name="strawb_gmo2" parent="." index="4" groups=["items"] instance=ExtResource("4_qek6e")]
-visible = false
-position = Vector2(543, 353)
-
-[node name="Strawb_non_Gmo3" parent="." index="5" groups=["items"] instance=ExtResource("5_tlryv")]
-visible = false
-position = Vector2(418, 477)
-
-[node name="Basket_Organic_L_Shape" parent="." index="6" groups=["items"] instance=ExtResource("3_qyddi")]
+[node name="Basket_Organic_L_Shape" parent="." index="4" groups=["items"] instance=ExtResource("3_qyddi")]
 position = Vector2(449, 315)
