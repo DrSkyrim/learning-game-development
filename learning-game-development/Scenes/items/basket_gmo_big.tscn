@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqd6xdm3vvgqj"]
+
+[ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_53obx"]
+[ext_resource type="Texture2D" uid="uid://bgsuvqftur3jy" path="res://Assets/Graphics/Items/gmo baskets draft.png" id="2_0m8yb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53obx"]
+atlas = ExtResource("2_0m8yb")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0m8yb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53obx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ovjwv"]
+size = Vector2(107, 108)
+
+[node name="basket_gmo_big" instance=ExtResource("1_53obx")]
+collision_layer = 2
+collision_mask = 7
+type = 3
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_0m8yb")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-0.5, 3)
+shape = SubResource("RectangleShape2D_ovjwv")

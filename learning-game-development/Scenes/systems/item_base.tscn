@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://j34ceab3rfg6"]
+
+[ext_resource type="Script" uid="uid://btfa5b15dqf3q" path="res://Scenes/items/item_base.gd" id="1_jield"]
+
+[node name="item_base" type="CharacterBody2D"]
+script = ExtResource("1_jield")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

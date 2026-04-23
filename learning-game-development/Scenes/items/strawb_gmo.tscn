@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://ip0lqpb78yul"]
+
+[ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_vjf0k"]
+[ext_resource type="Texture2D" uid="uid://di3tj7hqfiadh" path="res://Assets/Graphics/Items/gmo fruits draft.png" id="2_248qi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjf0k"]
+atlas = ExtResource("2_248qi")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_248qi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vjf0k")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lyj1h"]
+radius = 24.020824
+
+[node name="strawb_gmo" instance=ExtResource("1_vjf0k")]
+collision_layer = 8
+collision_mask = 8
+type = 1
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_248qi")
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("CircleShape2D_lyj1h")

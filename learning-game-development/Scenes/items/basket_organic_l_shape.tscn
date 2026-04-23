@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgxixecylyq7"]
+
+[ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_oe3jb"]
+[ext_resource type="Texture2D" uid="uid://csktuwclsh3kx" path="res://Assets/Graphics/Items/organic baskets draft.png" id="2_7eyrj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yck8o"]
+atlas = ExtResource("2_7eyrj")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qn5mw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yck8o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2c75o"]
+size = Vector2(48, 104)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yvx1d"]
+size = Vector2(102, 47)
+
+[node name="Basket_Organic_L_Shape" instance=ExtResource("1_oe3jb")]
+collision_layer = 2
+collision_mask = 11
+type = 2
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_qn5mw")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-31, 2)
+shape = SubResource("RectangleShape2D_2c75o")
+
+[node name="CollisionHelper" type="CollisionShape2D" parent="." index="2"]
+position = Vector2(-3, 29.5)
+shape = SubResource("RectangleShape2D_yvx1d")
