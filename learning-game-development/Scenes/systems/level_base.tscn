@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbiwv3rkaa64i"]
+[gd_scene format=3 uid="uid://dbiwv3rkaa64i"]
 
 [ext_resource type="Script" uid="uid://cncd8li1r3s5s" path="res://Scenes/levels/level_logic.gd" id="1_blqt3"]
 [ext_resource type="Texture2D" uid="uid://ng8mk8euydlh" path="res://Assets/Graphics/Backgrounds/tilemap draft.png" id="1_clsiy"]
+[ext_resource type="Texture2D" uid="uid://bdkrx4nqwcqa8" path="res://Assets/Graphics/UI/gameplay screen/background.png" id="2_5g2bk"]
+[ext_resource type="PackedScene" uid="uid://b1ytckvyhyqm4" path="res://Scenes/menus/in_level_ui.tscn" id="2_tutna"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_blqt3"]
 texture = ExtResource("1_clsiy")
@@ -30,8 +32,15 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 3
 sources/0 = SubResource("TileSetAtlasSource_blqt3")
 
-[node name="level_base" type="Node2D"]
+[node name="level_base" type="Node2D" unique_id=352806086]
 script = ExtResource("1_blqt3")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="Background" type="Sprite2D" parent="." unique_id=217168996]
+position = Vector2(324.5, 577.5)
+scale = Vector2(1.0783334, 1.196875)
+texture = ExtResource("2_5g2bk")
+
+[node name="InLevelUi" parent="." unique_id=250856348 instance=ExtResource("2_tutna")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1866890562]
 tile_set = SubResource("TileSet_ekuak")

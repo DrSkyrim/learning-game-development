@@ -1,30 +1,36 @@
-[gd_scene load_steps=6 format=4 uid="uid://b1s51vup8388g"]
+[gd_scene format=4 uid="uid://b1s51vup8388g"]
 
 [ext_resource type="PackedScene" uid="uid://dbiwv3rkaa64i" path="res://Scenes/systems/level_base.tscn" id="1_p3t8o"]
 [ext_resource type="PackedScene" uid="uid://dqd6xdm3vvgqj" path="res://Scenes/items/basket_gmo_big.tscn" id="2_7cdtw"]
-[ext_resource type="PackedScene" uid="uid://iqkqmtwjm63a" path="res://Scenes/items/basket_organic_i_shape.tscn" id="2_npvip"]
 [ext_resource type="PackedScene" uid="uid://ip0lqpb78yul" path="res://Scenes/items/strawb_gmo.tscn" id="3_5jepf"]
+[ext_resource type="PackedScene" uid="uid://cgxixecylyq7" path="res://Scenes/items/basket_organic_l_shape.tscn" id="3_npvip"]
 [ext_resource type="PackedScene" uid="uid://brrrgckqfp8i0" path="res://Scenes/items/strawb_non_gmo.tscn" id="4_jm0al"]
 
-[node name="level_5" instance=ExtResource("1_p3t8o")]
+[node name="level_5" unique_id=423422463 instance=ExtResource("1_p3t8o")]
 
-[node name="TileMapLayer" parent="." index="0"]
-tile_map_data = PackedByteArray("AAAFAAIAAAADAAAAAAAGAAIAAAAEAAAAAAAHAAIAAAAEAAAAAAAIAAIAAAAEAAAAAAAJAAIAAAAEAAAAAAAKAAIAAAAEAAAAAAALAAIAAAAFAAAAAAALAAMAAAAFAAEAAAALAAQAAAAFAAEAAAALAAUAAAAFAAEAAAALAAYAAAAFAAEAAAALAAcAAAAFAAEAAAALAAgAAAAFAAIAAAAFAAMAAAADAAEAAAAFAAQAAAADAAEAAAAFAAUAAAADAAEAAAAFAAYAAAADAAEAAAAFAAcAAAADAAEAAAAFAAgAAAADAAIAAAAGAAgAAAAEAAIAAAAHAAgAAAAEAAIAAAAIAAgAAAAEAAIAAAAJAAgAAAAEAAIAAAAKAAgAAAAEAAIAAAAGAAcAAAABAAEAAAAGAAYAAAABAAEAAAAGAAUAAAABAAEAAAAGAAQAAAABAAEAAAAGAAMAAAABAAEAAAAHAAMAAAABAAEAAAAIAAQAAAABAAEAAAAIAAUAAAABAAEAAAAHAAUAAAABAAEAAAAHAAQAAAABAAEAAAAIAAYAAAABAAEAAAAIAAcAAAABAAEAAAAJAAcAAAABAAEAAAAJAAYAAAABAAEAAAAKAAYAAAABAAEAAAAKAAcAAAABAAEAAAAKAAUAAAABAAEAAAAKAAQAAAABAAEAAAAKAAMAAAABAAEAAAAJAAMAAAABAAEAAAAIAAMAAAABAAEAAAAJAAQAAAABAAEAAAAJAAUAAAABAAEAAAAHAAYAAAABAAEAAAAHAAcAAAABAAEAAAA=")
+[node name="TileMapLayer" parent="." index="2" unique_id=1866890562]
+tile_map_data = PackedByteArray("AAACAAQAAAABAAEAAAADAAQAAAABAAEAAAAGAAQAAAABAAEAAAAHAAQAAAABAAEAAAACAAUAAAABAAEAAAACAAYAAAABAAEAAAADAAYAAAABAAEAAAADAAUAAAABAAEAAAAGAAUAAAABAAEAAAAHAAUAAAABAAEAAAAHAAYAAAABAAEAAAAGAAYAAAABAAEAAAAFAAYAAAABAAEAAAAEAAYAAAABAAEAAAACAAcAAAABAAEAAAADAAcAAAABAAEAAAAEAAcAAAABAAEAAAAFAAcAAAABAAEAAAAGAAcAAAABAAEAAAAHAAcAAAABAAEAAAAHAAgAAAABAAEAAAAHAAkAAAABAAEAAAAGAAkAAAABAAEAAAADAAkAAAABAAEAAAACAAkAAAABAAEAAAACAAgAAAABAAEAAAADAAgAAAABAAEAAAAGAAgAAAABAAEAAAABAAkAAAADAAEAAAABAAgAAAADAAEAAAABAAcAAAADAAEAAAABAAYAAAADAAEAAAABAAUAAAADAAEAAAABAAQAAAADAAEAAAAFAAQAAAADAAEAAAAFAAUAAAADAAEAAAAFAAgAAAADAAEAAAAFAAkAAAADAAEAAAAEAAkAAAAFAAEAAAAEAAgAAAAFAAEAAAAEAAUAAAAFAAEAAAAEAAQAAAAFAAEAAAAIAAQAAAAFAAEAAAAIAAUAAAAFAAEAAAAIAAYAAAAFAAEAAAAIAAcAAAAFAAEAAAAIAAgAAAAFAAEAAAAIAAkAAAAFAAEAAAAIAAMAAAAFAAAAAAAEAAMAAAAFAAAAAAABAAMAAAADAAAAAAAFAAMAAAADAAAAAAABAAoAAAADAAIAAAAFAAoAAAADAAIAAAAIAAoAAAAFAAIAAAAEAAoAAAAFAAIAAAACAAoAAAAEAAIAAAADAAoAAAAEAAIAAAAGAAoAAAAEAAIAAAAHAAoAAAAEAAIAAAADAAMAAAAEAAAAAAACAAMAAAAEAAAAAAAHAAMAAAAEAAAAAAAGAAMAAAAEAAAAAAA=")
 
-[node name="item_base" parent="." index="1" groups=["items"] instance=ExtResource("2_npvip")]
-position = Vector2(672, 448)
+[node name="basket_gmo_big" parent="." index="3" unique_id=761400261 instance=ExtResource("2_7cdtw")]
+position = Vector2(256, 448)
 
-[node name="basket_gmo_big" parent="." index="2" groups=["items"] instance=ExtResource("2_7cdtw")]
-position = Vector2(445, 254)
+[node name="Basket_Organic_L_Shape" parent="." index="4" unique_id=1853528694 instance=ExtResource("3_npvip")]
+position = Vector2(384, 448)
 
-[node name="Strawb_non_Gmo" parent="." index="3" groups=["items"] instance=ExtResource("4_jm0al")]
-position = Vector2(674, 220)
+[node name="strawb_gmo" parent="." index="5" unique_id=574554884 instance=ExtResource("3_5jepf")]
+position = Vector2(128, 320)
 
-[node name="Strawb_non_Gmo2" parent="." index="4" groups=["items"] instance=ExtResource("4_jm0al")]
-position = Vector2(610, 413)
+[node name="strawb_gmo2" parent="." index="6" unique_id=1039697989 instance=ExtResource("3_5jepf")]
+position = Vector2(192, 576)
 
-[node name="strawb_gmo" parent="." index="5" groups=["items"] instance=ExtResource("3_5jepf")]
-position = Vector2(480, 482)
+[node name="strawb_gmo3" parent="." index="7" unique_id=828558404 instance=ExtResource("3_5jepf")]
+position = Vector2(448, 256)
 
-[node name="strawb_gmo2" parent="." index="6" groups=["items"] instance=ExtResource("3_5jepf")]
-position = Vector2(542, 354)
+[node name="Strawb_non_Gmo" parent="." index="8" unique_id=922981373 instance=ExtResource("4_jm0al")]
+position = Vector2(192, 256)
+
+[node name="Strawb_non_Gmo2" parent="." index="9" unique_id=1872978622 instance=ExtResource("4_jm0al")]
+position = Vector2(448, 576)
+
+[node name="Strawb_non_Gmo3" parent="." index="10" unique_id=1875145222 instance=ExtResource("4_jm0al")]
+position = Vector2(384, 320)

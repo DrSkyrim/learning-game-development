@@ -21,11 +21,22 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6tfkf"]
 size = Vector2(57, 113)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1m52e"]
+size = Vector2(57, 112)
+
 [node name="item_base" unique_id=1730709340 instance=ExtResource("1_6tfkf")]
 
-[node name="AnimatedSprite2D" parent="." index="0"]
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
 sprite_frames = SubResource("SpriteFrames_i6ka7")
 
-[node name="CollisionShape2D" parent="." index="1"]
+[node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
 position = Vector2(0.5, 1.5)
 shape = SubResource("RectangleShape2D_6tfkf")
+
+[node name="ONLY USE WITH BASKETS" parent="." index="2" unique_id=1169250334]
+collision_layer = 2
+collision_mask = 8
+
+[node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="0" unique_id=1520535799]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_1m52e")
