@@ -1,10 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://j34ceab3rfg6"]
+[gd_scene format=3 uid="uid://j34ceab3rfg6"]
 
 [ext_resource type="Script" uid="uid://btfa5b15dqf3q" path="res://Scenes/items/item_base.gd" id="1_jield"]
 
-[node name="item_base" type="CharacterBody2D"]
+[node name="item_base" type="CharacterBody2D" unique_id=410173830 groups=["items"]]
 script = ExtResource("1_jield")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=53185206]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1712426591]
+
+[node name="ONLY USE WITH BASKETS" type="Area2D" parent="." unique_id=1169250334]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ONLY USE WITH BASKETS" unique_id=1520535799]
+debug_color = Color(0.6016312, 0.368745, 1, 0.41960785)
+
+[connection signal="body_entered" from="ONLY USE WITH BASKETS" to="." method="_on_only_use_with_baskets_body_entered"]

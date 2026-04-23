@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://b7ap5am8xo23a"]
+
+[ext_resource type="Script" uid="uid://cu07ltn7qm7" path="res://Scripts/main_menu.gd" id="1_1bxdl"]
+[ext_resource type="Texture2D" uid="uid://08vpri2agp24" path="res://Assets/Graphics/UI/title screen/background_title_screen.png" id="2_b55im"]
+
+[node name="main_menu" type="Control" unique_id=1806877066]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_1bxdl")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1221875591]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0026041667
+anchor_top = 0.0026041667
+anchor_right = 0.9930556
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=1198261307]
+layout_mode = 2
+texture = ExtResource("2_b55im")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=893127868]
+layout_mode = 2
+size_flags_vertical = 8
+alignment = 1
+
+[node name="Story Mode" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1248459229]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "STORY MODE"
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1301344031]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "FREE PLAY"
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer" unique_id=460566866]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "OPTIONS"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=514809873]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "EXIT"

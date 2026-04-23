@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cu32qy1kp24x1"]
+[gd_scene format=3 uid="uid://cu32qy1kp24x1"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_45nfw"]
 [ext_resource type="Texture2D" uid="uid://csktuwclsh3kx" path="res://Assets/Graphics/Items/organic baskets draft.png" id="2_wyqur"]
@@ -19,15 +19,34 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hjlts"]
-size = Vector2(120, 114)
+size = Vector2(119, 114)
 
-[node name="Basket_Organic_L_Shape" instance=ExtResource("1_45nfw")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_45nfw"]
+size = Vector2(56, 110)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wyqur"]
+size = Vector2(105, 53)
+
+[node name="Basket_Organic_L_Shape" unique_id=836492574 instance=ExtResource("1_45nfw")]
 collision_layer = 2
 collision_mask = 11
 
-[node name="AnimatedSprite2D" parent="." index="0"]
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
 sprite_frames = SubResource("SpriteFrames_gh7t7")
 
-[node name="CollisionShape2D" parent="." index="1"]
-position = Vector2(-4, -4)
+[node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
+position = Vector2(-4.5, -4)
 shape = SubResource("RectangleShape2D_hjlts")
+
+[node name="ONLY USE WITH BASKETS" parent="." index="2" unique_id=1169250334]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="0" unique_id=1520535799]
+position = Vector2(-33, -4)
+shape = SubResource("RectangleShape2D_45nfw")
+
+[node name="CollisionHelper" type="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="1" unique_id=2136772380]
+position = Vector2(-1.5, -28.5)
+shape = SubResource("RectangleShape2D_wyqur")
+debug_color = Color(0.5060563, 0.4336566, 0.98163587, 0.41960785)
