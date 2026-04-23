@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://iqkqmtwjm63a"]
+[gd_scene format=3 uid="uid://iqkqmtwjm63a"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_85nbm"]
 [ext_resource type="Texture2D" uid="uid://c15y22h88bueq" path="res://Assets/Graphics/Items/draft_1_game_assets_-_Copy.png" id="2_t5744"]
@@ -21,14 +21,25 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vxemp"]
 size = Vector2(52, 119)
 
-[node name="basket_organic_i_shape" instance=ExtResource("1_85nbm")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x7yh0"]
+size = Vector2(53, 119)
+
+[node name="basket_organic_i_shape" unique_id=1947260244 instance=ExtResource("1_85nbm")]
 collision_layer = 2
 collision_mask = 11
 type = 2
 
-[node name="AnimatedSprite2D" parent="." index="0"]
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
 sprite_frames = SubResource("SpriteFrames_8w061")
 
-[node name="CollisionShape2D" parent="." index="1"]
+[node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_vxemp")
+
+[node name="ONLY USE WITH BASKETS" parent="." index="2" unique_id=1169250334]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="0" unique_id=1520535799]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_x7yh0")

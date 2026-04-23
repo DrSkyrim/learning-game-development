@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b1ytckvyhyqm4"]
+
+[ext_resource type="Script" uid="uid://bshkrlurtx4pv" path="res://Scripts/in_level_ui.gd" id="1_q6y72"]
+
+[node name="InLevelUi" type="Control" unique_id=250856348]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q6y72")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=289089969]
+layout_mode = 0
+offset_right = 648.0
+offset_bottom = 91.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=220058101]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="BackToMenu" type="Button" parent="MarginContainer/HBoxContainer" unique_id=794591067]
+layout_mode = 2
+text = "BACKTOMENUTEMP"
+
+[node name="MovesLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1742280508]
+layout_mode = 2
+text = "Moves: 0"
+
+[node name="Undo" type="Button" parent="MarginContainer/HBoxContainer" unique_id=2069140920]
+layout_mode = 2
+text = "UNDOTEMP(TBD)"

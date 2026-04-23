@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var type : Type
 enum Type {FRUIT_ORG, FRUIT_GMO, BASKET_ORG, BASKET_GMO}
+signal moved
 
 const TILE_SIZE := 64
 const MOVE_SPEED := 300.0
@@ -56,6 +57,7 @@ func start_move(direction: Vector2):
 	if not test_move(transform, motion):
 		target_position = position + motion
 		is_moving = true
+		
 
 func move_to_target(delta):
 	position = position.move_toward(target_position, MOVE_SPEED * delta)
@@ -63,40 +65,27 @@ func move_to_target(delta):
 	if position.distance_to(target_position) < 1:
 		position = target_position
 		is_moving = false
-		try_collect()
-		
+		if type == Type.BASKET_ORG or type == Type.BASKET_GMO:
+			emit_signal("moved")
 func get_type():
 	return type
 
-func try_collect():
+
+
+func _on_only_use_with_baskets_body_entered(body: Node2D) -> void:
 	if type != Type.BASKET_ORG and type != Type.BASKET_GMO:
 		return
 
-	# Get the physics space
-	var space_state = get_world_2d().direct_space_state
+	if body == self:
+		return
 
-	# Use a small circle around the basket to detect nearby fruits
-	var circle_shape = CircleShape2D.new()
-	circle_shape.radius = 38  # adjust as needed (ERIK Comment: originally 64)
+	if not body.has_method("get_type"):
+		return
 
-	var query = PhysicsShapeQueryParameters2D.new()
-	query.shape = circle_shape
-	query.transform = Transform2D(0, position)
-	query.collide_with_bodies = true
-	query.collide_with_areas = true
+	var other_type = body.get_type()
 
-	var result = space_state.intersect_shape(query)
+	if type == Type.BASKET_ORG and other_type == Type.FRUIT_ORG:
+		body.queue_free()
 
-	for hit in result:
-		var collider = hit.collider
-		if collider == self:
-			continue
-		if not collider.has_method("get_type"):
-			continue
-
-		var other_type = collider.get_type()
-
-		if type == Type.BASKET_ORG and other_type == Type.FRUIT_ORG:
-			collider.queue_free()
-		elif type == Type.BASKET_GMO and other_type == Type.FRUIT_GMO:
-			collider.queue_free()
+	elif type == Type.BASKET_GMO and other_type == Type.FRUIT_GMO:
+		body.queue_free()
