@@ -6,12 +6,14 @@ signal moved
 
 const TILE_SIZE := 64
 const MOVE_SPEED := 300.0
-
+var facing := Vector2.UP
 var target_position : Vector2
 var is_moving := false
+var level
 
 func _ready():
 	target_position = position
+	level = get_tree().current_scene
 
 func _process(delta):
 	if is_moving:
@@ -24,7 +26,15 @@ func _process(delta):
 		direction = get_arrow_input()
 	elif type == Type.BASKET_GMO:
 		direction = get_wasd_input()
+	if type == Type.BASKET_ORG:
+		if Input.is_action_just_pressed("rotate_organic"):
+			rotate_right()
+	elif type == Type.BASKET_GMO:
+		if Input.is_action_just_pressed("rotate_non_organic"):
+			rotate_right()
 
+	if direction != Vector2.ZERO:
+		start_move(direction)
 	if direction != Vector2.ZERO:
 		start_move(direction)
 		#will need a refractor later for now a horrid solution which I hate, but Im vibing rn cuz I have crapload to do and not much time
@@ -70,7 +80,12 @@ func move_to_target(delta):
 func get_type():
 	return type
 
-
+func rotate_right():
+	facing = facing.rotated(PI/2)
+	update_visual_rotation()
+	
+func update_visual_rotation():
+	rotation_degrees = round(rad_to_deg(facing.angle()) / 90.0) * 90.0
 
 func _on_only_use_with_baskets_body_entered(body: Node2D) -> void:
 	if type != Type.BASKET_ORG and type != Type.BASKET_GMO:
@@ -85,6 +100,8 @@ func _on_only_use_with_baskets_body_entered(body: Node2D) -> void:
 	var other_type = body.get_type()
 
 	if type == Type.BASKET_ORG and other_type == Type.FRUIT_ORG:
+		if level.has_method("add_moves"):
+			level.add_moves(3)
 		body.queue_free()
 
 	elif type == Type.BASKET_GMO and other_type == Type.FRUIT_GMO:

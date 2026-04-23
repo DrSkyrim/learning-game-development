@@ -48,6 +48,10 @@ func check_win_condition():
 		
 func get_moves():
 	return moves
+	
+func add_moves(amount:int):
+	moves += amount
+	print("Moves after bonus: ", moves)
 
 func win_level():
 	print("Level Complete!")
