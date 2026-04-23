@@ -77,7 +77,7 @@ func try_collect():
 
 	# Use a small circle around the basket to detect nearby fruits
 	var circle_shape = CircleShape2D.new()
-	circle_shape.radius = 64  # adjust as needed
+	circle_shape.radius = 38  # adjust as needed (ERIK Comment: originally 64)
 
 	var query = PhysicsShapeQueryParameters2D.new()
 	query.shape = circle_shape

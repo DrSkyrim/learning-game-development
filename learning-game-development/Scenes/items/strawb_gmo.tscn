@@ -19,9 +19,10 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lyj1h"]
-radius = 24.020824
+radius = 8.0
 
 [node name="strawb_gmo" instance=ExtResource("1_vjf0k")]
+scale = Vector2(0.9, 0.9)
 collision_layer = 8
 collision_mask = 8
 type = 1
@@ -30,6 +31,6 @@ type = 1
 position = Vector2(32, 32)
 sprite_frames = SubResource("SpriteFrames_248qi")
 
-[node name="CollisionShape2D" parent="." index="1"]
+[node name="CollisionShape2D" parent="." index="1" groups=["items"]]
 position = Vector2(32, 32)
 shape = SubResource("CircleShape2D_lyj1h")
