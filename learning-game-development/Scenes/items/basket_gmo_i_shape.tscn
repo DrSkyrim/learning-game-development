@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://nx62lajyvym3"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_6tfkf"]
-[ext_resource type="Texture2D" uid="uid://bgsuvqftur3jy" path="res://Assets/Graphics/Items/gmo baskets draft.png" id="2_y6gqp"]
+[ext_resource type="Texture2D" uid="uid://dag8cv8g8vws1" path="res://Assets/Graphics/Items/2×2 gmo baskets.png" id="2_1m52e"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7407"]
-atlas = ExtResource("2_y6gqp")
-region = Rect2(128, 0, 64, 125)
+[sub_resource type="AtlasTexture" id="AtlasTexture_neq0n"]
+atlas = ExtResource("2_1m52e")
+region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i6ka7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_s7407")
+"texture": SubResource("AtlasTexture_neq0n")
 }],
 "loop": true,
 "name": &"default",
@@ -25,8 +25,11 @@ size = Vector2(57, 113)
 size = Vector2(57, 112)
 
 [node name="item_base" unique_id=1730709340 instance=ExtResource("1_6tfkf")]
+type = 3
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
+position = Vector2(30, 0)
+scale = Vector2(0.96875, 1)
 sprite_frames = SubResource("SpriteFrames_i6ka7")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]

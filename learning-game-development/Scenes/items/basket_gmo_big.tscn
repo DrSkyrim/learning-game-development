@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://dqd6xdm3vvgqj"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_53obx"]
-[ext_resource type="Texture2D" uid="uid://bgsuvqftur3jy" path="res://Assets/Graphics/Items/gmo baskets draft.png" id="2_0m8yb"]
+[ext_resource type="Texture2D" uid="uid://dag8cv8g8vws1" path="res://Assets/Graphics/Items/2×2 gmo baskets.png" id="2_53obx"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_53obx"]
-atlas = ExtResource("2_0m8yb")
+[sub_resource type="AtlasTexture" id="AtlasTexture_0m8yb"]
+atlas = ExtResource("2_53obx")
 region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0m8yb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_53obx")
+"texture": SubResource("AtlasTexture_0m8yb")
 }],
 "loop": true,
 "name": &"default",
