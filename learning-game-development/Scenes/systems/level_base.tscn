@@ -47,8 +47,8 @@ sources/1 = SubResource("TileSetAtlasSource_apl1y")
 script = ExtResource("1_blqt3")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=217168996]
-position = Vector2(324.5, 577.5)
-scale = Vector2(1.0783334, 1.196875)
+position = Vector2(324.5, 539.5)
+scale = Vector2(1.0783334, 1.1177084)
 texture = ExtResource("2_5g2bk")
 
 [node name="InLevelUi" parent="." unique_id=250856348 instance=ExtResource("2_tutna")]

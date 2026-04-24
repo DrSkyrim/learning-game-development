@@ -26,7 +26,7 @@ GameManager="*uid://1hu0cst8kt8e"
 [display]
 
 window/size/viewport_width=648
-window/size/viewport_height=1152
+window/size/viewport_height=1080
 
 [global_group]
 
