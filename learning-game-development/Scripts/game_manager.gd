@@ -29,3 +29,7 @@ func load_level(level:int):
 func load_next_level():
 	current_level += 1
 	load_level(current_level)
+	
+func _input(event):
+	if event.is_action_released("kill_app"):
+		get_tree().quit()
