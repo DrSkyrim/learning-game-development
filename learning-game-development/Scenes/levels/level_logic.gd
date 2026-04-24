@@ -5,6 +5,17 @@ extends Node2D
 signal moves_changed
 func _ready():
 	# Connect to all baskets
+	var get_level_name = get_tree().get_current_scene().name
+	print(get_level_name)
+	match get_level_name: # moves = floor tiles * 2
+		"Level_1":
+			moves = 16
+		"Level_2", "Level_3":
+			moves = 18
+		"Level_4":
+			moves = 36
+		"Level_5":
+			moves = 28
 	for node in get_tree().get_nodes_in_group("items"):
 		if not node.has_method("get_type"):
 			continue
