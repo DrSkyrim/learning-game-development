@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bradqkg4gnr7v"]
+
+[ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_uawpb"]
+[ext_resource type="Texture2D" uid="uid://d2qnp42nynmnk" path="res://Assets/Graphics/Items/organic_fruits.png" id="2_ank17"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svtl6"]
+atlas = ExtResource("2_ank17")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a681t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svtl6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6qbsc"]
+
+[node name="lemon_o" unique_id=410173830 instance=ExtResource("1_uawpb")]
+collision_layer = 4
+collision_mask = 4
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
+sprite_frames = SubResource("SpriteFrames_a681t")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
+shape = SubResource("CircleShape2D_6qbsc")

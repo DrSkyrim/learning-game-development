@@ -28,8 +28,5 @@ func populate_levels():
 func _on_level_button_pressed(level_id):
 	var level_path = "res://scenes/levels/level_%d.tscn" % level_id
 	var scene = load(level_path)
-	
-	if scene:
-		get_tree().change_scene_to_packed(scene)
-	else:
-		print("Level not found: ", level_path)
+	GameManager.is_story_mode = false
+	GameManager.load_level(level_id)
