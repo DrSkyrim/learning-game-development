@@ -1,0 +1,41 @@
+[gd_scene format=4 uid="uid://dkm65k7aatp44"]
+
+[ext_resource type="PackedScene" uid="uid://dbiwv3rkaa64i" path="res://Scenes/systems/level_base.tscn" id="1_ymhdl"]
+[ext_resource type="PackedScene" uid="uid://dqd6xdm3vvgqj" path="res://Scenes/items/basket_gmo_big.tscn" id="2_gws4d"]
+[ext_resource type="PackedScene" uid="uid://dygm51q2n4spe" path="res://Scenes/items/lemon_no.tscn" id="3_vmo8a"]
+[ext_resource type="PackedScene" uid="uid://bradqkg4gnr7v" path="res://Scenes/items/lemon_o.tscn" id="4_w5vkw"]
+[ext_resource type="PackedScene" uid="uid://cgxixecylyq7" path="res://Scenes/items/basket_organic_l_shape.tscn" id="5_vqsfn"]
+[ext_resource type="PackedScene" uid="uid://ip0lqpb78yul" path="res://Scenes/items/strawb_gmo.tscn" id="6_d6i5r"]
+[ext_resource type="PackedScene" uid="uid://brrrgckqfp8i0" path="res://Scenes/items/strawb_non_gmo.tscn" id="7_1t42e"]
+
+[node name="level_base" unique_id=352806086 instance=ExtResource("1_ymhdl")]
+moves = 50
+
+[node name="TileMapLayer" parent="." index="2" unique_id=1866890562]
+tile_map_data = PackedByteArray("AAABAAQAAQADAAAAAAACAAQAAQAEAAAAAAADAAQAAQAEAAAAAAAEAAQAAQAEAAAAAAAFAAQAAQAEAAAAAAAGAAQAAQAEAAAAAAABAAcAAQADAAEAAAABAAYAAQADAAEAAAABAAUAAQADAAEAAAACAAcAAQABAAEAAAACAAYAAQABAAEAAAACAAUAAQABAAEAAAADAAUAAQABAAEAAAADAAYAAQABAAEAAAADAAcAAQABAAEAAAAEAAcAAQABAAEAAAAEAAYAAQABAAEAAAAEAAUAAQABAAEAAAAFAAUAAQABAAEAAAAFAAYAAQABAAEAAAAFAAcAAQABAAEAAAAGAAcAAQABAAEAAAAGAAYAAQABAAEAAAAGAAUAAQABAAEAAAACAAgAAQAEAAIAAAABAAgAAQADAAIAAAAGAAgAAQAIAAEAAAAHAAQAAQAEAAAAAAAIAAQAAQAFAAAAAAAIAAUAAQAFAAEAAAAIAAYAAQAFAAEAAAAIAAcAAQAFAAEAAAAHAAUAAQABAAEAAAAHAAYAAQABAAEAAAAHAAcAAQABAAEAAAAHAAgAAQAEAAIAAAAIAAgAAQAFAAIAAAADAAgAAQAHAAEAAAADAAkAAQADAAEAAAADAAoAAQADAAEAAAADAAsAAQADAAEAAAAGAAkAAQAFAAEAAAAGAAoAAQAFAAEAAAAGAAsAAQAFAAEAAAAGAAwAAQAIAAAAAAAHAAwAAQAEAAAAAAACAAwAAQAEAAAAAAADAAwAAQAHAAAAAAAIAAwAAQAFAAAAAAAHAA0AAQABAAEAAAAGAA0AAQABAAEAAAAFAA0AAQABAAEAAAAEAA0AAQABAAEAAAAEAAwAAQABAAEAAAAEAAsAAQABAAEAAAAEAAoAAQABAAEAAAAEAAkAAQABAAEAAAAEAAgAAQABAAEAAAAFAAgAAQABAAEAAAAFAAkAAQABAAEAAAAFAAoAAQABAAEAAAAFAAsAAQABAAEAAAAFAAwAAQABAAEAAAACAA0AAQABAAEAAAADAA0AAQABAAEAAAACAA4AAQABAAEAAAADAA4AAQABAAEAAAAEAA4AAQABAAEAAAAFAA4AAQABAAEAAAAGAA4AAQABAAEAAAAHAA4AAQABAAEAAAABAAwAAQADAAAAAAACAA8AAQABAAEAAAADAA8AAQABAAEAAAAEAA8AAQABAAEAAAAFAA8AAQABAAEAAAAGAA8AAQABAAEAAAAHAA8AAQABAAEAAAAIAA0AAQAFAAEAAAAIAA4AAQAFAAEAAAAIAA8AAQAFAAEAAAACABAAAQAEAAIAAAADABAAAQAEAAIAAAAEABAAAQAEAAIAAAAFABAAAQAEAAIAAAAGABAAAQAEAAIAAAAHABAAAQAEAAIAAAAIABAAAQAFAAIAAAABAA8AAQADAAEAAAABAA4AAQADAAEAAAABAA0AAQADAAEAAAABABAAAQADAAIAAAA=")
+
+[node name="basket_gmo_big" parent="." index="3" unique_id=1636399895 instance=ExtResource("2_gws4d")]
+position = Vector2(191, 384)
+
+[node name="lemon_no" parent="." index="4" unique_id=410173830 instance=ExtResource("3_vmo8a")]
+position = Vector2(479, 350)
+scale = Vector2(0.928, 0.9)
+
+[node name="lemon_o" parent="." index="5" unique_id=1485246511 instance=ExtResource("4_w5vkw")]
+position = Vector2(288, 351)
+
+[node name="lemon_no3" parent="." index="6" unique_id=753229348 instance=ExtResource("3_vmo8a")]
+position = Vector2(479, 990)
+scale = Vector2(0.9, 0.9)
+
+[node name="lemon_o2" parent="." index="7" unique_id=1712422682 instance=ExtResource("4_w5vkw")]
+position = Vector2(289, 990)
+
+[node name="Basket_Organic_L_Shape" parent="." index="8" unique_id=1853528694 instance=ExtResource("5_vqsfn")]
+position = Vector2(195, 957)
+
+[node name="strawb_gmo" parent="." index="9" unique_id=844119818 instance=ExtResource("6_d6i5r")]
+position = Vector2(258, 451.00003)
+
+[node name="Strawb_non_Gmo" parent="." index="10" unique_id=922981373 instance=ExtResource("7_1t42e")]
+position = Vector2(448, 834)
