@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdfof1q6bbxru"
-path="res://.godot/imported/victory_conventional_screen.png-164348094571628f0f612d033357b8be.ctex"
+uid="uid://csvfpu8ncxokc"
+path="res://.godot/imported/counter_local.png-ade9bc3fded28c041e100f4a2f5ba6a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/results screen/victory_conventional_screen.png"
-dest_files=["res://.godot/imported/victory_conventional_screen.png-164348094571628f0f612d033357b8be.ctex"]
+source_file="res://Assets/Graphics/UI/gameplay screen/counter_local.png"
+dest_files=["res://.godot/imported/counter_local.png-ade9bc3fded28c041e100f4a2f5ba6a7.ctex"]
 
 [params]
 

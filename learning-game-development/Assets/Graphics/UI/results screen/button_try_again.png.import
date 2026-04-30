@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csvfpu8ncxokc"
-path="res://.godot/imported/local_counter.png-652e9674bfab088b11754304967d1c80.ctex"
+uid="uid://kfqwunh3a83f"
+path="res://.godot/imported/button_try_again.png-2a7f785600acea4c1da3cec14cb56a25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/gameplay screen/local_counter.png"
-dest_files=["res://.godot/imported/local_counter.png-652e9674bfab088b11754304967d1c80.ctex"]
+source_file="res://Assets/Graphics/UI/results screen/button_try_again.png"
+dest_files=["res://.godot/imported/button_try_again.png-2a7f785600acea4c1da3cec14cb56a25.ctex"]
 
 [params]
 

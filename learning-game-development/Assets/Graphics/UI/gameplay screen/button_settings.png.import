@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt1xphpsfjo5"
-path="res://.godot/imported/market_sign .png-2097be0701ab4c18f95dcc4370befe8d.ctex"
+uid="uid://coawrjjw45xe0"
+path="res://.godot/imported/button_settings.png-1b1db27bb4c3ba04d06960fb46a84960.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/results screen/market_sign .png"
-dest_files=["res://.godot/imported/market_sign .png-2097be0701ab4c18f95dcc4370befe8d.ctex"]
+source_file="res://Assets/Graphics/UI/gameplay screen/button_settings.png"
+dest_files=["res://.godot/imported/button_settings.png-1b1db27bb4c3ba04d06960fb46a84960.ctex"]
 
 [params]
 

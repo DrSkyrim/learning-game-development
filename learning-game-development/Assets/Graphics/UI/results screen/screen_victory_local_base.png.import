@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4503ut3dd7kw"
-path="res://.godot/imported/capy_game_sprite.png-c183fa22782d7af7ab1f8ad51d872bf0.ctex"
+uid="uid://bjwqmhqhk0w4s"
+path="res://.godot/imported/screen_victory_local_base.png-415b15d3e7957ebdf5d9fcef63cc1f17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/gameplay screen/capy_game_sprite.png"
-dest_files=["res://.godot/imported/capy_game_sprite.png-c183fa22782d7af7ab1f8ad51d872bf0.ctex"]
+source_file="res://Assets/Graphics/UI/results screen/screen_victory_local_base.png"
+dest_files=["res://.godot/imported/screen_victory_local_base.png-415b15d3e7957ebdf5d9fcef63cc1f17.ctex"]
 
 [params]
 

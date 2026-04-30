@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t43wkw7m8ujc"
-path="res://.godot/imported/next_button.png-f3a530c641ae2027fbf17f850257c92e.ctex"
+uid="uid://cdfof1q6bbxru"
+path="res://.godot/imported/screen_victory_conventional.png-db0f663b7ba442426106f88169f5b081.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/results screen/next_button.png"
-dest_files=["res://.godot/imported/next_button.png-f3a530c641ae2027fbf17f850257c92e.ctex"]
+source_file="res://Assets/Graphics/UI/results screen/screen_victory_conventional.png"
+dest_files=["res://.godot/imported/screen_victory_conventional.png-db0f663b7ba442426106f88169f5b081.ctex"]
 
 [params]
 
