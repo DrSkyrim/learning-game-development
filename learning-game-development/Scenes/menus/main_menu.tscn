@@ -39,6 +39,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "STORY MODE"
 
+[node name="Tutorial" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1076646012]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "TUTORIAL"
+
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1301344031]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64

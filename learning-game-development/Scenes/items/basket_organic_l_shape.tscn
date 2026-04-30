@@ -19,7 +19,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2c75o"]
-size = Vector2(48, 104)
+size = Vector2(50, 106)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7eyrj"]
+size = Vector2(102, 46)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oe3jb"]
 size = Vector2(47, 104)
@@ -36,10 +39,14 @@ type = 2
 sprite_frames = SubResource("SpriteFrames_qn5mw")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
-position = Vector2(-31, 2)
+position = Vector2(-30, -1)
 shape = SubResource("RectangleShape2D_2c75o")
 
-[node name="ONLY USE WITH BASKETS" parent="." index="2" unique_id=1169250334]
+[node name="CollisionHelperCollision" type="CollisionShape2D" parent="." index="2" unique_id=1073972919]
+position = Vector2(-4, -27)
+shape = SubResource("RectangleShape2D_7eyrj")
+
+[node name="ONLY USE WITH BASKETS" parent="." index="3" unique_id=1169250334]
 collision_layer = 2
 collision_mask = 4
 

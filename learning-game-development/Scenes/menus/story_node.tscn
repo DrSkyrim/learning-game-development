@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://by5w3qujdjkg7"]
+
+[ext_resource type="Script" uid="uid://bkfpoo6sa7qob" path="res://Scripts/story_node.gd" id="1_ys3s4"]
+
+[node name="story_node" type="Control" unique_id=672721108]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ys3s4")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1472301076]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="story_rect" type="TextureRect" parent="MarginContainer" unique_id=652841960]
+layout_mode = 2

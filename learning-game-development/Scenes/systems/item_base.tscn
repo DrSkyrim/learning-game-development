@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://j34ceab3rfg6"]
 
-[ext_resource type="Script" uid="uid://btfa5b15dqf3q" path="res://Scenes/items/item_base.gd" id="1_jield"]
+[ext_resource type="Script" uid="uid://btfa5b15dqf3q" path="res://Scripts/item_base.gd" id="1_jield"]
 
 [node name="item_base" type="CharacterBody2D" unique_id=410173830 groups=["items"]]
 script = ExtResource("1_jield")

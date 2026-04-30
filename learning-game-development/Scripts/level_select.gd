@@ -1,11 +1,13 @@
 extends Node
 
 @onready var grid = $MarginContainer/VBoxContainer/LevelMapping
+@onready var back: Button = $MarginContainer/VBoxContainer/Back
 
 var total_levels := 10  # change this to however many levels you have
 
 func _ready():
 	populate_levels()
+	back.pressed.connect(_on_back_pressed)
 
 func populate_levels():
 	for i in range(total_levels):
@@ -30,3 +32,6 @@ func _on_level_button_pressed(level_id):
 	var scene = load(level_path)
 	GameManager.is_story_mode = false
 	GameManager.load_level(level_id)
+
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://Scenes/menus/main_menu.tscn")

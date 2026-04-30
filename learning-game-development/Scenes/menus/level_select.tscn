@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bbla1qeq7ag55"]
 
-[ext_resource type="Script" uid="uid://jjsdaldx0x53" path="res://Scenes/menus/level_select.gd" id="1_c2chm"]
+[ext_resource type="Script" uid="uid://jjsdaldx0x53" path="res://Scripts/level_select.gd" id="1_c2chm"]
 
 [node name="LevelSelect" type="Control" unique_id=1249376538]
 layout_mode = 3
@@ -35,3 +35,7 @@ columns = 4
 [node name="TotalMovesUsed" type="Label" parent="MarginContainer/VBoxContainer" unique_id=496927526]
 layout_mode = 2
 text = "TO BE DONE, CUZ I DONT WANNA DO GLOBAL SCRIPTING JUST YET"
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1235929962]
+layout_mode = 2
+text = "BACK TO MENU"
