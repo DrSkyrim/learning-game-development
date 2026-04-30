@@ -48,18 +48,20 @@ func check_win_condition():
 		
 func get_moves():
 	return moves
+	
+func add_moves(amount:int):
+	moves += amount
+	print("Moves after bonus: ", moves)
 
 func win_level():
 	print("Level Complete!")
 
 	await get_tree().create_timer(0.5).timeout
 
-	if GameManager.is_story_mode:
-		GameManager.load_next_level()
-	else:
-		get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
+	get_tree().change_scene_to_file("res://Scenes/menus/level_end_win.tscn")
 
 
 func lose_level():
-	print("Out of moves!")
-	get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
+	await get_tree().create_timer(0.5).timeout
+
+	get_tree().change_scene_to_file("res://Scenes/menus/level_end_loss.tscn")
