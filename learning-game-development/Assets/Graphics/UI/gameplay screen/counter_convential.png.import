@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv2rdh0f04ess"
-path="res://.godot/imported/start_button.png-5c4a84d8ffbed11d5c766e2d79a12a00.ctex"
+uid="uid://dhafobgvqhcyk"
+path="res://.godot/imported/counter_convential.png-644884736de8119566c5c584fd862cd2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/main menu screen/start_button.png"
-dest_files=["res://.godot/imported/start_button.png-5c4a84d8ffbed11d5c766e2d79a12a00.ctex"]
+source_file="res://Assets/Graphics/UI/gameplay screen/counter_convential.png"
+dest_files=["res://.godot/imported/counter_convential.png-644884736de8119566c5c584fd862cd2.ctex"]
 
 [params]
 

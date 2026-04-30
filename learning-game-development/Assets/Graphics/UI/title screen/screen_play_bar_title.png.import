@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bty7n2svjgipq"
-path="res://.godot/imported/quit_button.png-a47b738499cce504021119b6ccf72edf.ctex"
+uid="uid://1urqphr62waf"
+path="res://.godot/imported/screen_play_bar_title.png-9243c72d3e17992697af8dbb1d65fa98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/main menu screen/quit_button.png"
-dest_files=["res://.godot/imported/quit_button.png-a47b738499cce504021119b6ccf72edf.ctex"]
+source_file="res://Assets/Graphics/UI/title screen/screen_play_bar_title.png"
+dest_files=["res://.godot/imported/screen_play_bar_title.png-9243c72d3e17992697af8dbb1d65fa98.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyplibnpos63k"
-path="res://.godot/imported/level_bar.png-bc8cabc729ae998c340dc7e992094b23.ctex"
+uid="uid://coawrjjw45xe0"
+path="res://.godot/imported/button_settings.png-1b1db27bb4c3ba04d06960fb46a84960.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/gameplay screen/level_bar.png"
-dest_files=["res://.godot/imported/level_bar.png-bc8cabc729ae998c340dc7e992094b23.ctex"]
+source_file="res://Assets/Graphics/UI/gameplay screen/button_settings.png"
+dest_files=["res://.godot/imported/button_settings.png-1b1db27bb4c3ba04d06960fb46a84960.ctex"]
 
 [params]
 
