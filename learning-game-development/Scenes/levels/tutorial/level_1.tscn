@@ -1,0 +1,25 @@
+[gd_scene format=4 uid="uid://b3so5h1t6oyo0"]
+
+[ext_resource type="PackedScene" uid="uid://dbiwv3rkaa64i" path="res://Scenes/systems/level_base.tscn" id="1_mkwgf"]
+[ext_resource type="PackedScene" uid="uid://cstovajoixcgs" path="res://Scenes/items/basket_1x1_NO.tscn" id="2_0lml3"]
+[ext_resource type="PackedScene" uid="uid://b6lrr6upmd6tf" path="res://Scenes/items/basket_1x1_O.tscn" id="3_qyddi"]
+[ext_resource type="PackedScene" uid="uid://ip0lqpb78yul" path="res://Scenes/items/strawb_gmo.tscn" id="4_qek6e"]
+[ext_resource type="PackedScene" uid="uid://brrrgckqfp8i0" path="res://Scenes/items/strawb_non_gmo.tscn" id="5_tlryv"]
+
+[node name="Level_1" unique_id=2147123878 instance=ExtResource("1_mkwgf")]
+moves = 16
+
+[node name="TileMapLayer" parent="." index="2" unique_id=1866890562]
+tile_map_data = PackedByteArray("AAABAAgAAQADAAEAAAABAAkAAQADAAEAAAACAAoAAQAEAAIAAAADAAoAAQAEAAIAAAAEAAkAAQAFAAEAAAAEAAgAAQAFAAEAAAADAAcAAQAEAAAAAAACAAcAAQAEAAAAAAABAAcAAQADAAAAAAABAAoAAQADAAIAAAAEAAcAAQAFAAAAAAAEAAoAAQAFAAIAAAAIAA4AAQAFAAIAAAAIAA0AAQAFAAEAAAAIAAwAAQAFAAEAAAAIAAsAAQAFAAAAAAAHAA4AAQAEAAIAAAAGAA4AAQAEAAIAAAAFAA4AAQADAAIAAAAFAA0AAQADAAEAAAAFAAwAAQADAAEAAAAFAAsAAQADAAAAAAAGAAsAAQAEAAAAAAAHAAsAAQAEAAAAAAAHAA0AAQABAAEAAAAGAA0AAQABAAEAAAAGAAwAAQABAAEAAAAHAAwAAQABAAEAAAADAAkAAQABAAEAAAACAAkAAQABAAEAAAACAAgAAQABAAEAAAADAAgAAQABAAEAAAA=")
+
+[node name="item_base" parent="." index="3" unique_id=1630100157 instance=ExtResource("2_0lml3")]
+position = Vector2(192, 576)
+
+[node name="item_base2" parent="." index="4" unique_id=1388390994 instance=ExtResource("3_qyddi")]
+position = Vector2(448, 832)
+
+[node name="strawb_gmo" parent="." index="5" unique_id=57737669 instance=ExtResource("4_qek6e")]
+position = Vector2(128, 512)
+
+[node name="Strawb_non_Gmo" parent="." index="6" unique_id=721619355 instance=ExtResource("5_tlryv")]
+position = Vector2(384, 768)
