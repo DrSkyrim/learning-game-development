@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://vr3mdax8xr1k"]
+
+[ext_resource type="Script" uid="uid://b1iy2xrjeotgv" path="res://Scripts/level_end_win.gd" id="1_bwsu4"]
+[ext_resource type="Texture2D" uid="uid://bjwqmhqhk0w4s" path="res://Assets/Graphics/UI/results screen/screen_victory_local_base.png" id="2_l7g8a"]
+[ext_resource type="Texture2D" uid="uid://bt1xphpsfjo5" path="res://Assets/Graphics/UI/results screen/sign_market .png" id="3_io7q6"]
+[ext_resource type="Texture2D" uid="uid://t43wkw7m8ujc" path="res://Assets/Graphics/UI/results screen/button_next.png" id="4_l7g8a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nu5cw"]
+atlas = ExtResource("3_io7q6")
+region = Rect2(128, 0, 128, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5mguy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nu5cw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="level_end_win" type="Control" unique_id=1669779005]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -512.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bwsu4")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1233356193]
+layout_mode = 0
+offset_right = 649.0
+offset_bottom = 1150.0
+texture = ExtResource("2_l7g8a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TextureRect" unique_id=205930335]
+position = Vector2(388, 300)
+sprite_frames = SubResource("SpriteFrames_5mguy")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1084724025]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 328.0
+offset_bottom = 578.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1688855273]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="next_level" type="Button" parent="MarginContainer/VBoxContainer" unique_id=314295973]
+layout_mode = 2
+icon = ExtResource("4_l7g8a")
+
+[node name="back" type="Button" parent="MarginContainer/VBoxContainer" unique_id=688626615]
+layout_mode = 2
+text = "BACK"

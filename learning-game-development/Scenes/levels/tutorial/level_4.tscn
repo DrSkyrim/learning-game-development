@@ -1,0 +1,37 @@
+[gd_scene format=4 uid="uid://dmiefsvvqhax0"]
+
+[ext_resource type="PackedScene" uid="uid://dbiwv3rkaa64i" path="res://Scenes/systems/level_base.tscn" id="1_cn7ie"]
+[ext_resource type="PackedScene" uid="uid://dqd6xdm3vvgqj" path="res://Scenes/items/basket_gmo_big.tscn" id="2_3l0ff"]
+[ext_resource type="PackedScene" uid="uid://ip0lqpb78yul" path="res://Scenes/items/strawb_gmo.tscn" id="3_qmkwd"]
+[ext_resource type="PackedScene" uid="uid://brrrgckqfp8i0" path="res://Scenes/items/strawb_non_gmo.tscn" id="4_atycn"]
+[ext_resource type="PackedScene" uid="uid://cgxixecylyq7" path="res://Scenes/items/basket_organic_l_shape.tscn" id="5_njctx"]
+
+[node name="level_4" unique_id=1176534193 instance=ExtResource("1_cn7ie")]
+moves = 36
+
+[node name="TileMapLayer" parent="." index="2" unique_id=1866890562]
+tile_map_data = PackedByteArray("AAABAAUAAQADAAAAAAAIAAUAAQAFAAAAAAACAAUAAQAEAAAAAAADAAUAAQAEAAAAAAAEAAUAAQAEAAAAAAAFAAUAAQAEAAAAAAAGAAUAAQAEAAAAAAAHAAUAAQAEAAAAAAAIAAYAAQAFAAEAAAAIAAcAAQAFAAEAAAAIAAgAAQAFAAEAAAAIAAkAAQAFAAEAAAAIAAoAAQAFAAEAAAAIAAsAAQAFAAEAAAABAAYAAQADAAEAAAABAAcAAQADAAEAAAABAAgAAQADAAEAAAABAAkAAQADAAEAAAABAAoAAQADAAEAAAAIAAwAAQAFAAIAAAACAAwAAQAEAAIAAAADAAwAAQAEAAIAAAAEAAwAAQAEAAIAAAAFAAwAAQAEAAIAAAAGAAwAAQAEAAIAAAAHAAwAAQAEAAIAAAABAAsAAQADAAEAAAABAAwAAQADAAIAAAACAAYAAQABAAEAAAACAAcAAQABAAEAAAACAAgAAQABAAEAAAACAAkAAQABAAEAAAACAAoAAQABAAEAAAACAAsAAQABAAEAAAADAAsAAQABAAEAAAAEAAsAAQABAAEAAAAFAAsAAQABAAEAAAAGAAsAAQABAAEAAAAHAAsAAQABAAEAAAAHAAoAAQABAAEAAAAGAAoAAQABAAEAAAAFAAoAAQABAAEAAAAEAAoAAQABAAEAAAADAAoAAQABAAEAAAADAAkAAQABAAEAAAAEAAkAAQABAAEAAAAFAAkAAQABAAEAAAAGAAkAAQABAAEAAAAHAAkAAQABAAEAAAAHAAgAAQABAAEAAAAHAAcAAQABAAEAAAAHAAYAAQABAAEAAAAGAAYAAQABAAEAAAAFAAYAAQABAAEAAAAEAAYAAQABAAEAAAADAAYAAQABAAEAAAADAAcAAQABAAEAAAADAAgAAQABAAEAAAAEAAgAAQABAAEAAAAFAAgAAQABAAEAAAAEAAcAAQABAAEAAAAFAAcAAQABAAEAAAAGAAcAAQABAAEAAAAGAAgAAQABAAEAAAA=")
+
+[node name="basket_gmo_big" parent="." index="3" unique_id=2129967338 instance=ExtResource("2_3l0ff")]
+position = Vector2(192, 448)
+
+[node name="Basket_Organic_L_Shape" parent="." index="4" unique_id=1919150100 instance=ExtResource("5_njctx")]
+position = Vector2(448, 704)
+
+[node name="strawb_gmo" parent="." index="5" unique_id=1926910364 instance=ExtResource("3_qmkwd")]
+position = Vector2(192, 704.00006)
+
+[node name="strawb_gmo2" parent="." index="6" unique_id=301354161 instance=ExtResource("3_qmkwd")]
+position = Vector2(384, 448)
+
+[node name="Strawb_non_Gmo" parent="." index="7" unique_id=922981373 instance=ExtResource("4_atycn")]
+position = Vector2(384, 384)
+
+[node name="Strawb_non_Gmo2" parent="." index="8" unique_id=1437649087 instance=ExtResource("4_atycn")]
+position = Vector2(128, 640)
+
+[node name="strawb_gmo3" parent="." index="9" unique_id=729172855 instance=ExtResource("3_qmkwd")]
+position = Vector2(256, 512)
+
+[node name="Strawb_non_Gmo3" parent="." index="10" unique_id=137601281 instance=ExtResource("4_atycn")]
+position = Vector2(320, 576)

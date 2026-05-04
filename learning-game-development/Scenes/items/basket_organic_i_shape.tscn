@@ -25,6 +25,7 @@ size = Vector2(52, 119)
 size = Vector2(53, 119)
 
 [node name="basket_organic_i_shape" unique_id=1947260244 instance=ExtResource("1_85nbm")]
+position = Vector2(32, 0)
 collision_layer = 2
 collision_mask = 11
 type = 2
