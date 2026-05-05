@@ -12,7 +12,14 @@ var facing := Vector2.UP
 var target_position : Vector2
 var is_moving := false
 
-# Cached reference to level (safe lookup)
+# Swipe
+var swipe_start := Vector2.ZERO
+var swipe_end := Vector2.ZERO
+var swipe_threshold := 30.0
+
+# Selection (shared across all baskets)
+static var selected_basket: CharacterBody2D = null
+
 var level
 
 
@@ -24,54 +31,96 @@ func _ready():
 func _process(delta):
 	if is_moving:
 		move_to_target(delta)
-		return
-
-	var direction := Vector2.ZERO
-
-	# Movement input
-	if type == Type.BASKET_ORG:
-		direction = get_arrow_input()
-	elif type == Type.BASKET_GMO:
-		direction = get_wasd_input()
-
-	# Rotation input
-	if type == Type.BASKET_ORG:
-		if Input.is_action_just_pressed("rotate_organic"):
-			rotate_right()
-	elif type == Type.BASKET_GMO:
-		if Input.is_action_just_pressed("rotate_non_organic"):
-			rotate_right()
-
-	if direction != Vector2.ZERO:
-		start_move(direction)
 
 
 # ======================
 # INPUT
 # ======================
 
-func get_arrow_input() -> Vector2:
-	if Input.is_action_just_pressed("ui_right"):
-		return Vector2.RIGHT
-	if Input.is_action_just_pressed("ui_left"):
-		return Vector2.LEFT
-	if Input.is_action_just_pressed("ui_down"):
-		return Vector2.DOWN
-	if Input.is_action_just_pressed("ui_up"):
-		return Vector2.UP
-	return Vector2.ZERO
+func _input(event):
+	if not is_basket():
+		return
+
+	# SELECT on press
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		if is_mouse_over():
+			selected_basket = self
+			swipe_start = event.position
+
+	# TOUCH select
+	elif event is InputEventScreenTouch and event.pressed:
+		if is_touch_over(event.position):
+			selected_basket = self
+			swipe_start = event.position
+
+	# RELEASE → swipe
+	elif event is InputEventMouseButton and not event.pressed:
+		if selected_basket == self:
+			swipe_end = event.position
+			handle_swipe()
+
+	elif event is InputEventScreenTouch and not event.pressed:
+		if selected_basket == self:
+			swipe_end = event.position
+			handle_swipe()
 
 
-func get_wasd_input() -> Vector2:
-	if Input.is_action_just_pressed("move_right"):
-		return Vector2.RIGHT
-	if Input.is_action_just_pressed("move_left"):
-		return Vector2.LEFT
-	if Input.is_action_just_pressed("move_down"):
-		return Vector2.DOWN
-	if Input.is_action_just_pressed("move_up"):
-		return Vector2.UP
-	return Vector2.ZERO
+func handle_swipe():
+	if is_moving:
+		return
+
+	var delta = swipe_end - swipe_start
+
+	# TAP → ROTATE
+	if delta.length() < swipe_threshold:
+		rotate_right()
+		return
+
+	var direction = get_swipe_direction(delta)
+
+	if direction != Vector2.ZERO:
+		start_move(direction)
+
+
+func get_swipe_direction(delta: Vector2) -> Vector2:
+	if abs(delta.x) > abs(delta.y):
+		return Vector2.RIGHT if delta.x > 0 else Vector2.LEFT
+	else:
+		return Vector2.DOWN if delta.y > 0 else Vector2.UP
+
+
+# ======================
+# HIT DETECTION
+# ======================
+
+func is_mouse_over() -> bool:
+	var mouse_pos = get_global_mouse_position()
+	var shape_node = $CollisionShape2D
+
+	var local_pos = shape_node.to_local(mouse_pos)
+
+	var rect_shape = shape_node.shape as RectangleShape2D
+	if rect_shape:
+		var extents = rect_shape.size / 2.0
+		return abs(local_pos.x) <= extents.x and abs(local_pos.y) <= extents.y
+
+	return false
+
+
+func is_touch_over(pos: Vector2) -> bool:
+	var shape_node = $CollisionShape2D
+	var local_pos = shape_node.to_local(pos)
+
+	var rect_shape = shape_node.shape as RectangleShape2D
+	if rect_shape:
+		var extents = rect_shape.size / 2.0
+		return abs(local_pos.x) <= extents.x and abs(local_pos.y) <= extents.y
+
+	return false
+
+
+func get_collision_shape():
+	return $CollisionShape2D.shape
 
 
 # ======================
@@ -98,7 +147,7 @@ func move_to_target(delta):
 
 
 # ======================
-# ROTATION (SAFE)
+# ROTATION
 # ======================
 
 func rotate_right():
@@ -108,21 +157,16 @@ func rotate_right():
 	var old_rotation = rotation_degrees
 	var old_facing = facing
 
-	# Apply rotation
 	facing = facing.rotated(PI/2)
 	rotation_degrees += 90
 
-	# Snap to grid BEFORE checking collision
 	position = snap_to_grid(position)
 
-	# Check if rotation causes collision
 	if test_move(transform, Vector2.ZERO):
 		facing = old_facing
 		rotation_degrees = old_rotation
-
-
-func update_visual_rotation():
-	rotation_degrees = round(rotation_degrees / 90.0) * 90.0
+	else:
+		emit_signal("moved")
 
 
 # ======================
