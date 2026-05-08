@@ -23,6 +23,7 @@ animations = [{
 [node name="apple_no" unique_id=410173830 instance=ExtResource("1_tcv33")]
 collision_layer = 8
 collision_mask = 8
+type = 1
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
 sprite_frames = SubResource("SpriteFrames_ya3kf")
