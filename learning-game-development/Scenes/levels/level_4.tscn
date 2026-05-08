@@ -20,10 +20,10 @@ tile_map_data = PackedByteArray("AAADAAUAAQABAAEAAAADAAYAAQABAAEAAAADAAcAAQABAAE
 position = Vector2(289, 609)
 
 [node name="apple_o" parent="." index="4" unique_id=1993489084 instance=ExtResource("3_a0hjo")]
-position = Vector2(418, 928)
+position = Vector2(164, 931)
 
 [node name="basket_gmo_big" parent="." index="5" unique_id=1636399895 instance=ExtResource("4_b6u7m")]
-position = Vector2(192, 896)
+position = Vector2(254, 895)
 
 [node name="Basket_Organic_L_Shape" parent="." index="6" unique_id=1853528694 instance=ExtResource("5_pyo1i")]
 position = Vector2(257, 445)
@@ -38,4 +38,4 @@ position = Vector2(482, 865)
 position = Vector2(480, 479)
 
 [node name="lemon_no" parent="." index="10" unique_id=534635975 instance=ExtResource("9_bp53q")]
-position = Vector2(416, 797)
+position = Vector2(415, 927)
