@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt1xphpsfjo5"
-path="res://.godot/imported/sign_market .png-3261fbe038bfae87f1cec8a82556fb0a.ctex"
+uid="uid://duchctwk75ajq"
+path="res://.godot/imported/title_sprite.png-66a3b19050e43f9b5cd448861ee932bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/results screen/sign_market .png"
-dest_files=["res://.godot/imported/sign_market .png-3261fbe038bfae87f1cec8a82556fb0a.ctex"]
+source_file="res://Assets/Graphics/UI/title screen/title_sprite.png"
+dest_files=["res://.godot/imported/title_sprite.png-66a3b19050e43f9b5cd448861ee932bf.ctex"]
 
 [params]
 
