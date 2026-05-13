@@ -165,8 +165,6 @@ func rotate_right():
 	if test_move(transform, Vector2.ZERO):
 		facing = old_facing
 		rotation_degrees = old_rotation
-	else:
-		emit_signal("moved")
 
 
 # ======================
@@ -186,8 +184,6 @@ func _on_only_use_with_baskets_body_entered(body: Node2D) -> void:
 	var other_type = body.get_type()
 
 	if type == Type.BASKET_ORG and other_type == Type.FRUIT_ORG:
-		if level != null and level.has_method("add_moves"):
-			level.add_moves(3)
 		body.queue_free()
 
 	elif type == Type.BASKET_GMO and other_type == Type.FRUIT_GMO:

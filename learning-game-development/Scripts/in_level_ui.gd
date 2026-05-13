@@ -2,6 +2,7 @@ extends Control
 
 @onready var back_to_menu: Button = $MarginContainer/HBoxContainer/BackToMenu
 @onready var moves_label: Label = $MarginContainer/HBoxContainer/MovesLabel
+@onready var undo: Button = $MarginContainer/HBoxContainer/Undo
 
 
 var level
@@ -18,7 +19,10 @@ func _ready() -> void:
 	update_moves()
 
 func _on_back_to_menu_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
+	if(!GameManager.is_story_mode):
+		get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
+	else:
+		get_tree().change_scene_to_file("res://Scenes/menus/main_menu.tscn")
 
 func update_moves():
 	if level == null:
