@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqmekghjqv1hl"
-path="res://.godot/imported/3x3 organic baskets.png-d8ea469cb3fa0a798d1b20132e0121d4.ctex"
+uid="uid://csktuwclsh3kx"
+path="res://.godot/imported/draft_organic baskets.png-18e229ff8b735a89639e1044bf1bb990.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/Items/3x3 organic baskets.png"
-dest_files=["res://.godot/imported/3x3 organic baskets.png-d8ea469cb3fa0a798d1b20132e0121d4.ctex"]
+source_file="res://Assets/Graphics/Items/draft_organic baskets.png"
+dest_files=["res://.godot/imported/draft_organic baskets.png-18e229ff8b735a89639e1044bf1bb990.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ng8mk8euydlh"
-path="res://.godot/imported/tilemap draft.png-24f479c474de2ed9caddc8802a010d5b.ctex"
+uid="uid://crtna56d5wnmh"
+path="res://.godot/imported/basket_1x1_conventional.png-eb7bbaabb959768646e916260cd4cd33.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/Backgrounds/tilemap draft.png"
-dest_files=["res://.godot/imported/tilemap draft.png-24f479c474de2ed9caddc8802a010d5b.ctex"]
+source_file="res://Assets/Graphics/Items/basket_1x1_conventional.png"
+dest_files=["res://.godot/imported/basket_1x1_conventional.png-eb7bbaabb959768646e916260cd4cd33.ctex"]
 
 [params]
 

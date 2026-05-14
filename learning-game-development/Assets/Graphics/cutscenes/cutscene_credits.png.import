@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4hd3j8u74w60"
-path="res://.godot/imported/2×2 organic baskets.png-66219619a0f86b759fa4dabdfda4452e.ctex"
+uid="uid://b7db8fufdvuw8"
+path="res://.godot/imported/cutscene_credits.png-a5ccb555184c06110f44a7baafd9fae9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/Items/2×2 organic baskets.png"
-dest_files=["res://.godot/imported/2×2 organic baskets.png-66219619a0f86b759fa4dabdfda4452e.ctex"]
+source_file="res://Assets/Graphics/cutscenes/cutscene_credits.png"
+dest_files=["res://.godot/imported/cutscene_credits.png-a5ccb555184c06110f44a7baafd9fae9.ctex"]
 
 [params]
 

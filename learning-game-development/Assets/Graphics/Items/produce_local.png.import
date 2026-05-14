@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di3tj7hqfiadh"
-path="res://.godot/imported/gmo fruits draft.png-f89ab2efb55d30c10622030ac4fdeda3.ctex"
+uid="uid://d2qnp42nynmnk"
+path="res://.godot/imported/produce_local.png-ab80f8949930f159d6b77cbcd4e6915a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/Items/gmo fruits draft.png"
-dest_files=["res://.godot/imported/gmo fruits draft.png-f89ab2efb55d30c10622030ac4fdeda3.ctex"]
+source_file="res://Assets/Graphics/Items/produce_local.png"
+dest_files=["res://.godot/imported/produce_local.png-ab80f8949930f159d6b77cbcd4e6915a.ctex"]
 
 [params]
 

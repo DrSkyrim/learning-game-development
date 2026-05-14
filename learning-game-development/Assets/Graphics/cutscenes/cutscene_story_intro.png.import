@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crtna56d5wnmh"
-path="res://.godot/imported/1×1 gmo baskets.png-29b3909df7b656356e486da89f9aeede.ctex"
+uid="uid://bmfm80h8ywk0f"
+path="res://.godot/imported/cutscene_story_intro.png-dcfc5a7f493a3496add9deb7f33d47f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/Items/1×1 gmo baskets.png"
-dest_files=["res://.godot/imported/1×1 gmo baskets.png-29b3909df7b656356e486da89f9aeede.ctex"]
+source_file="res://Assets/Graphics/cutscenes/cutscene_story_intro.png"
+dest_files=["res://.godot/imported/cutscene_story_intro.png-dcfc5a7f493a3496add9deb7f33d47f5.ctex"]
 
 [params]
 
