@@ -6,6 +6,8 @@ extends Control
 
 
 func _ready() -> void:
+	if(not GameManager.is_tutorial):
+		show_rewards()
 	next_level.pressed.connect(_on_next_pressed)
 	back.pressed.connect(_on_back_pressed)
 	next_level.disabled = not GameManager.is_story_mode && not GameManager.is_tutorial
@@ -17,6 +19,7 @@ func _on_next_pressed() -> void:
 		GameManager.load_next_tutorial()
 	else:
 		# In free play, "next" doesn't really make sense
+		GameManager.reset_rewards()
 		get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
 
 
@@ -27,3 +30,15 @@ func _on_back_pressed() -> void:
 	else:
 		# Go back to level select in free play
 		get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
+
+func show_rewards():
+	%reward_level_1.set_frame_and_progress(GameManager.reward_level_array[0],0.0)
+	%reward_level_2.set_frame_and_progress(GameManager.reward_level_array[1],0.0)
+	%reward_level_3.set_frame_and_progress(GameManager.reward_level_array[2],0.0)
+	%reward_level_4.set_frame_and_progress(GameManager.reward_level_array[3],0.0)
+	%reward_level_5.set_frame_and_progress(GameManager.reward_level_array[4],0.0)
+	%reward_level_6.set_frame_and_progress(GameManager.reward_level_array[5],0.0)
+	%reward_level_7.set_frame_and_progress(GameManager.reward_level_array[6],0.0)
+	#%reward_level_8.set_frame_and_progress(GameManager.reward_level_array[7],0.0)
+	#%reward_level_9.set_frame_and_progress(GameManager.reward_level_array[8],0.0)
+	%reward_level_10.set_frame_and_progress(GameManager.reward_level_array[9],0.0)

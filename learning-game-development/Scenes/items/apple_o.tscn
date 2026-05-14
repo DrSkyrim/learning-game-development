@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://byhrn4oqh8ruw"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_m5oky"]
-[ext_resource type="Texture2D" uid="uid://d2qnp42nynmnk" path="res://Assets/Graphics/Items/organic_fruits.png" id="2_30jce"]
+[ext_resource type="Texture2D" uid="uid://d2qnp42nynmnk" path="res://Assets/Graphics/Items/produce_local.png" id="2_30jce"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_redb4"]
 atlas = ExtResource("2_30jce")
