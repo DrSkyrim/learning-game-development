@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bkrbktlwfoqbt"]
 
-[ext_resource type="AudioStream" uid="uid://bgmo8wi6qfxkp" path="res://Assets/Sound/music3_bg_snowflake_dance.mp3" id="1_do1xs"]
+[ext_resource type="AudioStream" uid="uid://bgmo8wi6qfxkp" path="res://Assets/Audio/Music/music3_bg_snowflake_dance.mp3" id="1_do1xs"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=287432063]
 stream = ExtResource("1_do1xs")
