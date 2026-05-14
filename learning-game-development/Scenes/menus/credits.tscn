@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://8o7th68k63b5"]
+
+[ext_resource type="Script" uid="uid://dc3m038phmg68" path="res://Scenes/menus/credits.gd" id="1_ty7xb"]
+[ext_resource type="Texture2D" uid="uid://b7db8fufdvuw8" path="res://Assets/Graphics/cutscenes/cutscene_credits.png" id="1_wnhpg"]
+[ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf" id="2_ty7xb"]
+
+[node name="Credits" type="Control" unique_id=827970156]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ty7xb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=970904126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_wnhpg")
+
+[node name="Credits text" type="Label" parent="TextureRect" unique_id=390433076]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -385.0
+offset_bottom = 436.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ty7xb")
+theme_override_font_sizes/font_size = 64
+text = "Lead Programmer: Martin \"Dr.Skyrim\" Lukas
+Level Designer: Cagdas Karagdas
+Lead Artist: Alesia Zhuli
+Producer:  Erik \"Enitheone\" Nikiforov
+
+Outside Assets:
+Write shit here"
+autowrap_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect" unique_id=1765794240]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

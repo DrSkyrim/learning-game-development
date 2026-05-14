@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var type : Type
 enum Type {FRUIT_ORG, FRUIT_GMO, BASKET_ORG, BASKET_GMO}
+@export var uses_rotation := false
 
 signal moved
 
@@ -44,15 +45,22 @@ func _input(event):
 	# SELECT on press
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		if is_mouse_over():
+			if selected_basket != null and selected_basket != self:
+				selected_basket.scale = Vector2.ONE
+
 			selected_basket = self
+			selected_basket.scale = Vector2(1.1, 1.1)
 			swipe_start = event.position
 
 	# TOUCH select
 	elif event is InputEventScreenTouch and event.pressed:
 		if is_touch_over(event.position):
-			selected_basket = self
-			swipe_start = event.position
+			if selected_basket != null and selected_basket != self:
+				selected_basket.scale = Vector2.ONE
 
+			selected_basket = self
+			selected_basket.scale = Vector2(1.1, 1.1)
+			swipe_start = event.position
 	# RELEASE → swipe
 	elif event is InputEventMouseButton and not event.pressed:
 		if selected_basket == self:
@@ -151,7 +159,7 @@ func move_to_target(delta):
 # ======================
 
 func rotate_right():
-	if not is_basket():
+	if not is_basket() or not uses_rotation:
 		return
 
 	var old_rotation = rotation_degrees
@@ -165,8 +173,6 @@ func rotate_right():
 	if test_move(transform, Vector2.ZERO):
 		facing = old_facing
 		rotation_degrees = old_rotation
-	else:
-		emit_signal("moved")
 
 
 # ======================
@@ -186,8 +192,6 @@ func _on_only_use_with_baskets_body_entered(body: Node2D) -> void:
 	var other_type = body.get_type()
 
 	if type == Type.BASKET_ORG and other_type == Type.FRUIT_ORG:
-		if level != null and level.has_method("add_moves"):
-			level.add_moves(3)
 		body.queue_free()
 
 	elif type == Type.BASKET_GMO and other_type == Type.FRUIT_GMO:

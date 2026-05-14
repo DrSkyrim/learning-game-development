@@ -19,11 +19,12 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x5h3p"]
-size = Vector2(16, 16)
+size = Vector2(52, 54)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ktdx"]
+size = Vector2(53, 55)
 
-[node name="item_base" unique_id=1547239996 groups=["items"] instance=ExtResource("1_4ktdx")]
+[node name="item_base" unique_id=1547239996 instance=ExtResource("1_4ktdx")]
 collision_layer = 2
 collision_mask = 7
 safe_margin = 0.001
@@ -42,5 +43,5 @@ collision_layer = 2
 collision_mask = 8
 
 [node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="0" unique_id=1520535799]
-position = Vector2(32, 32)
+position = Vector2(32.5, 31.5)
 shape = SubResource("RectangleShape2D_4ktdx")
