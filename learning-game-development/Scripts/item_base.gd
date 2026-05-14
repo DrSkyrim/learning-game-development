@@ -163,15 +163,10 @@ func rotate_right():
 		return
 
 	var old_rotation = rotation_degrees
-	var old_facing = facing
 
-	facing = facing.rotated(PI/2)
 	rotation_degrees += 90
 
-	position = snap_to_grid(position)
-
-	if test_move(transform, Vector2.ZERO):
-		facing = old_facing
+	if test_move(global_transform, Vector2.ZERO):
 		rotation_degrees = old_rotation
 
 
