@@ -65,9 +65,9 @@ func win_level(org_not_org):
 	await get_tree().create_timer(0.5).timeout
 	if(GameManager.is_tutorial):
 		if(org_not_org == 0):
-			get_tree().change_scene_to_file("res://Scenes/menus/level_end_win_local.tscn")
+			GameManager.win_type = 0
 		else:
-			get_tree().change_scene_to_file("res://Scenes/menus/level_end_win_local.tscn")
+			GameManager.win_type = 1
 	else:
 		var this_level = GameManager.current_level-1
 		if(org_not_org == 0):
@@ -76,7 +76,7 @@ func win_level(org_not_org):
 		else:
 			GameManager.reward_level_array[this_level] = 1
 			GameManager.win_type = 1
-		get_tree().change_scene_to_file("res://Scenes/menus/level_end_win_result.tscn")
+	get_tree().change_scene_to_file("res://Scenes/menus/level_end_win_result.tscn")
 
 
 func lose_level():
