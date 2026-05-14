@@ -3,7 +3,10 @@ extends Control
 @onready var story_rect: TextureRect = $MarginContainer/story_rect
 
 func _ready() -> void:
-	load_story_image()
+	if (not GameManager.is_tutorial):
+		load_story_image()
+	else:
+		load_tutorial_image()
 
 
 func load_story_image():
@@ -25,4 +28,21 @@ func get_story_path() -> String:
 
 func _input(event):
 	if event.is_action_pressed("advance_story"):
-		GameManager.load_level(1)
+		if GameManager.is_tutorial:
+			GameManager.load_tutorial_level(GameManager.current_tutorial_level)
+		else:
+			GameManager.load_level(1)
+
+func load_tutorial_image():
+	var path = "res://Assets/Graphics/cutscenes/cutscene_tutorial.png"
+
+	if path == "":
+		print("No story image found")
+		return
+
+	var texture = load(path)
+
+	if texture:
+		story_rect.texture = texture
+	else:
+		print("Failed to load: ", path)

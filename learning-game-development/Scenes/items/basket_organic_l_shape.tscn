@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cgxixecylyq7"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_oe3jb"]
-[ext_resource type="Texture2D" uid="uid://c4hd3j8u74w60" path="res://Assets/Graphics/Items/2×2 organic baskets.png" id="2_oe3jb"]
+[ext_resource type="Texture2D" uid="uid://c4hd3j8u74w60" path="res://Assets/Graphics/Items/basket_2x2_local.png" id="2_oe3jb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7eyrj"]
 atlas = ExtResource("2_oe3jb")
