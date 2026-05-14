@@ -26,14 +26,16 @@ size = Vector2(51, 172)
 
 [node name="bakset_3x1_NO" unique_id=410173830 instance=ExtResource("1_dt5oj")]
 type = 3
+uses_rotation = true
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
+position = Vector2(16, 32)
 sprite_frames = SubResource("SpriteFrames_vrxof")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
-position = Vector2(-45, 1)
+position = Vector2(-32, 34)
 shape = SubResource("RectangleShape2D_i5yd4")
 
 [node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" parent_id_path=PackedInt32Array(1169250334) index="0" unique_id=1520535799]
-position = Vector2(-46.5, 3)
+position = Vector2(-31.5, 35)
 shape = SubResource("RectangleShape2D_a06ir")

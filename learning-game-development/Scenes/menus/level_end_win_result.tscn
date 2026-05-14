@@ -16,35 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://cvqg2o7ky256n" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_8.png" id="12_o70ln"]
 [ext_resource type="Texture2D" uid="uid://jrqt67hgbya7" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_9.png" id="13_uuoy5"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o70ln"]
-atlas = ExtResource("3_p3wao")
-region = Rect2(0, 0, 256, 384)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uuoy5"]
-atlas = ExtResource("3_p3wao")
-region = Rect2(256, 0, 256, 384)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7dn0t"]
-atlas = ExtResource("3_p3wao")
-region = Rect2(512, 0, 256, 384)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_jvn13"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o70ln")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_uuoy5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7dn0t")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_jvn13"]
 atlas = ExtResource("3_hv7n7")
 region = Rect2(0, 0, 300, 300)
@@ -334,6 +305,35 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_o70ln"]
+atlas = ExtResource("3_p3wao")
+region = Rect2(0, 0, 256, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uuoy5"]
+atlas = ExtResource("3_p3wao")
+region = Rect2(256, 0, 256, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dn0t"]
+atlas = ExtResource("3_p3wao")
+region = Rect2(512, 0, 256, 384)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jvn13"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o70ln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uuoy5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dn0t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="level_end_result" type="Control" unique_id=1669779005]
 layout_mode = 3
 anchors_preset = 15
@@ -351,10 +351,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_v6yid")
-
-[node name="capybara" type="AnimatedSprite2D" parent="background" unique_id=2114978911]
-position = Vector2(449, 667)
-sprite_frames = SubResource("SpriteFrames_jvn13")
 
 [node name="reward_level_10" type="AnimatedSprite2D" parent="background" unique_id=205930335]
 unique_name_in_owner = true
@@ -413,16 +409,22 @@ animation = &"level7"
 speed_scale = 0.0
 
 [node name="reward_level_8" type="AnimatedSprite2D" parent="background" unique_id=1367214936]
-position = Vector2(608, 128)
+unique_name_in_owner = true
+position = Vector2(620, 128)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level8"
 speed_scale = 0.0
 
 [node name="reward_level_9" type="AnimatedSprite2D" parent="background" unique_id=1610764360]
+unique_name_in_owner = true
 position = Vector2(672, 512)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level9"
 speed_scale = 0.0
+
+[node name="capybara" type="AnimatedSprite2D" parent="background" unique_id=2114978911]
+position = Vector2(449, 667)
+sprite_frames = SubResource("SpriteFrames_jvn13")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1084724025]
 layout_mode = 1
