@@ -31,24 +31,31 @@ size = Vector2(99, 36)
 size = Vector2(38, 151)
 
 [node name="basket_T_shape_o" unique_id=410173830 instance=ExtResource("1_vmlg3")]
+collision_layer = 2
+collision_mask = 11
 type = 2
+uses_rotation = true
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
+position = Vector2(51, 1)
 sprite_frames = SubResource("SpriteFrames_0db7a")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
-position = Vector2(-19, -2)
+position = Vector2(32, -1)
 shape = SubResource("RectangleShape2D_x8mlp")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="." index="2" unique_id=452478294]
-position = Vector2(-51.5, -1)
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_sxxq6")
 
-[node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" parent_id_path=PackedInt32Array(1169250334) index="0" unique_id=1520535799]
+[node name="ONLY USE WITH BASKETS" parent="." index="3" unique_id=1169250334]
+position = Vector2(51, 1)
+
+[node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="0" unique_id=1520535799]
 position = Vector2(-19.5, -3)
 shape = SubResource("RectangleShape2D_7b2lg")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="ONLY USE WITH BASKETS" parent_id_path=PackedInt32Array(1169250334) index="1" unique_id=973600472]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="1" unique_id=973600472]
 position = Vector2(-50, -0.5)
 shape = SubResource("RectangleShape2D_wq552")
 debug_color = Color(0.5838531, 0.3851834, 0.9917694, 0.41960785)
