@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hrtss74nv0j6"
-path="res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"
+uid="uid://u51r5qi1p3p7"
+path="res://.godot/imported/button_freeplay.png-d0ee57d7d5abc22937d2a17df4dfefa1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Builds/Web/ver_0_0_7 (eni).icon.png"
-dest_files=["res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/button_freeplay.png"
+dest_files=["res://.godot/imported/button_freeplay.png-d0ee57d7d5abc22937d2a17df4dfefa1.ctex"]
 
 [params]
 

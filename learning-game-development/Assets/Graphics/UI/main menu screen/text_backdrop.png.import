@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hrtss74nv0j6"
-path="res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"
+uid="uid://ks1ix4uvi5bx"
+path="res://.godot/imported/text_backdrop.png-710b0644b8e1fbb0455a908772a0a79a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Builds/Web/ver_0_0_7 (eni).icon.png"
-dest_files=["res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/text_backdrop.png"
+dest_files=["res://.godot/imported/text_backdrop.png-710b0644b8e1fbb0455a908772a0a79a.ctex"]
 
 [params]
 

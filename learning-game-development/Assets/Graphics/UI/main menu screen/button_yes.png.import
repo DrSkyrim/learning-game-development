@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hrtss74nv0j6"
-path="res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"
+uid="uid://dleb42y38xi1i"
+path="res://.godot/imported/button_yes.png-6fd1fd8ae7c48acf47dbca56baa42899.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Builds/Web/ver_0_0_7 (eni).icon.png"
-dest_files=["res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/button_yes.png"
+dest_files=["res://.godot/imported/button_yes.png-6fd1fd8ae7c48acf47dbca56baa42899.ctex"]
 
 [params]
 

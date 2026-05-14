@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hrtss74nv0j6"
-path="res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"
+uid="uid://dbdylo6dfn1x0"
+path="res://.godot/imported/button_storymode.png-3e0c00fa3e7906dd206efe47830f16df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Builds/Web/ver_0_0_7 (eni).icon.png"
-dest_files=["res://.godot/imported/ver_0_0_7 (eni).icon.png-e32a315d20b2e153f683bb8c4fe7282f.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/button_storymode.png"
+dest_files=["res://.godot/imported/button_storymode.png-3e0c00fa3e7906dd206efe47830f16df.ctex"]
 
 [params]
 
