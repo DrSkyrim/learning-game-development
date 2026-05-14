@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c2mlcdh1kl6sf"]
+
+[ext_resource type="AudioStream" uid="uid://do3ssos802e8d" path="res://Assets/Audio/SFX/sfx_itempickup1.mp3" id="1_6ss84"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=188957186]
+stream = ExtResource("1_6ss84")
+volume_db = -10.0

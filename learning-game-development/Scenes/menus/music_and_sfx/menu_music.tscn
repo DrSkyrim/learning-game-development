@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://qiduyxf5ng24"]
+
+[ext_resource type="AudioStream" uid="uid://dbwdexb7kfl20" path="res://Assets/Audio/Music/music1_bg_footsteps_in_the_snow.mp3" id="1_pkqkc"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=2122393231]
+stream = ExtResource("1_pkqkc")
+autoplay = true

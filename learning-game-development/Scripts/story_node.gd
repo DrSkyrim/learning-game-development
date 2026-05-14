@@ -34,7 +34,7 @@ func _input(event):
 			GameManager.load_level(1)
 
 func load_tutorial_image():
-	var path = "res://Assets/Graphics/cutscenes/tutorial_comic_1.png"
+	var path = "res://Assets/Graphics/cutscenes/cutscene_tutorial.png"
 
 	if path == "":
 		print("No story image found")

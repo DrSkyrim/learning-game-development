@@ -68,7 +68,7 @@ func load_next_tutorial():
 func get_story_image_path() -> String:
 	match story_index:
 		0:
-			return "res://Assets/Graphics/cutscenes/cutscene_intro.png"
+			return "res://Assets/Graphics/cutscenes/cutscene_story_intro.png"
 		1:
 			return "res://Assets/story/story_1.png"
 		2:
