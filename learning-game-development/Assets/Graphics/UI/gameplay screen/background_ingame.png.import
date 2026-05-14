@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dupb1rwtm6bq2"
-path="res://.godot/imported/conventional_counter.png-5c95cfb2da504b120a4f53e15ba3995b.ctex"
+uid="uid://bdkrx4nqwcqa8"
+path="res://.godot/imported/background_ingame.png-65f5a1a7542a47572ae45270903da5e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/gameplay screen/conventional_counter.png"
-dest_files=["res://.godot/imported/conventional_counter.png-5c95cfb2da504b120a4f53e15ba3995b.ctex"]
+source_file="res://Assets/Graphics/UI/gameplay screen/background_ingame.png"
+dest_files=["res://.godot/imported/background_ingame.png-65f5a1a7542a47572ae45270903da5e3.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0kxj3pehtses"
-path="res://.godot/imported/good_job_bubble.png-bad9d5629c46b193aac290f5702ac1d4.ctex"
+uid="uid://c7l354hv4htwx"
+path="res://.godot/imported/button_music_on.png-b73d8165e3222d2b4807c7f91bc2d549.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/results screen/good_job_bubble.png"
-dest_files=["res://.godot/imported/good_job_bubble.png-bad9d5629c46b193aac290f5702ac1d4.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/button_music_on.png"
+dest_files=["res://.godot/imported/button_music_on.png-b73d8165e3222d2b4807c7f91bc2d549.ctex"]
 
 [params]
 

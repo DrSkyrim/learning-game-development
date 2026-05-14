@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dehrlfo6xcjcl"
-path="res://.godot/imported/music_off_button.png-7cc6550dc1282fcaf3cf786624f77dbf.ctex"
+uid="uid://sgsas22tpey4"
+path="res://.godot/imported/background_splash_title.png-1639868f2211697af293d9f7a0170578.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/main menu screen/music_off_button.png"
-dest_files=["res://.godot/imported/music_off_button.png-7cc6550dc1282fcaf3cf786624f77dbf.ctex"]
+source_file="res://Assets/Graphics/UI/title screen/background_splash_title.png"
+dest_files=["res://.godot/imported/background_splash_title.png-1639868f2211697af293d9f7a0170578.ctex"]
 
 [params]
 

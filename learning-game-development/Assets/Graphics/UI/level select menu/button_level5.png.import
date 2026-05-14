@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sgsas22tpey4"
-path="res://.godot/imported/backgroun_with_title_screen.png-1290ac2101b0b2b3a122514cdcb85980.ctex"
+uid="uid://u31u3ywvh8s2"
+path="res://.godot/imported/button_level5.png-3897e01db70a7d47a440191201761b7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/title screen/backgroun_with_title_screen.png"
-dest_files=["res://.godot/imported/backgroun_with_title_screen.png-1290ac2101b0b2b3a122514cdcb85980.ctex"]
+source_file="res://Assets/Graphics/UI/level select menu/button_level5.png"
+dest_files=["res://.godot/imported/button_level5.png-3897e01db70a7d47a440191201761b7b.ctex"]
 
 [params]
 

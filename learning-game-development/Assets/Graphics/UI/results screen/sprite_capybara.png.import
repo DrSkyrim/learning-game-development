@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr1c60msrrh4l"
-path="res://.godot/imported/level_7_button.png-56e2d4316ce897a9d3663110a21a1e35.ctex"
+uid="uid://bc13ahy67kt7a"
+path="res://.godot/imported/sprite_capybara.png-177eb69f28265ffbdbd3807caa12e64d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/level select menu/level_7_button.png"
-dest_files=["res://.godot/imported/level_7_button.png-56e2d4316ce897a9d3663110a21a1e35.ctex"]
+source_file="res://Assets/Graphics/UI/results screen/sprite_capybara.png"
+dest_files=["res://.godot/imported/sprite_capybara.png-177eb69f28265ffbdbd3807caa12e64d.ctex"]
 
 [params]
 

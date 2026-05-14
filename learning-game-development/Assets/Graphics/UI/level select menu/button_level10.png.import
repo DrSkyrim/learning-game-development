@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dct3rqstktmc8"
-path="res://.godot/imported/level_3_button.png-e6e12e9aec450cbeabe6ed9d633e1c34.ctex"
+uid="uid://dtx4llq3uybty"
+path="res://.godot/imported/button_level10.png-ad49fde0e77dde2dc8193c71879c3479.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/level select menu/level_3_button.png"
-dest_files=["res://.godot/imported/level_3_button.png-e6e12e9aec450cbeabe6ed9d633e1c34.ctex"]
+source_file="res://Assets/Graphics/UI/level select menu/button_level10.png"
+dest_files=["res://.godot/imported/button_level10.png-ad49fde0e77dde2dc8193c71879c3479.ctex"]
 
 [params]
 

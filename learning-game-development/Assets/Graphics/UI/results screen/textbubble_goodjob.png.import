@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdkrx4nqwcqa8"
-path="res://.godot/imported/background.png-57198dc86691811d0c6b00090c4c5f17.ctex"
+uid="uid://b0kxj3pehtses"
+path="res://.godot/imported/textbubble_goodjob.png-2458addfacbb65a7b253134b249527a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/gameplay screen/background.png"
-dest_files=["res://.godot/imported/background.png-57198dc86691811d0c6b00090c4c5f17.ctex"]
+source_file="res://Assets/Graphics/UI/results screen/textbubble_goodjob.png"
+dest_files=["res://.godot/imported/textbubble_goodjob.png-2458addfacbb65a7b253134b249527a2.ctex"]
 
 [params]
 

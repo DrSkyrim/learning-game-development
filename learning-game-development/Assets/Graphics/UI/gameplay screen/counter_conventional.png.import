@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u31u3ywvh8s2"
-path="res://.godot/imported/level_5_button.png-51f5b0ce9a3908e5e21f8796bb8679e6.ctex"
+uid="uid://dupb1rwtm6bq2"
+path="res://.godot/imported/counter_conventional.png-f3aa2c022cfda0eecc5d9430b1921216.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/level select menu/level_5_button.png"
-dest_files=["res://.godot/imported/level_5_button.png-51f5b0ce9a3908e5e21f8796bb8679e6.ctex"]
+source_file="res://Assets/Graphics/UI/gameplay screen/counter_conventional.png"
+dest_files=["res://.godot/imported/counter_conventional.png-f3aa2c022cfda0eecc5d9430b1921216.ctex"]
 
 [params]
 
