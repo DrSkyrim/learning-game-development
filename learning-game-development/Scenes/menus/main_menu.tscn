@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cu07ltn7qm7" path="res://Scripts/main_menu.gd" id="1_1bxdl"]
 [ext_resource type="Texture2D" uid="uid://sgsas22tpey4" path="res://Assets/Graphics/UI/title screen/background_splash_title.png" id="2_b55im"]
+[ext_resource type="Texture2D" uid="uid://bty7n2svjgipq" path="res://Assets/Graphics/UI/main menu screen/button_quit.png" id="3_6upyc"]
 
 [node name="main_menu" type="Control" unique_id=1806877066]
 layout_mode = 3
@@ -49,12 +50,14 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 64
 text = "FREE PLAY"
 
-[node name="Options" type="Button" parent="MarginContainer/VBoxContainer" unique_id=460566866]
+[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer" unique_id=460566866]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
-text = "OPTIONS"
+text = "CREDITS"
 
 [node name="Exit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=514809873]
 layout_mode = 2
 theme_override_font_sizes/font_size = 64
-text = "EXIT"
+icon = ExtResource("3_6upyc")
+flat = true
+icon_alignment = 1

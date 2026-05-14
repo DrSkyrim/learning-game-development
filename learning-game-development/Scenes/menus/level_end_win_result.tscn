@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bnt16d01tsrk6" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_5.png" id="8_o70ln"]
 [ext_resource type="Texture2D" uid="uid://dot6xm4j0q2cv" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_6.png" id="9_uuoy5"]
 [ext_resource type="Texture2D" uid="uid://bukcpjwkf2kho" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_7.png" id="10_7dn0t"]
+[ext_resource type="Texture2D" uid="uid://x6xu3apym14a" path="res://Assets/Graphics/UI/back to menu button (1).png" id="12_8w6lm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jvn13"]
 atlas = ExtResource("3_hv7n7")
@@ -352,7 +353,9 @@ size_flags_vertical = 4
 [node name="next_level" type="Button" parent="MarginContainer/VBoxContainer" unique_id=314295973]
 layout_mode = 2
 icon = ExtResource("4_8he6l")
+flat = true
 
 [node name="back" type="Button" parent="MarginContainer/VBoxContainer" unique_id=688626615]
 layout_mode = 2
-text = "BACK"
+icon = ExtResource("12_8w6lm")
+flat = true

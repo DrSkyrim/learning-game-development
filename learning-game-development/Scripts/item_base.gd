@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var type : Type
 enum Type {FRUIT_ORG, FRUIT_GMO, BASKET_ORG, BASKET_GMO}
+@export var uses_rotation := false
 
 signal moved
 
@@ -151,7 +152,7 @@ func move_to_target(delta):
 # ======================
 
 func rotate_right():
-	if not is_basket():
+	if not is_basket() or not uses_rotation:
 		return
 
 	var old_rotation = rotation_degrees

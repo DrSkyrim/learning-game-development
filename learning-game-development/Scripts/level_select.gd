@@ -10,21 +10,24 @@ func _ready():
 	back.pressed.connect(_on_back_pressed)
 
 func populate_levels():
+
 	for i in range(total_levels):
-		var button = Button.new()
-		
 		var level_id = i + 1
-		
-		# Set button text
-		button.text = "Level %d" % level_id
-		
-		# Optional: make buttons expand nicely
+
+		var button = Button.new()
+		button.flat = true
+		button.custom_minimum_size = Vector2(64, 64)
+
+		var path = ("res://Assets/Graphics/UI/level select menu/button_level%d.png" % level_id)
+		if ResourceLoader.exists(path):
+			button.icon = load(path)
+		else:
+			print("Missing icon:", path)
+
 		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		
-		# Connect signal with bound parameter
+
 		button.pressed.connect(_on_level_button_pressed.bind(level_id))
-		
-		# Add to GridContainer
+
 		grid.add_child(button)
 		
 func _on_level_button_pressed(level_id):
