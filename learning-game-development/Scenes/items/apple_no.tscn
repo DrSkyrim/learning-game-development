@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://byslfahieqr3u"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_tcv33"]
-[ext_resource type="Texture2D" uid="uid://d0sm0otqu422c" path="res://Assets/Graphics/Items/gmo fruits.png" id="2_6w0i1"]
+[ext_resource type="Texture2D" uid="uid://d0sm0otqu422c" path="res://Assets/Graphics/Items/produce_conventional.png" id="2_6w0i1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_btlmi"]
 atlas = ExtResource("2_6w0i1")
