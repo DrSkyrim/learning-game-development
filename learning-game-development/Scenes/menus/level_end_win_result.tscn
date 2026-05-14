@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://x6xu3apym14a" path="res://Assets/Graphics/UI/back to menu button (1).png" id="12_8w6lm"]
 [ext_resource type="Texture2D" uid="uid://cvqg2o7ky256n" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_8.png" id="12_o70ln"]
 [ext_resource type="Texture2D" uid="uid://jrqt67hgbya7" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_9.png" id="13_uuoy5"]
+[ext_resource type="AudioStream" uid="uid://xjjnlkorpu4p" path="res://Assets/Audio/Music/music_victory.mp3" id="16_uuoy5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jvn13"]
 atlas = ExtResource("3_hv7n7")
@@ -452,3 +453,8 @@ flat = true
 layout_mode = 2
 icon = ExtResource("12_8w6lm")
 flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=843074088]
+stream = ExtResource("16_uuoy5")
+volume_db = -10.0
+autoplay = true
