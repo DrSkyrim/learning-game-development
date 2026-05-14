@@ -22,6 +22,10 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*uid://1hu0cst8kt8e"
+MenuMusic="*uid://qiduyxf5ng24"
+CoreGameplayMusic="*uid://bkrbktlwfoqbt"
+SfxPickup="*uid://c2mlcdh1kl6sf"
+UiClick="*uid://cgg53wuakigd0"
 
 [display]
 

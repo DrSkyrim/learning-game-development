@@ -4,6 +4,8 @@ extends Node2D
 
 signal moves_changed
 func _ready():
+	MenuMusic.stop()
+	if not CoreGameplayMusic.playing: CoreGameplayMusic.play()
 	# Connect to all baskets
 	for node in get_tree().get_nodes_in_group("items"):
 		if not node.has_method("get_type"):
@@ -13,6 +15,8 @@ func _ready():
 		
 		if t == node.Type.BASKET_ORG or t == node.Type.BASKET_GMO:
 			node.moved.connect(_on_basket_moved)
+		elif t == node.Type.FRUIT_ORG or t == node.Type.FRUIT_GMO:
+			node.tree_exiting.connect(func(): SfxPickup.play())
 
 
 func _process(_delta):
@@ -59,6 +63,7 @@ func add_moves(amount:int):
 	print("Moves after bonus: ", moves)
 
 func win_level(org_not_org):
+	CoreGameplayMusic.stop()
 	print("Level Complete!")
 
 	await get_tree().create_timer(0.5).timeout
@@ -69,6 +74,7 @@ func win_level(org_not_org):
 
 
 func lose_level():
+	CoreGameplayMusic.stop()
 	await get_tree().create_timer(0.5).timeout
 
 	get_tree().change_scene_to_file("res://Scenes/menus/level_end_loss.tscn")

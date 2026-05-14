@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/music3_bg_snowflake_dance.mp3-2cb085c0064cd8e
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

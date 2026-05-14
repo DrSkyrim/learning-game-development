@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ek5cutwl44kt" path="res://Scripts/level_end_loss.gd" id="1_5hvpl"]
 [ext_resource type="Texture2D" uid="uid://dverd0mkisif5" path="res://Assets/Graphics/UI/results screen/screen_gameover.png" id="2_pgu8n"]
 [ext_resource type="Texture2D" uid="uid://kfqwunh3a83f" path="res://Assets/Graphics/UI/results screen/button_try_again.png" id="3_o7wgn"]
+[ext_resource type="AudioStream" uid="uid://ey72eioda38v" path="res://Assets/Sound/music_loss.mp3" id="4_ntvc2"]
 
 [node name="level_end_loss" type="Control" unique_id=1669779005]
 layout_mode = 3
@@ -45,3 +46,8 @@ icon = ExtResource("3_o7wgn")
 [node name="back" type="Button" parent="MarginContainer/VBoxContainer" unique_id=688626615]
 layout_mode = 2
 text = "BACK"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1968601720]
+stream = ExtResource("4_ntvc2")
+volume_db = -10.0
+autoplay = true
