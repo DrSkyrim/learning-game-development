@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://de5v6rcufy6bq"]
 
 [ext_resource type="Script" uid="uid://b1iy2xrjeotgv" path="res://Scripts/level_end_win.gd" id="1_oe7on"]
-[ext_resource type="Texture2D" uid="uid://cdfof1q6bbxru" path="res://Assets/Graphics/UI/results screen/screen_victory_conventional.png" id="2_mq1y6"]
+[ext_resource type="Texture2D" uid="uid://chm3uv6msidk4" path="res://Assets/Graphics/UI/results screen/screen_victory.png" id="2_v6yid"]
 [ext_resource type="Texture2D" uid="uid://bt1xphpsfjo5" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_10 .png" id="3_ctefa"]
 [ext_resource type="Texture2D" uid="uid://dbxu3wwu0g423" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_2.png" id="3_hv7n7"]
+[ext_resource type="Texture2D" uid="uid://bc13ahy67kt7a" path="res://Assets/Graphics/UI/results screen/sprite_capybara.png" id="3_p3wao"]
 [ext_resource type="Texture2D" uid="uid://t43wkw7m8ujc" path="res://Assets/Graphics/UI/results screen/button_next.png" id="4_8he6l"]
 [ext_resource type="Texture2D" uid="uid://cjpi52cfdq4a6" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_1.png" id="4_8w6lm"]
 [ext_resource type="Texture2D" uid="uid://cyr02yyjxqs2k" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_3.png" id="6_v6yid"]
@@ -12,6 +13,35 @@
 [ext_resource type="Texture2D" uid="uid://dot6xm4j0q2cv" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_6.png" id="9_uuoy5"]
 [ext_resource type="Texture2D" uid="uid://bukcpjwkf2kho" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_7.png" id="10_7dn0t"]
 [ext_resource type="Texture2D" uid="uid://x6xu3apym14a" path="res://Assets/Graphics/UI/back to menu button (1).png" id="12_8w6lm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o70ln"]
+atlas = ExtResource("3_p3wao")
+region = Rect2(0, 0, 256, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uuoy5"]
+atlas = ExtResource("3_p3wao")
+region = Rect2(256, 0, 256, 384)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7dn0t"]
+atlas = ExtResource("3_p3wao")
+region = Rect2(512, 0, 256, 384)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jvn13"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o70ln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uuoy5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7dn0t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jvn13"]
 atlas = ExtResource("3_hv7n7")
@@ -265,69 +295,75 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -512.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_oe7on")
 
 [node name="background" type="TextureRect" parent="." unique_id=1233356193]
-layout_mode = 0
-offset_right = 649.0
-offset_bottom = 1150.0
-texture = ExtResource("2_mq1y6")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_v6yid")
+
+[node name="capybara" type="AnimatedSprite2D" parent="background" unique_id=2114978911]
+position = Vector2(449, 667)
+sprite_frames = SubResource("SpriteFrames_jvn13")
 
 [node name="reward_level_10" type="AnimatedSprite2D" parent="background" unique_id=205930335]
 unique_name_in_owner = true
-position = Vector2(388, 300)
+position = Vector2(477, 283)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level10"
 speed_scale = 0.0
 
 [node name="reward_level_1" type="AnimatedSprite2D" parent="background" unique_id=1588602336]
 unique_name_in_owner = true
-position = Vector2(320, 832)
+position = Vector2(128, 895)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level1"
 speed_scale = 0.0
 
 [node name="reward_level_2" type="AnimatedSprite2D" parent="background" unique_id=656059512]
 unique_name_in_owner = true
-position = Vector2(513, 1024)
+position = Vector2(569, 929)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level2"
 speed_scale = 0.0
 
 [node name="reward_level_3" type="AnimatedSprite2D" parent="background" unique_id=1714394001]
 unique_name_in_owner = true
-position = Vector2(128, 896)
+position = Vector2(279, 716)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level3"
 speed_scale = 0.0
 
 [node name="reward_level_4" type="AnimatedSprite2D" parent="background" unique_id=216974231]
 unique_name_in_owner = true
-position = Vector2(128, 704)
+position = Vector2(141, 743)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level4"
 speed_scale = 0.0
 
 [node name="reward_level_5" type="AnimatedSprite2D" parent="background" unique_id=1731737541]
 unique_name_in_owner = true
-position = Vector2(64, 448)
+position = Vector2(101, 445)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level5"
 speed_scale = 0.0
 
 [node name="reward_level_6" type="AnimatedSprite2D" parent="background" unique_id=247674386]
 unique_name_in_owner = true
-position = Vector2(256, 384)
+position = Vector2(322, 594)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level6"
 speed_scale = 0.0
 
 [node name="reward_level_7" type="AnimatedSprite2D" parent="background" unique_id=1090202516]
 unique_name_in_owner = true
-position = Vector2(256, 256)
+position = Vector2(249, 340)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level7"
 speed_scale = 0.0
@@ -340,9 +376,8 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -143.5
-offset_top = 315.0
+offset_top = -265.0
 offset_right = 143.5
-offset_bottom = 580.0
 grow_horizontal = 2
 grow_vertical = 0
 

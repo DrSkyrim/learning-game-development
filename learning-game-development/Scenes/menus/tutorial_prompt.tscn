@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://08vpri2agp24" path="res://Assets/Graphics/UI/title screen/background_splash_notitle.png" id="1_hm1oe"]
 [ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf" id="2_a8dsj"]
 [ext_resource type="Script" uid="uid://dbss7taj7aode" path="res://Scenes/menus/label.gd" id="3_a8dsj"]
+[ext_resource type="Texture2D" uid="uid://dleb42y38xi1i" path="res://Assets/Graphics/UI/main menu screen/button_yes.png" id="5_my4fi"]
+[ext_resource type="Texture2D" uid="uid://bphv6rm48fh4u" path="res://Assets/Graphics/UI/main menu screen/button_no.png" id="6_61w1b"]
 
 [node name="tutorial_prompt" type="Control" unique_id=502532694]
 layout_mode = 3
@@ -48,9 +50,11 @@ size_flags_horizontal = 4
 [node name="yes" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1185643612]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "YES"
+icon = ExtResource("5_my4fi")
+flat = true
 
 [node name="no" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=117719733]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "NO"
+icon = ExtResource("6_61w1b")
+flat = true

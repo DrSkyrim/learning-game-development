@@ -11,15 +11,17 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -512.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5hvpl")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1233356193]
-layout_mode = 0
-offset_right = 649.0
-offset_bottom = 1150.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_pgu8n")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1084724025]
@@ -30,9 +32,8 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -143.5
-offset_top = 260.0
+offset_top = -319.0
 offset_right = 143.5
-offset_bottom = 579.0
 grow_horizontal = 2
 grow_vertical = 0
 

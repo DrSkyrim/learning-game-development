@@ -6,6 +6,7 @@ var current_tutorial_level := 1
 var is_tutorial := false
 var story_index := 0
 var has_played_tutorial := false
+var win_type = 0  #0 = organic, 1 = non
 
 var reward_level_array := [0,0,0,0,0,0,0,0,0,0]
 

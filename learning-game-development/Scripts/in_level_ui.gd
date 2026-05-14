@@ -19,6 +19,9 @@ func _ready() -> void:
 		level.moves_changed.connect(update_moves)
 
 	update_moves()
+	undo.pressed.connect(_undo_pressed)
+	mute_music.pressed.connect(_mute_music)
+	mute_sound.pressed.connect(_mute_sound)
 
 func _on_back_to_menu_pressed() -> void:
 	if GameManager.is_tutorial or GameManager.is_story_mode:
@@ -35,3 +38,24 @@ func update_moves():
 
 	var moves = level.get_moves()
 	moves_label.text = str(moves)
+	
+func _undo_pressed():
+	get_tree().reload_current_scene()
+	
+func _mute_music():
+	if(CoreGameplayMusic.playing):
+		CoreGameplayMusic.stop()
+		mute_music.icon = load("res://Assets/Graphics/UI/main menu screen/button_music_off.png")
+	else:
+		CoreGameplayMusic.play()
+		mute_music.icon = load("res://Assets/Graphics/UI/main menu screen/button_music_on.png")
+
+@onready var icon_on = preload("res://Assets/Graphics/UI/main menu screen/button_sound_on.png")
+@onready var icon_off = preload("res://Assets/Graphics/UI/main menu screen/button_sound_off.png")
+
+func _mute_sound():
+	var sfx_bus = AudioServer.get_bus_index("SFX")
+	var new_state = !AudioServer.is_bus_mute(sfx_bus)
+
+	AudioServer.set_bus_mute(sfx_bus, new_state)
+	mute_sound.icon = icon_off if new_state else icon_on
