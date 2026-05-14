@@ -39,41 +39,67 @@ func _process(delta):
 # ======================
 
 func _input(event):
-	if OS.get_name() == "Android" or OS.get_name() == "iOS":
-		if event is InputEventMouseButton:
-			return
+
 	if not is_basket():
 		return
 
-	# SELECT on press
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		if is_mouse_over():
-			if selected_basket != null and selected_basket != self:
-				selected_basket.scale = Vector2.ONE
+	var is_mobile = OS.get_name() == "Android" or OS.get_name() == "iOS"
 
-			selected_basket = self
-			selected_basket.scale = Vector2(1.1, 1.1)
-			swipe_start = event.position
+	# ======================
+	# MOBILE INPUT
+	# ======================
 
-	# TOUCH select
-	elif event is InputEventScreenTouch and event.pressed:
-		if is_touch_over(event.position):
-			if selected_basket != null and selected_basket != self:
-				selected_basket.scale = Vector2.ONE
+	if is_mobile:
 
-			selected_basket = self
-			selected_basket.scale = Vector2(1.1, 1.1)
-			swipe_start = event.position
-	# RELEASE → swipe
-	elif event is InputEventMouseButton and not event.pressed:
-		if selected_basket == self:
-			swipe_end = event.position
-			handle_swipe()
+		if event is InputEventScreenTouch:
 
-	elif event is InputEventScreenTouch and not event.pressed:
-		if selected_basket == self:
-			swipe_end = event.position
-			handle_swipe()
+			# TOUCH PRESS
+			if event.pressed:
+
+				if is_touch_over(event.position):
+
+					if selected_basket != null and selected_basket != self:
+						selected_basket.scale = Vector2.ONE
+
+					selected_basket = self
+					selected_basket.scale = Vector2(1.1, 1.1)
+
+					swipe_start = event.position
+
+			# TOUCH RELEASE
+			else:
+
+				if selected_basket == self:
+					swipe_end = event.position
+					handle_swipe()
+
+		return
+
+	# ======================
+	# PC INPUT
+	# ======================
+
+	if event is InputEventMouseButton:
+
+		# MOUSE PRESS
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+
+			if is_mouse_over():
+
+				if selected_basket != null and selected_basket != self:
+					selected_basket.scale = Vector2.ONE
+
+				selected_basket = self
+				selected_basket.scale = Vector2(1.1, 1.1)
+
+				swipe_start = event.position
+
+		# MOUSE RELEASE
+		elif not event.pressed:
+
+			if selected_basket == self:
+				swipe_end = event.position
+				handle_swipe()
 
 
 func handle_swipe():
