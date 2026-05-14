@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dleb42y38xi1i"
-path="res://.godot/imported/yes_button.png-4513a2d8dac637cce311e2d4f6efcc25.ctex"
+uid="uid://bphv6rm48fh4u"
+path="res://.godot/imported/button_no.png-a34490d5e6f508e9571dd8b91f9dbfe7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/main menu screen/yes_button.png"
-dest_files=["res://.godot/imported/yes_button.png-4513a2d8dac637cce311e2d4f6efcc25.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/button_no.png"
+dest_files=["res://.godot/imported/button_no.png-a34490d5e6f508e9571dd8b91f9dbfe7.ctex"]
 
 [params]
 
