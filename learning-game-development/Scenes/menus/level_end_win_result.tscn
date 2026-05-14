@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://dot6xm4j0q2cv" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_6.png" id="9_uuoy5"]
 [ext_resource type="Texture2D" uid="uid://bukcpjwkf2kho" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_7.png" id="10_7dn0t"]
 [ext_resource type="Texture2D" uid="uid://x6xu3apym14a" path="res://Assets/Graphics/UI/back to menu button (1).png" id="12_8w6lm"]
+[ext_resource type="Texture2D" uid="uid://cvqg2o7ky256n" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_8.png" id="12_o70ln"]
+[ext_resource type="Texture2D" uid="uid://jrqt67hgbya7" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_9.png" id="13_uuoy5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o70ln"]
 atlas = ExtResource("3_p3wao")
@@ -151,6 +153,30 @@ region = Rect2(200, 0, 200, 300)
 atlas = ExtResource("10_7dn0t")
 region = Rect2(400, 0, 200, 300)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_gn8i5"]
+atlas = ExtResource("12_o70ln")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smu2p"]
+atlas = ExtResource("12_o70ln")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62rm3"]
+atlas = ExtResource("12_o70ln")
+region = Rect2(400, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_our6k"]
+atlas = ExtResource("13_uuoy5")
+region = Rect2(0, 0, 100, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jv1fj"]
+atlas = ExtResource("13_uuoy5")
+region = Rect2(100, 0, 100, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e60y5"]
+atlas = ExtResource("13_uuoy5")
+region = Rect2(200, 0, 100, 200)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_5mguy"]
 animations = [{
 "frames": [{
@@ -279,12 +305,30 @@ animations = [{
 "name": &"level7",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gn8i5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smu2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62rm3")
+}],
 "loop": true,
 "name": &"level8",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_our6k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jv1fj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e60y5")
+}],
 "loop": true,
 "name": &"level9",
 "speed": 5.0
@@ -366,6 +410,18 @@ unique_name_in_owner = true
 position = Vector2(249, 340)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level7"
+speed_scale = 0.0
+
+[node name="reward_level_8" type="AnimatedSprite2D" parent="background" unique_id=1367214936]
+position = Vector2(608, 128)
+sprite_frames = SubResource("SpriteFrames_5mguy")
+animation = &"level8"
+speed_scale = 0.0
+
+[node name="reward_level_9" type="AnimatedSprite2D" parent="background" unique_id=1610764360]
+position = Vector2(672, 512)
+sprite_frames = SubResource("SpriteFrames_5mguy")
+animation = &"level9"
 speed_scale = 0.0
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1084724025]

@@ -46,6 +46,6 @@ func show_rewards():
 	%reward_level_5.set_frame_and_progress(GameManager.reward_level_array[4],0.0)
 	%reward_level_6.set_frame_and_progress(GameManager.reward_level_array[5],0.0)
 	%reward_level_7.set_frame_and_progress(GameManager.reward_level_array[6],0.0)
-	#%reward_level_8.set_frame_and_progress(GameManager.reward_level_array[7],0.0)
-	#%reward_level_9.set_frame_and_progress(GameManager.reward_level_array[8],0.0)
+	%reward_level_8.set_frame_and_progress(GameManager.reward_level_array[7],0.0)
+	%reward_level_9.set_frame_and_progress(GameManager.reward_level_array[8],0.0)
 	%reward_level_10.set_frame_and_progress(GameManager.reward_level_array[9],0.0)
