@@ -7,6 +7,16 @@ extends Control
 @onready var tutorial: Button = $MarginContainer/VBoxContainer/Tutorial
 
 func _ready() -> void:
+	CoreGameplayMusic.stop()
+	
+	if not MenuMusic.playing:
+		MenuMusic.play()
+	
+	var buttons = [play, options, exit, story_mode, tutorial]
+	for btn in buttons:
+		if btn: 
+			btn.pressed.connect(UiClick.play)
+		
 	story_mode.pressed.connect(_on_story_pressed)
 	play.pressed.connect(_on_play_pressed)
 	exit.pressed.connect(_on_exit_pressed)
@@ -17,7 +27,6 @@ func _on_story_pressed():
 
 func _on_play_pressed():
 	GameManager.start_free_play()
-
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
