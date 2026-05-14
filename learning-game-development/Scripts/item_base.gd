@@ -39,6 +39,9 @@ func _process(delta):
 # ======================
 
 func _input(event):
+	if OS.get_name() == "Android" or OS.get_name() == "iOS":
+		if event is InputEventMouseButton:
+			return
 	if not is_basket():
 		return
 
