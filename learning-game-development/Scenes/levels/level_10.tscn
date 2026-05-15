@@ -1,0 +1,49 @@
+[gd_scene format=4 uid="uid://dndjhwlj85xf1"]
+
+[ext_resource type="PackedScene" uid="uid://dbiwv3rkaa64i" path="res://Scenes/systems/level_base.tscn" id="1_tcm7w"]
+[ext_resource type="PackedScene" uid="uid://dqd6xdm3vvgqj" path="res://Scenes/items/basket_gmo_big.tscn" id="2_7psd8"]
+[ext_resource type="PackedScene" uid="uid://cgxixecylyq7" path="res://Scenes/items/basket_organic_l_shape.tscn" id="3_yqpxt"]
+[ext_resource type="PackedScene" uid="uid://byhrn4oqh8ruw" path="res://Scenes/items/apple_o.tscn" id="4_ynvmg"]
+[ext_resource type="PackedScene" uid="uid://byslfahieqr3u" path="res://Scenes/items/apple_no.tscn" id="5_15nga"]
+[ext_resource type="PackedScene" uid="uid://dygm51q2n4spe" path="res://Scenes/items/lemon_no.tscn" id="6_emfoc"]
+[ext_resource type="PackedScene" uid="uid://bradqkg4gnr7v" path="res://Scenes/items/lemon_o.tscn" id="7_ol81e"]
+[ext_resource type="PackedScene" uid="uid://ip0lqpb78yul" path="res://Scenes/items/strawb_gmo.tscn" id="8_15nga"]
+[ext_resource type="PackedScene" uid="uid://brrrgckqfp8i0" path="res://Scenes/items/strawb_non_gmo.tscn" id="9_emfoc"]
+[ext_resource type="PackedScene" uid="uid://cn8xcgxmv3xjv" path="res://Scenes/items/carrot_o.tscn" id="10_ol81e"]
+[ext_resource type="PackedScene" uid="uid://txkgl2s15muh" path="res://Scenes/items/carrot_no.tscn" id="11_luib5"]
+
+[node name="level_base" unique_id=352806086 instance=ExtResource("1_tcm7w")]
+moves = 60
+
+[node name="TileMapLayer" parent="." index="2" unique_id=1866890562]
+tile_map_data = PackedByteArray("AAACAAkAAQABAAEAAAACAAoAAQABAAEAAAACAAsAAQABAAEAAAACAAwAAQABAAEAAAAEAAwAAQABAAEAAAAFAAwAAQABAAEAAAAGAAwAAQABAAEAAAAIAAwAAQABAAEAAAAIAAsAAQABAAEAAAAHAAsAAQABAAEAAAAGAAsAAQABAAEAAAAFAAsAAQABAAEAAAAEAAsAAQABAAEAAAADAAsAAQABAAEAAAAHAAoAAQABAAEAAAAGAAoAAQAGAAIAAAADAAoAAQABAAEAAAAIAAoAAQABAAEAAAAIAAkAAQABAAEAAAAHAAkAAQABAAEAAAADAAkAAQABAAEAAAAFAAgAAQABAAEAAAAGAAgAAQABAAEAAAAHAAgAAQABAAEAAAAIAAgAAQABAAEAAAAGAAcAAQABAAEAAAAFAAcAAQABAAEAAAAEAAcAAQABAAEAAAAJAAgAAQABAAEAAAAJAAkAAQABAAEAAAAJAAoAAQABAAEAAAAJAAsAAQABAAEAAAAHAA0AAQABAAEAAAAGAA0AAQAGAAIAAAAEAA0AAQAGAAIAAAADAA0AAQABAAEAAAABAAsAAQABAAEAAAABAAoAAQABAAEAAAABAAkAAQABAAEAAAAGAAkAAQABAAEAAAAEAAYAAQABAAEAAAAFAAYAAQABAAEAAAAGAAYAAQABAAEAAAAJAAcAAQABAAEAAAAIAAcAAQABAAEAAAAHAAcAAQABAAEAAAAHAAYAAQAIAAAAAAAHAAUAAQAFAAAAAAAGAAUAAQAEAAAAAAAFAAUAAQAEAAAAAAAEAAUAAQAEAAAAAAADAAUAAQADAAAAAAADAAYAAQAHAAAAAAABAAgAAQABAAEAAAACAAgAAQABAAEAAAADAAgAAQABAAEAAAADAAcAAQABAAEAAAACAAcAAQABAAEAAAABAAcAAQABAAEAAAABAAYAAQABAAEAAAAJAAYAAQABAAEAAAAJAAUAAQAEAAAAAAABAAUAAQAEAAAAAAAIAAUAAQADAAAAAAACAAUAAQAFAAAAAAAEAAgAAQABAAEAAAAFAAkAAQAGAAIAAAAFAAoAAQABAAEAAAAEAAoAAQAGAAIAAAAEAAkAAQABAAEAAAAAAAUAAQADAAAAAAAKAAUAAQAFAAAAAAAKAAYAAQAFAAEAAAAKAAcAAQAFAAEAAAAKAAgAAQAFAAEAAAAKAAkAAQAFAAEAAAAKAAoAAQAFAAEAAAAKAAsAAQAFAAEAAAAKAAwAAQAFAAIAAAAAAAwAAQADAAIAAAAAAAsAAQADAAEAAAAAAAoAAQADAAEAAAAAAAkAAQADAAEAAAAAAAgAAQADAAEAAAAAAAcAAQADAAEAAAAAAAYAAQADAAEAAAACAA4AAQADAAIAAAADAA4AAQAEAAIAAAAEAA4AAQAEAAIAAAAFAA4AAQAEAAIAAAAGAA4AAQAEAAIAAAAHAA4AAQAEAAIAAAABAAwAAQAHAAEAAAABAA0AAQADAAIAAAACAA0AAQAHAAEAAAAIAA4AAQAFAAIAAAAJAA0AAQAFAAIAAAAIAA0AAQAIAAEAAAAJAAwAAQAIAAEAAAACAAYAAQAIAAAAAAAIAAYAAQAHAAAAAAAFAA0AAQABAAEAAAAHAAwAAQABAAEAAAADAAwAAQABAAEAAAA=")
+
+[node name="basket_gmo_big" parent="." index="3" unique_id=1636399895 instance=ExtResource("2_7psd8")]
+position = Vector2(256, 576)
+
+[node name="Basket_Organic_L_Shape" parent="." index="4" unique_id=1853528694 instance=ExtResource("3_yqpxt")]
+position = Vector2(448, 576)
+
+[node name="apple_o" parent="." index="5" unique_id=410173830 instance=ExtResource("4_ynvmg")]
+position = Vector2(608, 416)
+
+[node name="apple_no" parent="." index="6" unique_id=39981121 instance=ExtResource("5_15nga")]
+position = Vector2(224, 800)
+
+[node name="lemon_no" parent="." index="7" unique_id=209684350 instance=ExtResource("6_emfoc")]
+position = Vector2(352, 480)
+
+[node name="lemon_o" parent="." index="8" unique_id=10325350 instance=ExtResource("7_ol81e")]
+position = Vector2(352, 672)
+
+[node name="strawb_gmo" parent="." index="9" unique_id=844119818 instance=ExtResource("8_15nga")]
+position = Vector2(576, 512)
+
+[node name="Strawb_non_Gmo" parent="." index="10" unique_id=922981373 instance=ExtResource("9_emfoc")]
+position = Vector2(320, 832)
+
+[node name="carrot_o" parent="." index="11" unique_id=1210726476 instance=ExtResource("10_ol81e")]
+position = Vector2(96, 416)
+
+[node name="carrot_no" parent="." index="12" unique_id=1198308763 instance=ExtResource("11_luib5")]
+position = Vector2(480, 800)
