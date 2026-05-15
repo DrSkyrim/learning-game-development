@@ -42,13 +42,38 @@ func _on_back_pressed() -> void:
 		get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
 
 func show_rewards():
-	%reward_level_1.set_frame_and_progress(GameManager.reward_level_array[0],0.0)
-	%reward_level_2.set_frame_and_progress(GameManager.reward_level_array[1],0.0)
-	%reward_level_3.set_frame_and_progress(GameManager.reward_level_array[2],0.0)
-	%reward_level_4.set_frame_and_progress(GameManager.reward_level_array[3],0.0)
-	%reward_level_5.set_frame_and_progress(GameManager.reward_level_array[4],0.0)
-	%reward_level_6.set_frame_and_progress(GameManager.reward_level_array[5],0.0)
-	%reward_level_7.set_frame_and_progress(GameManager.reward_level_array[6],0.0)
-	%reward_level_8.set_frame_and_progress(GameManager.reward_level_array[7],0.0)
-	%reward_level_9.set_frame_and_progress(GameManager.reward_level_array[8],0.0)
-	%reward_level_10.set_frame_and_progress(GameManager.reward_level_array[9],0.0)
+	var rewards = [
+		%reward_level_1,
+		%reward_level_2,
+		%reward_level_3,
+		%reward_level_4,
+		%reward_level_5,
+		%reward_level_6,
+		%reward_level_7,
+		%reward_level_8,
+		%reward_level_9,
+		%reward_level_10
+	]
+
+	for i in range(rewards.size()):
+		var reward = rewards[i]
+
+		reward.set_frame_and_progress(
+			GameManager.reward_level_array[i],
+			0.0
+		)
+
+		# Start invisible
+		reward.modulate.a = 0.0
+
+		var tween = create_tween()
+
+		# Small stagger so they appear one by one
+		tween.tween_interval(i * 0.1)
+
+		tween.tween_property(
+			reward,
+			"modulate:a",
+			1.0,
+			0.3
+		)

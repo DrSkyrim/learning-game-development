@@ -2,9 +2,11 @@ extends Control
 
 @onready var back_to_menu: Button = $MarginContainer/VBoxContainer/HBoxContainer/BackToMenu
 @onready var undo: Button = $MarginContainer/VBoxContainer/HBoxContainer/Undo
-@onready var moves_label: Label = $MovesLabel
+@onready var moves_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/TextureRect/MovesLabel
 @onready var mute_sound: Button = $MarginContainer/VBoxContainer/HBoxContainer/MuteSound
 @onready var mute_music: Button = $MarginContainer/VBoxContainer/HBoxContainer/MuteMusic
+@onready var local_label: Label = $"MarginContainer/VBoxContainer/Counter Container/VBoxContainer/Couner_Local/localLabel"
+@onready var convenient_label: Label = $"MarginContainer/VBoxContainer/Counter Container/VBoxContainer/Counter_Convenient/convenientLabel"
 
 
 var level
@@ -17,7 +19,10 @@ func _ready() -> void:
 	
 	if level.has_signal("moves_changed"):
 		level.moves_changed.connect(update_moves)
-
+	if level.has_signal("fruits_changed"):
+		level.fruits_changed.connect(_on_fruits_changed)
+		
+		_on_fruits_changed(level.get_org_fruits(), level.get_gmo_fruits())
 	update_moves()
 	undo.pressed.connect(_undo_pressed)
 	mute_music.pressed.connect(_mute_music)
@@ -59,3 +64,7 @@ func _mute_sound():
 
 	AudioServer.set_bus_mute(sfx_bus, new_state)
 	mute_sound.icon = icon_off if new_state else icon_on
+
+func _on_fruits_changed(org_count, gmo_count):
+	local_label.text = str(org_count)
+	convenient_label.text = str(gmo_count)
