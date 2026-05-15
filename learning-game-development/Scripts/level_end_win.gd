@@ -15,6 +15,9 @@ func _ready() -> void:
 		capybara.set_frame_and_progress(1,0)
 	if(not GameManager.is_tutorial):
 		show_rewards()
+		%textbox.visible = false
+	else:
+		%textbox.visible = true
 	next_level.pressed.connect(_on_next_pressed)
 	back.pressed.connect(_on_back_pressed)
 	next_level.disabled = not GameManager.is_story_mode && not GameManager.is_tutorial
