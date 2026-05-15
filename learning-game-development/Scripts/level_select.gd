@@ -6,6 +6,10 @@ extends Node
 var total_levels := 10  # change this to however many levels you have
 
 func _ready():
+	CoreGameplayMusic.stop()
+
+	if not MenuMusic.playing:
+		MenuMusic.play()
 	populate_levels()
 	back.pressed.connect(_on_back_pressed)
 

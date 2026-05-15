@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://2kpr4c5hsns3" path="res://Assets/Graphics/UI/gameplay screen/button_back.png" id="3_pl4sr"]
 [ext_resource type="Texture2D" uid="uid://qqy80vn86u8j" path="res://Assets/Graphics/UI/gameplay screen/button_reset.png" id="3_yfe48"]
 [ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf" id="4_yfe48"]
+[ext_resource type="Texture2D" uid="uid://chh7janj257iv" path="res://Assets/Graphics/UI/gameplay screen/counter_local.png" id="8_6d0ia"]
+[ext_resource type="Texture2D" uid="uid://dupb1rwtm6bq2" path="res://Assets/Graphics/UI/gameplay screen/counter_conventional.png" id="9_t72n0"]
 
 [node name="InLevelUi" type="Control" unique_id=250856348]
 layout_mode = 3
@@ -46,6 +48,16 @@ flat = true
 layout_mode = 2
 texture = ExtResource("2_sbjyo")
 
+[node name="MovesLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/TextureRect" unique_id=1742280508]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 47.0
+offset_right = 294.0
+offset_bottom = 91.0
+theme_override_fonts/font = ExtResource("4_yfe48")
+theme_override_font_sizes/font_size = 32
+text = "0"
+
 [node name="BackToMenu" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=794591067]
 layout_mode = 2
 icon = ExtResource("3_pl4sr")
@@ -56,12 +68,37 @@ layout_mode = 2
 icon = ExtResource("3_yfe48")
 flat = true
 
-[node name="MovesLabel" type="Label" parent="." unique_id=1742280508]
+[node name="Counter Container" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1345807069]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Counter Container" unique_id=121338864]
+layout_mode = 2
+
+[node name="Couner_Local" type="TextureRect" parent="MarginContainer/VBoxContainer/Counter Container/VBoxContainer" unique_id=1440213440]
+layout_mode = 2
+texture = ExtResource("8_6d0ia")
+
+[node name="localLabel" type="Label" parent="MarginContainer/VBoxContainer/Counter Container/VBoxContainer/Couner_Local" unique_id=1149952893]
 layout_mode = 0
 offset_left = 85.0
-offset_top = 56.0
-offset_right = 105.0
-offset_bottom = 100.0
-theme_override_fonts/font = ExtResource("4_yfe48")
+offset_top = 6.0
+offset_right = 113.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "0"
+text = "1"
+
+[node name="Counter_Convenient" type="TextureRect" parent="MarginContainer/VBoxContainer/Counter Container/VBoxContainer" unique_id=1603020350]
+layout_mode = 2
+texture = ExtResource("9_t72n0")
+
+[node name="convenientLabel" type="Label" parent="MarginContainer/VBoxContainer/Counter Container/VBoxContainer/Counter_Convenient" unique_id=890329407]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 5.0
+offset_right = 112.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "1"
