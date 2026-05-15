@@ -1,6 +1,12 @@
 [gd_scene format=3 uid="uid://b1ytckvyhyqm4"]
 
 [ext_resource type="Script" uid="uid://bshkrlurtx4pv" path="res://Scripts/in_level_ui.gd" id="1_q6y72"]
+[ext_resource type="Texture2D" uid="uid://c7l354hv4htwx" path="res://Assets/Graphics/UI/main menu screen/button_music_on.png" id="2_7blw7"]
+[ext_resource type="Texture2D" uid="uid://cyplibnpos63k" path="res://Assets/Graphics/UI/gameplay screen/bar_level.png" id="2_sbjyo"]
+[ext_resource type="Texture2D" uid="uid://cahxjryv5sp0i" path="res://Assets/Graphics/UI/main menu screen/button_sound_on.png" id="2_yakn0"]
+[ext_resource type="Texture2D" uid="uid://2kpr4c5hsns3" path="res://Assets/Graphics/UI/gameplay screen/button_back.png" id="3_pl4sr"]
+[ext_resource type="Texture2D" uid="uid://qqy80vn86u8j" path="res://Assets/Graphics/UI/gameplay screen/button_reset.png" id="3_yfe48"]
+[ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf" id="4_yfe48"]
 
 [node name="InLevelUi" type="Control" unique_id=250856348]
 layout_mode = 3
@@ -12,22 +18,50 @@ grow_vertical = 2
 script = ExtResource("1_q6y72")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=289089969]
-layout_mode = 0
-offset_right = 648.0
-offset_bottom = 91.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 105.0
+grow_horizontal = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=220058101]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1703189406]
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="BackToMenu" type="Button" parent="MarginContainer/HBoxContainer" unique_id=794591067]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=220058101]
 layout_mode = 2
-text = "BACKTOMENUTEMP"
+size_flags_horizontal = 4
 
-[node name="MovesLabel" type="Label" parent="MarginContainer/HBoxContainer" unique_id=1742280508]
+[node name="MuteSound" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1595048919]
 layout_mode = 2
-text = "Moves: 0"
+icon = ExtResource("2_yakn0")
+flat = true
 
-[node name="Undo" type="Button" parent="MarginContainer/HBoxContainer" unique_id=2069140920]
+[node name="MuteMusic" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1119715200]
 layout_mode = 2
-text = "UNDOTEMP(TBD)"
+icon = ExtResource("2_7blw7")
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=741322796]
+layout_mode = 2
+texture = ExtResource("2_sbjyo")
+
+[node name="BackToMenu" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=794591067]
+layout_mode = 2
+icon = ExtResource("3_pl4sr")
+flat = true
+
+[node name="Undo" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=2069140920]
+layout_mode = 2
+icon = ExtResource("3_yfe48")
+flat = true
+
+[node name="MovesLabel" type="Label" parent="." unique_id=1742280508]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 56.0
+offset_right = 105.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("4_yfe48")
+theme_override_font_sizes/font_size = 32
+text = "0"

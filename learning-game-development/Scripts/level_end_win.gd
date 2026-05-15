@@ -2,10 +2,17 @@ extends Control
 
 @onready var next_level: Button = $MarginContainer/VBoxContainer/next_level
 @onready var back: Button = $MarginContainer/VBoxContainer/back
+@onready var capybara: AnimatedSprite2D = $background/capybara
 
+func level_win_type():
+	pass
 
 
 func _ready() -> void:
+	if(GameManager.win_type == 0):
+		capybara.set_frame_and_progress(2,0)
+	else:
+		capybara.set_frame_and_progress(1,0)
 	if(not GameManager.is_tutorial):
 		show_rewards()
 	next_level.pressed.connect(_on_next_pressed)
