@@ -25,17 +25,18 @@ size = Vector2(52, 54)
 size = Vector2(53, 55)
 
 [node name="item_base" unique_id=1547239996 instance=ExtResource("1_4ktdx")]
+scale = Vector2(0.9, 0.9)
 collision_layer = 2
 collision_mask = 7
 safe_margin = 0.001
 type = 3
 
 [node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
-position = Vector2(32, 32)
+position = Vector2(30.111122, 32.222214)
 sprite_frames = SubResource("SpriteFrames_kqgeg")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1712426591 groups=["items"]]
-position = Vector2(32, 32)
+position = Vector2(29.333324, 30.33334)
 shape = SubResource("RectangleShape2D_x5h3p")
 
 [node name="ONLY USE WITH BASKETS" parent="." index="2" unique_id=1169250334]
@@ -43,5 +44,5 @@ collision_layer = 2
 collision_mask = 8
 
 [node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="0" unique_id=1520535799]
-position = Vector2(32.5, 31.5)
+position = Vector2(29.833336, 30.833332)
 shape = SubResource("RectangleShape2D_4ktdx")

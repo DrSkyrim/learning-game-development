@@ -25,7 +25,7 @@ position = Vector2(128, 320)
 position = Vector2(192, 576)
 
 [node name="strawb_gmo3" parent="." index="7" unique_id=828558404 instance=ExtResource("3_5jepf")]
-position = Vector2(448, 256)
+position = Vector2(448, 320)
 
 [node name="Strawb_non_Gmo" parent="." index="8" unique_id=922981373 instance=ExtResource("4_jm0al")]
 position = Vector2(192, 256)
@@ -34,4 +34,4 @@ position = Vector2(192, 256)
 position = Vector2(448, 576)
 
 [node name="Strawb_non_Gmo3" parent="." index="10" unique_id=1875145222 instance=ExtResource("4_jm0al")]
-position = Vector2(384, 320)
+position = Vector2(384, 256)
