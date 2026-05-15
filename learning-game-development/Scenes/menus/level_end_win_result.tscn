@@ -360,32 +360,11 @@ sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level10"
 speed_scale = 0.0
 
-[node name="reward_level_1" type="AnimatedSprite2D" parent="background" unique_id=1588602336]
-unique_name_in_owner = true
-position = Vector2(128, 895)
-sprite_frames = SubResource("SpriteFrames_5mguy")
-animation = &"level1"
-speed_scale = 0.0
-
 [node name="reward_level_2" type="AnimatedSprite2D" parent="background" unique_id=656059512]
 unique_name_in_owner = true
 position = Vector2(569, 929)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level2"
-speed_scale = 0.0
-
-[node name="reward_level_3" type="AnimatedSprite2D" parent="background" unique_id=1714394001]
-unique_name_in_owner = true
-position = Vector2(279, 716)
-sprite_frames = SubResource("SpriteFrames_5mguy")
-animation = &"level3"
-speed_scale = 0.0
-
-[node name="reward_level_4" type="AnimatedSprite2D" parent="background" unique_id=216974231]
-unique_name_in_owner = true
-position = Vector2(141, 743)
-sprite_frames = SubResource("SpriteFrames_5mguy")
-animation = &"level4"
 speed_scale = 0.0
 
 [node name="reward_level_5" type="AnimatedSprite2D" parent="background" unique_id=1731737541]
@@ -395,11 +374,32 @@ sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level5"
 speed_scale = 0.0
 
+[node name="reward_level_4" type="AnimatedSprite2D" parent="background" unique_id=216974231]
+unique_name_in_owner = true
+position = Vector2(141, 667)
+sprite_frames = SubResource("SpriteFrames_5mguy")
+animation = &"level4"
+speed_scale = 0.0
+
+[node name="reward_level_1" type="AnimatedSprite2D" parent="background" unique_id=1588602336]
+unique_name_in_owner = true
+position = Vector2(122, 933)
+sprite_frames = SubResource("SpriteFrames_5mguy")
+animation = &"level1"
+speed_scale = 0.0
+
 [node name="reward_level_6" type="AnimatedSprite2D" parent="background" unique_id=247674386]
 unique_name_in_owner = true
-position = Vector2(322, 594)
+position = Vector2(330, 549)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level6"
+speed_scale = 0.0
+
+[node name="reward_level_3" type="AnimatedSprite2D" parent="background" unique_id=1714394001]
+unique_name_in_owner = true
+position = Vector2(244, 755)
+sprite_frames = SubResource("SpriteFrames_5mguy")
+animation = &"level3"
 speed_scale = 0.0
 
 [node name="reward_level_7" type="AnimatedSprite2D" parent="background" unique_id=1090202516]
@@ -418,13 +418,13 @@ speed_scale = 0.0
 
 [node name="reward_level_9" type="AnimatedSprite2D" parent="background" unique_id=1610764360]
 unique_name_in_owner = true
-position = Vector2(672, 512)
+position = Vector2(656, 512)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level9"
 speed_scale = 0.0
 
 [node name="capybara" type="AnimatedSprite2D" parent="background" unique_id=2114978911]
-position = Vector2(449, 667)
+position = Vector2(365, 708)
 sprite_frames = SubResource("SpriteFrames_jvn13")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1084724025]
