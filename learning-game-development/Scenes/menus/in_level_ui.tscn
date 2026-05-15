@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://qqy80vn86u8j" path="res://Assets/Graphics/UI/gameplay screen/button_reset.png" id="3_yfe48"]
 [ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf" id="4_yfe48"]
 [ext_resource type="Texture2D" uid="uid://chh7janj257iv" path="res://Assets/Graphics/UI/gameplay screen/counter_local.png" id="8_6d0ia"]
+[ext_resource type="Texture2D" uid="uid://c4503ut3dd7kw" path="res://Assets/Graphics/UI/gameplay screen/sprite_capy_game.png" id="8_t72n0"]
 [ext_resource type="Texture2D" uid="uid://dupb1rwtm6bq2" path="res://Assets/Graphics/UI/gameplay screen/counter_conventional.png" id="9_t72n0"]
 
 [node name="InLevelUi" type="Control" unique_id=250856348]
@@ -23,7 +24,7 @@ script = ExtResource("1_q6y72")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 105.0
+offset_bottom = 437.0
 grow_horizontal = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1703189406]
@@ -70,10 +71,12 @@ flat = true
 
 [node name="Counter Container" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1345807069]
 layout_mode = 2
-size_flags_horizontal = 8
+size_flags_horizontal = 4
+size_flags_vertical = 8
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/Counter Container" unique_id=121338864]
 layout_mode = 2
+size_flags_horizontal = 4
 
 [node name="Couner_Local" type="TextureRect" parent="MarginContainer/VBoxContainer/Counter Container/VBoxContainer" unique_id=1440213440]
 layout_mode = 2
@@ -102,3 +105,11 @@ offset_bottom = 50.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "1"
+
+[node name="Capy Container" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=448502990]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Capy Container" unique_id=389237191]
+layout_mode = 2
+texture = ExtResource("8_t72n0")
