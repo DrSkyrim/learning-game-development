@@ -5,7 +5,7 @@ extends Control
 @onready var exit: Button = $MarginContainer/VBoxContainer/Exit
 @onready var story_mode: Button = $"MarginContainer/VBoxContainer/Story Mode"
 @onready var tutorial: Button = $MarginContainer/VBoxContainer/Tutorial
-@onready var casual: Button =$"Casual Mode"
+@onready var casual: Button =$"MarginContainer/VBoxContainer/Casual Mode"
 
 
 func _ready() -> void:
