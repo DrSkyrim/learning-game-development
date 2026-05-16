@@ -10,11 +10,14 @@ var win_type = 0  #0 = organic, 1 = non
 
 var reward_level_array := [0,0,0,0,0,0,0,0,0,0]
 
+var story_moves := 0
+
 func start_story_mode():
 	is_story_mode = true
 	is_tutorial = false
 	current_level = 1
 	story_index = 0
+	story_moves = 255
 	reset_rewards()
 		
 	get_tree().change_scene_to_file("res://Scenes/menus/story_node.tscn")
