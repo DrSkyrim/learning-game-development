@@ -52,6 +52,9 @@ func _ready():
 	if (GameManager.is_story_mode):
 		current_story_moves = GameManager.story_moves
 		emit_signal("moves_changed")
+	if (GameManager.is_casual_mode):
+		moves = GameManager.casual_moves
+		emit_signal("moves_changed")
 
 	# Emit initial values once level loads
 	emit_signal(
@@ -66,7 +69,9 @@ func _process(_delta):
 
 
 func _on_basket_moved():
-	if not GameManager.is_tutorial:
+	if (GameManager.is_casual_mode):
+		moves += 1
+	elif not GameManager.is_tutorial:
 		if (GameManager.is_story_mode):
 			current_story_moves -= 1
 		else:
@@ -130,6 +135,8 @@ func win_level(org_not_org):
 			GameManager.win_type = 1
 		if (GameManager.is_story_mode):
 			GameManager.story_moves = current_story_moves
+		elif (GameManager.is_casual_mode):
+				GameManager.casual_moves = moves
 		
 	get_tree().change_scene_to_file("res://Scenes/menus/level_end_win_result.tscn")
 

@@ -7,6 +7,8 @@ var total_levels := 10  # change this to however many levels you have
 
 func _ready():
 	CoreGameplayMusic.stop()
+	if (GameManager.is_casual_mode):
+		GameManager.is_casual_mode = false
 
 	if not MenuMusic.playing:
 		MenuMusic.play()

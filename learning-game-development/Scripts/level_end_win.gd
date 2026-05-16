@@ -20,10 +20,10 @@ func _ready() -> void:
 		%textbox.visible = true
 	next_level.pressed.connect(_on_next_pressed)
 	back.pressed.connect(_on_back_pressed)
-	next_level.disabled = not GameManager.is_story_mode && not GameManager.is_tutorial
+	next_level.disabled = not _story_check() && not GameManager.is_tutorial
 
 func _on_next_pressed() -> void:
-	if GameManager.is_story_mode:
+	if GameManager.is_story_mode or GameManager.is_casual_mode:
 		GameManager.load_next_level()
 	elif GameManager.is_tutorial:
 		GameManager.load_next_tutorial()
@@ -77,3 +77,9 @@ func show_rewards():
 			1.0,
 			0.3
 		)
+		
+func _story_check() -> bool:
+	if (GameManager.is_story_mode or GameManager.is_casual_mode):
+		if GameManager.current_level < 10:
+			return true
+	return false

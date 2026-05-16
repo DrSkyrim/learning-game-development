@@ -5,15 +5,17 @@ extends Control
 @onready var exit: Button = $MarginContainer/VBoxContainer/Exit
 @onready var story_mode: Button = $"MarginContainer/VBoxContainer/Story Mode"
 @onready var tutorial: Button = $MarginContainer/VBoxContainer/Tutorial
+@onready var casual: Button =$"Casual Mode"
 
 
 func _ready() -> void:
 	CoreGameplayMusic.stop()
+	GameManager.is_casual_mode = false
 
 	if not MenuMusic.playing:
 		MenuMusic.play()
 
-	var buttons = [play, credits, exit, story_mode, tutorial]
+	var buttons = [play, credits, exit, story_mode, tutorial, casual]
 
 	for btn in buttons:
 		if btn:
@@ -24,6 +26,8 @@ func _ready() -> void:
 	exit.pressed.connect(_on_exit_pressed)
 	tutorial.pressed.connect(_on_tutorial_pressed)
 	credits.pressed.connect(_on_credits_pressed)
+	casual.pressed.connect(_on_casual_pressed)
+
 
 	# Hide exit button on web builds
 	if OS.get_name() == "Web":
@@ -51,3 +55,10 @@ func _on_tutorial_pressed():
 
 func _on_credits_pressed():
 	get_tree().change_scene_to_file("res://Scenes/menus/credits.tscn")
+	
+func _on_casual_pressed():
+	GameManager.is_casual_mode = true
+	if(GameManager.has_played_tutorial):
+		GameManager.start_casual_mode()
+	else:
+		get_tree().change_scene_to_file("res://Scenes/menus/tutorial_prompt.tscn")

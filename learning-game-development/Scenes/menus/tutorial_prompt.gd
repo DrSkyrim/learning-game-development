@@ -14,4 +14,7 @@ func _on_yes_pressed():
 	GameManager.start_tutorial()
 
 func _on_no_pressed():
-	GameManager.start_story_mode()
+	if (GameManager.is_casual_mode):
+		GameManager.start_casual_mode()
+	else: 
+		GameManager.start_story_mode()

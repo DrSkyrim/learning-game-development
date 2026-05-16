@@ -29,7 +29,7 @@ func _ready() -> void:
 	mute_sound.pressed.connect(_mute_sound)
 
 func _on_back_to_menu_pressed() -> void:
-	if GameManager.is_tutorial or GameManager.is_story_mode:
+	if GameManager.is_tutorial or GameManager.is_story_mode or GameManager.is_casual_mode:
 		get_tree().change_scene_to_file("res://Scenes/menus/main_menu.tscn")
 	else:
 		get_tree().change_scene_to_file("res://Scenes/menus/level_select.tscn")
