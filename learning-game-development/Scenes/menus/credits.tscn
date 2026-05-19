@@ -28,20 +28,43 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = -385.0
-offset_bottom = 436.0
+offset_top = -488.0
+offset_bottom = 193.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_ty7xb")
 theme_override_font_sizes/font_size = 64
 text = "Lead Programmer: Martin \"Dr.Skyrim\" Lukas
-Level Designer: Cagdas Karagdas
+Level Designer: Cagdas \"Cagkar07\" Karatas
 Lead Artist: Alesia Zhuli
 Producer:  Erik \"Enitheone\" Nikiforov
 
-Outside Assets:
-Write shit here"
+Outside Assets:"
+autowrap_mode = 2
+
+[node name="Credits text2" type="Label" parent="TextureRect" unique_id=346745196]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -36.0
+offset_bottom = 550.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ty7xb")
+theme_override_font_sizes/font_size = 46
+text = "Background Music:
+\"Memories of Winter\", \"Footsteps in the Snow\", \"Snowflake Dance\" by Crescendo
+Game Over Music:
+\"A Sad Meme\" by David Renda (fesliyanstudios.com)
+Sound Effects (SFX):
+  * Victory Sting 6 by Victor_Natas (CC BY 4.0)
+  * Item Pickup by Strechy (CC BY 4.0)
+  * Itemize by Scrampunk (CC BY 4.0)
+  * Modern UI Click by yuugfr1a (CC0)"
 autowrap_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="TextureRect" unique_id=1765794240]
