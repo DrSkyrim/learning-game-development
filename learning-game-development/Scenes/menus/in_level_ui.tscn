@@ -59,6 +59,27 @@ theme_override_fonts/font = ExtResource("5_t72n0")
 theme_override_font_sizes/font_size = 32
 text = "0"
 
+[node name="LevelLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/TextureRect" unique_id=972545822]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.5
+offset_top = -52.5
+offset_right = 24.0
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.59607846, 0.61960787, 0.45882353, 1)
+theme_override_fonts/font = ExtResource("5_t72n0")
+theme_override_font_sizes/font_size = 32
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="BackToMenu" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=794591067]
 layout_mode = 2
 icon = ExtResource("3_pl4sr")
