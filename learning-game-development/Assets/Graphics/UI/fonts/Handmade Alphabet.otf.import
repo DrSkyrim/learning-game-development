@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bj3sroqdfrh48"
-path="res://.godot/imported/Handmade Alphabet.otf-d6b853987238ae268d1e6b864a69f28d.fontdata"
+path="res://.godot/imported/Handmade Alphabet.otf-19b2736516f2ecb35d4cbf28f83a24af.fontdata"
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/new font (for numbers)/Handmade Alphabet.otf"
-dest_files=["res://.godot/imported/Handmade Alphabet.otf-d6b853987238ae268d1e6b864a69f28d.fontdata"]
+source_file="res://Assets/Graphics/UI/fonts/Handmade Alphabet.otf"
+dest_files=["res://.godot/imported/Handmade Alphabet.otf-19b2736516f2ecb35d4cbf28f83a24af.fontdata"]
 
 [params]
 
