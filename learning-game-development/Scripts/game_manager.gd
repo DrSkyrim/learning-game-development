@@ -20,7 +20,7 @@ func start_story_mode():
 	is_casual_mode = false
 	current_level = 1
 	story_index = 0
-	story_moves = 255
+	story_moves = 230
 	reset_rewards()
 		
 	get_tree().change_scene_to_file("res://Scenes/menus/story_node.tscn")
