@@ -7,6 +7,8 @@ var gmo_fruit_count := 0
 signal moves_changed
 signal fruits_changed(org_count, gmo_count)
 
+var current_story_moves := 0
+
 func _ready():
 	MenuMusic.stop()
 
@@ -47,6 +49,12 @@ func _ready():
 					gmo_fruit_count
 				)
 			)
+	if (GameManager.is_story_mode):
+		current_story_moves = GameManager.story_moves
+		emit_signal("moves_changed")
+	if (GameManager.is_casual_mode):
+		moves = GameManager.casual_moves
+		emit_signal("moves_changed")
 
 	# Emit initial values once level loads
 	emit_signal(
@@ -61,12 +69,16 @@ func _process(_delta):
 
 
 func _on_basket_moved():
-	if not GameManager.is_tutorial:
-		moves -= 1
-		emit_signal("moves_changed")
-	
-		if moves <= 0:
+	if (GameManager.is_casual_mode):
+		moves += 1
+	elif not GameManager.is_tutorial:
+		if (GameManager.is_story_mode):
+			current_story_moves -= 1
+		else:
+			moves -= 1
+		if get_moves() <= 0:
 			lose_level()
+	emit_signal("moves_changed")
 
 
 func check_win_condition():
@@ -84,7 +96,7 @@ func check_win_condition():
 			org_exists = true
 		elif t == node.Type.FRUIT_GMO:
 			gmo_exists = true
-	if (not org_exists or not gmo_exists) and moves > 0:
+	if (not org_exists or not gmo_exists) and get_moves() > 0:
 		if(not org_exists):
 			org_not_org = 0
 			win_level(org_not_org)
@@ -93,6 +105,8 @@ func check_win_condition():
 			win_level(org_not_org)
 
 func get_moves():
+	if (GameManager.is_story_mode):
+		return current_story_moves
 	return moves
 	
 func get_org_fruits():
@@ -119,6 +133,11 @@ func win_level(org_not_org):
 		else:
 			GameManager.reward_level_array[this_level] = 1
 			GameManager.win_type = 1
+		if (GameManager.is_story_mode):
+			GameManager.story_moves = current_story_moves
+		elif (GameManager.is_casual_mode):
+				GameManager.casual_moves = moves
+		
 	get_tree().change_scene_to_file("res://Scenes/menus/level_end_win_result.tscn")
 
 
@@ -127,3 +146,4 @@ func lose_level():
 	await get_tree().create_timer(0.5).timeout
 
 	get_tree().change_scene_to_file("res://Scenes/menus/level_end_loss.tscn")
+	

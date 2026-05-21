@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://u51r5qi1p3p7" path="res://Assets/Graphics/UI/main menu screen/button_freeplay.png" id="5_u5itc"]
 [ext_resource type="Texture2D" uid="uid://3jf3u2nrawq4" path="res://Assets/Graphics/UI/main menu screen/button_credits.png" id="6_fxueo"]
 [ext_resource type="Texture2D" uid="uid://duchctwk75ajq" path="res://Assets/Graphics/UI/title screen/sprite_title.png" id="8_u5itc"]
+[ext_resource type="FontFile" uid="uid://dj6nik0r10vnq" path="res://Assets/Graphics/UI/Vividly-Regular.ttf" id="9_fxueo"]
 
 [node name="main_menu" type="Control" unique_id=1806877066]
 layout_mode = 3
@@ -42,10 +43,46 @@ alignment = 1
 
 [node name="Story Mode" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1248459229]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 64
 icon = ExtResource("3_6p7ge")
 flat = true
 icon_alignment = 1
+
+[node name="Label_challenge" type="Label" parent="MarginContainer/VBoxContainer/Story Mode" unique_id=577679204]
+layout_mode = 0
+offset_left = 107.875
+offset_top = 32.1875
+offset_right = 235.875
+offset_bottom = 96.1875
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_fonts/font = ExtResource("9_fxueo")
+theme_override_font_sizes/font_size = 32
+text = "Challenge"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Casual Mode" type="Button" parent="MarginContainer/VBoxContainer" unique_id=579601247]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 64
+icon = ExtResource("3_6p7ge")
+flat = true
+icon_alignment = 1
+
+[node name="Label_casual" type="Label" parent="MarginContainer/VBoxContainer/Casual Mode" unique_id=248138089]
+layout_mode = 0
+offset_left = 107.875
+offset_top = 31.1875
+offset_right = 235.875
+offset_bottom = 95.1875
+theme_override_colors/font_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+theme_override_fonts/font = ExtResource("9_fxueo")
+theme_override_font_sizes/font_size = 32
+text = "Casual"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Tutorial" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1076646012]
 layout_mode = 2
