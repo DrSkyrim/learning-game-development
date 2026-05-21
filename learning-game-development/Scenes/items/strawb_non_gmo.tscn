@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://brrrgckqfp8i0"]
 
 [ext_resource type="PackedScene" uid="uid://j34ceab3rfg6" path="res://Scenes/systems/item_base.tscn" id="1_y1vib"]
-[ext_resource type="Texture2D" uid="uid://ci5yt30frlffc" path="res://Assets/Graphics/Items/draft_organic fruits.png" id="2_6utwb"]
+[ext_resource type="Texture2D" uid="uid://d2qnp42nynmnk" path="res://Assets/Graphics/Items/produce_local.png" id="2_y1vib"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_y1vib"]
-atlas = ExtResource("2_6utwb")
+[sub_resource type="AtlasTexture" id="AtlasTexture_6utwb"]
+atlas = ExtResource("2_y1vib")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6utwb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_y1vib")
+"texture": SubResource("AtlasTexture_6utwb")
 }],
 "loop": true,
 "name": &"default",
@@ -21,15 +21,15 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_g0nhr"]
 radius = 8.0
 
-[node name="Strawb_non_Gmo" unique_id=922981373 groups=["items"] instance=ExtResource("1_y1vib")]
+[node name="Strawb_non_Gmo" unique_id=922981373 instance=ExtResource("1_y1vib")]
 scale = Vector2(0.9, 0.9)
 collision_layer = 4
 collision_mask = 4
 
-[node name="AnimatedSprite2D" parent="." index="0"]
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=53185206]
 position = Vector2(32, 32)
 sprite_frames = SubResource("SpriteFrames_6utwb")
 
-[node name="CollisionShape2D" parent="." index="1"]
+[node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
 position = Vector2(32, 32)
 shape = SubResource("CircleShape2D_g0nhr")

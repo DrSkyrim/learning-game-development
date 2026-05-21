@@ -29,7 +29,7 @@ UiClick="*uid://cgg53wuakigd0"
 
 [display]
 
-window/size/viewport_width=648
+window/size/viewport_width=720
 window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 
@@ -86,3 +86,7 @@ advance_story={
 2d_physics/layer_2="Basket"
 2d_physics/layer_3="OrganicColliders"
 2d_physics/layer_4="GmoColliders"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true

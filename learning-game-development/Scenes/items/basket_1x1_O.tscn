@@ -19,11 +19,12 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x5h3p"]
-size = Vector2(16, 16)
+size = Vector2(44, 46)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i1wf3"]
+size = Vector2(44, 46)
 
-[node name="item_base" unique_id=686229804 groups=["items"] instance=ExtResource("1_i1wf3")]
+[node name="item_base" unique_id=686229804 instance=ExtResource("1_i1wf3")]
 collision_layer = 2
 collision_mask = 11
 safe_margin = 0.001
@@ -34,7 +35,7 @@ position = Vector2(32, 32)
 sprite_frames = SubResource("SpriteFrames_kqgeg")
 
 [node name="CollisionShape2D" parent="." index="1" unique_id=1712426591]
-position = Vector2(32, 32)
+position = Vector2(30, 32)
 shape = SubResource("RectangleShape2D_x5h3p")
 debug_color = Color(0.4514392, 0.0658646, 0.17593423, 0.41960785)
 
@@ -43,5 +44,5 @@ collision_layer = 2
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="ONLY USE WITH BASKETS" index="0" unique_id=1520535799]
-position = Vector2(32, 32)
+position = Vector2(30, 32)
 shape = SubResource("RectangleShape2D_i1wf3")

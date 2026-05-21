@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var type : Type
 enum Type {FRUIT_ORG, FRUIT_GMO, BASKET_ORG, BASKET_GMO}
+@export var uses_rotation := false
 
 signal moved
 
@@ -32,37 +33,63 @@ func _process(delta):
 	if is_moving:
 		move_to_target(delta)
 
-
-# ======================
 # INPUT
-# ======================
-
 func _input(event):
+
 	if not is_basket():
 		return
 
-	# SELECT on press
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		if is_mouse_over():
-			selected_basket = self
-			swipe_start = event.position
+	var is_mobile = OS.get_name() == "Android" or OS.get_name() == "iOS"
 
-	# TOUCH select
-	elif event is InputEventScreenTouch and event.pressed:
-		if is_touch_over(event.position):
-			selected_basket = self
-			swipe_start = event.position
+	# MOBILE INPUT
+	if is_mobile:
 
-	# RELEASE → swipe
-	elif event is InputEventMouseButton and not event.pressed:
-		if selected_basket == self:
-			swipe_end = event.position
-			handle_swipe()
+		if event is InputEventScreenTouch:
 
-	elif event is InputEventScreenTouch and not event.pressed:
-		if selected_basket == self:
-			swipe_end = event.position
-			handle_swipe()
+			# TOUCH PRESS
+			if event.pressed:
+
+				if is_touch_over(event.position):
+
+					if selected_basket != null and selected_basket != self:
+						selected_basket.scale = Vector2.ONE
+
+					selected_basket = self
+					selected_basket.scale = Vector2(1.1, 1.1)
+
+					swipe_start = event.position
+
+			# TOUCH RELEASE
+			else:
+
+				if selected_basket == self:
+					swipe_end = event.position
+					handle_swipe()
+
+		return
+		
+	# PC INPUT
+	if event is InputEventMouseButton:
+
+		# MOUSE PRESS
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+
+			if is_mouse_over():
+
+				if selected_basket != null and selected_basket != self:
+					selected_basket.scale = Vector2.ONE
+
+				selected_basket = self
+				selected_basket.scale = Vector2(1.1, 1.1)
+
+				swipe_start = event.position
+
+		# MOUSE RELEASE
+		elif not event.pressed:
+
+			if selected_basket == self:
+				swipe_end = event.position
+				handle_swipe()
 
 
 func handle_swipe():
@@ -88,10 +115,7 @@ func get_swipe_direction(delta: Vector2) -> Vector2:
 	else:
 		return Vector2.DOWN if delta.y > 0 else Vector2.UP
 
-
-# ======================
 # HIT DETECTION
-# ======================
 
 func is_mouse_over() -> bool:
 	var mouse_pos = get_global_mouse_position()
@@ -122,10 +146,7 @@ func is_touch_over(pos: Vector2) -> bool:
 func get_collision_shape():
 	return $CollisionShape2D.shape
 
-
-# ======================
 # MOVEMENT
-# ======================
 
 func start_move(direction: Vector2):
 	var motion = direction * TILE_SIZE
@@ -145,33 +166,21 @@ func move_to_target(delta):
 		if is_basket():
 			emit_signal("moved")
 
-
-# ======================
 # ROTATION
-# ======================
 
 func rotate_right():
-	if not is_basket():
+	if not is_basket() or not uses_rotation:
 		return
 
 	var old_rotation = rotation_degrees
-	var old_facing = facing
 
-	facing = facing.rotated(PI/2)
 	rotation_degrees += 90
 
-	position = snap_to_grid(position)
-
-	if test_move(transform, Vector2.ZERO):
-		facing = old_facing
+	if test_move(global_transform, Vector2.ZERO):
 		rotation_degrees = old_rotation
-	else:
-		emit_signal("moved")
 
-
-# ======================
 # COLLECTION
-# ======================
+
 
 func _on_only_use_with_baskets_body_entered(body: Node2D) -> void:
 	if not is_basket():
@@ -186,17 +195,12 @@ func _on_only_use_with_baskets_body_entered(body: Node2D) -> void:
 	var other_type = body.get_type()
 
 	if type == Type.BASKET_ORG and other_type == Type.FRUIT_ORG:
-		if level != null and level.has_method("add_moves"):
-			level.add_moves(3)
-		body.queue_free()
+		body.collect()
 
 	elif type == Type.BASKET_GMO and other_type == Type.FRUIT_GMO:
-		body.queue_free()
+		body.collect()
 
-
-# ======================
 # HELPERS
-# ======================
 
 func is_basket() -> bool:
 	return type == Type.BASKET_ORG or type == Type.BASKET_GMO
@@ -217,6 +221,33 @@ func find_level():
 		node = node.get_parent()
 	return null
 
-
 func get_type():
 	return type
+
+func collect():
+	# Fruits render above baskets during fade
+	z_index = 100
+
+	# Disable collisions immediately
+	$CollisionShape2D.disabled = true
+
+	var tween = create_tween()
+
+	# Fade + small float upward
+	tween.parallel().tween_property(
+		self,
+		"modulate:a",
+		0.0,
+		0.3
+	)
+
+	tween.parallel().tween_property(
+		self,
+		"position:y",
+		position.y - 20,
+		0.3
+	)
+
+	await tween.finished
+
+	queue_free()

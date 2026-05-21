@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bt1xphpsfjo5" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_10 .png" id="3_io7q6"]
 [ext_resource type="Texture2D" uid="uid://t43wkw7m8ujc" path="res://Assets/Graphics/UI/results screen/button_next.png" id="4_l7g8a"]
 [ext_resource type="AudioStream" uid="uid://xjjnlkorpu4p" path="res://Assets/Audio/Music/music_victory.mp3" id="5_io7q6"]
+[ext_resource type="Texture2D" uid="uid://x6xu3apym14a" path="res://Assets/Graphics/UI/back to menu button (1).png" id="5_nu5cw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nu5cw"]
 atlas = ExtResource("3_io7q6")
@@ -60,10 +61,12 @@ size_flags_vertical = 4
 [node name="next_level" type="Button" parent="MarginContainer/VBoxContainer" unique_id=314295973]
 layout_mode = 2
 icon = ExtResource("4_l7g8a")
+flat = true
 
 [node name="back" type="Button" parent="MarginContainer/VBoxContainer" unique_id=688626615]
 layout_mode = 2
-text = "BACK"
+icon = ExtResource("5_nu5cw")
+flat = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1181791660]
 stream = ExtResource("5_io7q6")
