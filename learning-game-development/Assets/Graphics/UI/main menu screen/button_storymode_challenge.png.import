@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgwlewn81s0dp"
-path="res://.godot/imported/casual_convenientional_end_cutscene.png-412a7bf0903ea57c192de6de2a0653dc.ctex"
+uid="uid://dmxb71a3yjof8"
+path="res://.godot/imported/button_storymode_challenge.png-8f673f9f26f1d169f648acde17b9f118.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/cutscenes/casual_convenientional_end_cutscene.png"
-dest_files=["res://.godot/imported/casual_convenientional_end_cutscene.png-412a7bf0903ea57c192de6de2a0653dc.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/button_storymode_challenge.png"
+dest_files=["res://.godot/imported/button_storymode_challenge.png-8f673f9f26f1d169f648acde17b9f118.ctex"]
 
 [params]
 

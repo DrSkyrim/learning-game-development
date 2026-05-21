@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqwsgitkq08nb"
-path="res://.godot/imported/casual_local_end_cutscene.png-72b6d1c2079d19c54c2e13523ff1e901.ctex"
+uid="uid://b6obwrs7etr4o"
+path="res://.godot/imported/button_storymode_casual.png-146323602a165f2acbcb5bc90d2e89b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/cutscenes/casual_local_end_cutscene.png"
-dest_files=["res://.godot/imported/casual_local_end_cutscene.png-72b6d1c2079d19c54c2e13523ff1e901.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/button_storymode_casual.png"
+dest_files=["res://.godot/imported/button_storymode_casual.png-146323602a165f2acbcb5bc90d2e89b8.ctex"]
 
 [params]
 

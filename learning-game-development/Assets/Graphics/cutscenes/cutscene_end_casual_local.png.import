@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmxb71a3yjof8"
-path="res://.godot/imported/challenge_button.png-409874e9021de0a78e2e0279b0d548fe.ctex"
+uid="uid://dqwsgitkq08nb"
+path="res://.godot/imported/cutscene_end_casual_local.png-d589663f4b4f2addc5ce209a1c10c237.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/main menu screen/challenge_button.png"
-dest_files=["res://.godot/imported/challenge_button.png-409874e9021de0a78e2e0279b0d548fe.ctex"]
+source_file="res://Assets/Graphics/cutscenes/cutscene_end_casual_local.png"
+dest_files=["res://.godot/imported/cutscene_end_casual_local.png-d589663f4b4f2addc5ce209a1c10c237.ctex"]
 
 [params]
 

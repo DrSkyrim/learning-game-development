@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1fh8n73vtdsy"
-path="res://.godot/imported/credits_text_backdrop.png-bd45f50053742481edd6cdc4316c3e6b.ctex"
+uid="uid://cdqbcyifi3kby"
+path="res://.godot/imported/cutscene_end_casual_neutral.png-5ac7ff093c9dc05645388cd51f634551.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/main menu screen/credits_text_backdrop.png"
-dest_files=["res://.godot/imported/credits_text_backdrop.png-bd45f50053742481edd6cdc4316c3e6b.ctex"]
+source_file="res://Assets/Graphics/cutscenes/cutscene_end_casual_neutral.png"
+dest_files=["res://.godot/imported/cutscene_end_casual_neutral.png-5ac7ff093c9dc05645388cd51f634551.ctex"]
 
 [params]
 

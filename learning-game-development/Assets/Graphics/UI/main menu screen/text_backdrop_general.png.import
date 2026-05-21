@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cis6t5p8vm42x"
-path="res://.godot/imported/challenge_neutral_end_cutscene.png-2b25ae5704fcef3e56d827091b7d2272.ctex"
+uid="uid://ks1ix4uvi5bx"
+path="res://.godot/imported/text_backdrop_general.png-5dc7b94ee663c830f8dc92797d59b6b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Graphics/cutscenes/challenge_neutral_end_cutscene.png"
-dest_files=["res://.godot/imported/challenge_neutral_end_cutscene.png-2b25ae5704fcef3e56d827091b7d2272.ctex"]
+source_file="res://Assets/Graphics/UI/main menu screen/text_backdrop_general.png"
+dest_files=["res://.godot/imported/text_backdrop_general.png-5dc7b94ee663c830f8dc92797d59b6b2.ctex"]
 
 [params]
 
