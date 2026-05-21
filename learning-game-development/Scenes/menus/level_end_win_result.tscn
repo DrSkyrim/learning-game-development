@@ -389,7 +389,7 @@ speed_scale = 0.0
 
 [node name="reward_level_6" type="AnimatedSprite2D" parent="background" unique_id=247674386]
 unique_name_in_owner = true
-position = Vector2(330, 549)
+position = Vector2(429, 378)
 sprite_frames = SubResource("SpriteFrames_5mguy")
 animation = &"level6"
 speed_scale = 0.0
