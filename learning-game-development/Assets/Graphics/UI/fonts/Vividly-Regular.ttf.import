@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://4jtpkl8gqi8q"
-path="res://.godot/imported/HandwrittenMadness-Regular.ttf-a240c05bff115485f8b12a222791b5a5.fontdata"
+uid="uid://dj6nik0r10vnq"
+path="res://.godot/imported/Vividly-Regular.ttf-959738eed68b6fbea192643996de55d7.fontdata"
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf"
-dest_files=["res://.godot/imported/HandwrittenMadness-Regular.ttf-a240c05bff115485f8b12a222791b5a5.fontdata"]
+source_file="res://Assets/Graphics/UI/fonts/Vividly-Regular.ttf"
+dest_files=["res://.godot/imported/Vividly-Regular.ttf-959738eed68b6fbea192643996de55d7.fontdata"]
 
 [params]
 
@@ -23,19 +23,14 @@ allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
 hinting=1
-subpixel_positioning=0
+subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]
 Compress=null
 compress=true
-preload=[{
-"chars": [],
-"glyphs": [],
-"name": "New Configuration",
-"size": Vector2i(16, 0)
-}]
+preload=[]
 language_support={}
 script_support={}
 opentype_features={}

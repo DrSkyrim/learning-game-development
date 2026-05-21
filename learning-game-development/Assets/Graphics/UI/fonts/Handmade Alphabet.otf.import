@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dj6nik0r10vnq"
-path="res://.godot/imported/Vividly-Regular.ttf-2baaad93659443aadb45af7940949f0e.fontdata"
+uid="uid://bj3sroqdfrh48"
+path="res://.godot/imported/Handmade Alphabet.otf-19b2736516f2ecb35d4cbf28f83a24af.fontdata"
 
 [deps]
 
-source_file="res://Assets/Graphics/UI/Vividly-Regular.ttf"
-dest_files=["res://.godot/imported/Vividly-Regular.ttf-2baaad93659443aadb45af7940949f0e.fontdata"]
+source_file="res://Assets/Graphics/UI/fonts/Handmade Alphabet.otf"
+dest_files=["res://.godot/imported/Handmade Alphabet.otf-19b2736516f2ecb35d4cbf28f83a24af.fontdata"]
 
 [params]
 

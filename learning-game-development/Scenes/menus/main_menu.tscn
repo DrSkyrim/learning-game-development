@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://u51r5qi1p3p7" path="res://Assets/Graphics/UI/main menu screen/button_freeplay.png" id="5_u5itc"]
 [ext_resource type="Texture2D" uid="uid://3jf3u2nrawq4" path="res://Assets/Graphics/UI/main menu screen/button_credits.png" id="6_fxueo"]
 [ext_resource type="Texture2D" uid="uid://duchctwk75ajq" path="res://Assets/Graphics/UI/title screen/sprite_title.png" id="8_u5itc"]
-[ext_resource type="FontFile" uid="uid://dj6nik0r10vnq" path="res://Assets/Graphics/UI/Vividly-Regular.ttf" id="9_fxueo"]
+[ext_resource type="FontFile" uid="uid://dj6nik0r10vnq" path="res://Assets/Graphics/UI/fonts/Vividly-Regular.ttf" id="9_fxueo"]
 
 [node name="main_menu" type="Control" unique_id=1806877066]
 layout_mode = 3

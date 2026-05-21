@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c8wvjqqig0upy" path="res://Scenes/menus/tutorial_prompt.gd" id="1_4jsd0"]
 [ext_resource type="Texture2D" uid="uid://08vpri2agp24" path="res://Assets/Graphics/UI/title screen/background_splash_notitle.png" id="1_hm1oe"]
-[ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf" id="2_a8dsj"]
+[ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/fonts/HandwrittenMadness-Regular.ttf" id="2_a8dsj"]
 [ext_resource type="Script" uid="uid://dbss7taj7aode" path="res://Scenes/menus/label.gd" id="3_a8dsj"]
 [ext_resource type="Texture2D" uid="uid://dleb42y38xi1i" path="res://Assets/Graphics/UI/main menu screen/button_yes.png" id="5_my4fi"]
 [ext_resource type="Texture2D" uid="uid://bphv6rm48fh4u" path="res://Assets/Graphics/UI/main menu screen/button_no.png" id="6_61w1b"]

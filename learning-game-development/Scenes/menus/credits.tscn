@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dc3m038phmg68" path="res://Scenes/menus/credits.gd" id="1_ty7xb"]
 [ext_resource type="Texture2D" uid="uid://b7db8fufdvuw8" path="res://Assets/Graphics/cutscenes/cutscene_credits.png" id="1_wnhpg"]
-[ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/HandwrittenMadness-Regular.ttf" id="2_ty7xb"]
+[ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/fonts/HandwrittenMadness-Regular.ttf" id="2_ty7xb"]
 
 [node name="Credits" type="Control" unique_id=827970156]
 layout_mode = 3
