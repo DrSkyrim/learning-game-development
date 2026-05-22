@@ -12,6 +12,7 @@ func _ready() -> void:
 	CoreGameplayMusic.stop()
 	GameManager.is_casual_mode = false
 	GameManager.is_story_mode = false
+	GameManager.is_tutorial = false
 
 	if not MenuMusic.playing:
 		MenuMusic.play()
@@ -36,7 +37,8 @@ func _ready() -> void:
 
 func _on_story_pressed():
 	if(GameManager.has_played_tutorial):
-		GameManager.start_story_mode()
+		get_tree().change_scene_to_file("res://Scenes/menus/difficulity_menu.tscn")
+		#GameManager.start_story_mode()
 	else:
 		get_tree().change_scene_to_file("res://Scenes/menus/tutorial_prompt.tscn")
 

@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://bukcpjwkf2kho" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_7.png" id="9_ex5ad"]
 [ext_resource type="Texture2D" uid="uid://cvqg2o7ky256n" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_8.png" id="10_usv64"]
 [ext_resource type="Texture2D" uid="uid://jrqt67hgbya7" path="res://Assets/Graphics/UI/results screen/sprite_reward_level_9.png" id="11_povnb"]
+[ext_resource type="AudioStream" uid="uid://e6uoadrc62ww" path="res://Assets/Audio/Music/music_bg_myon myon march.mp3" id="12_xf3fj"]
+[ext_resource type="AudioStream" uid="uid://4fx5mm1p506g" path="res://Assets/Audio/Music/music_bg_hopeful cherry blossoms.mp3" id="13_k46bx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jvn13"]
 atlas = ExtResource("2_ebvqq")
@@ -331,3 +333,13 @@ scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_jvwg4")
 animation = &"level10"
 speed_scale = 0.0
+
+[node name="IntroMusic" type="AudioStreamPlayer" parent="." unique_id=1006348295]
+unique_name_in_owner = true
+stream = ExtResource("12_xf3fj")
+volume_db = -15.0
+
+[node name="OutroMusic" type="AudioStreamPlayer" parent="." unique_id=1409446664]
+unique_name_in_owner = true
+stream = ExtResource("13_k46bx")
+volume_db = -15.0

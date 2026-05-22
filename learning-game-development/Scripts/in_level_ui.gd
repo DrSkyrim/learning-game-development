@@ -45,6 +45,10 @@ func update_moves():
 		
 	if not level.has_method("get_moves"):
 		return
+		
+	if (GameManager.is_tutorial):
+		moves_label.text = str("chill")
+		return
 
 	var moves = level.get_moves()
 	moves_label.text = str(moves)
