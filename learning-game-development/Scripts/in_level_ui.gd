@@ -7,6 +7,7 @@ extends Control
 @onready var mute_music: Button = $MarginContainer/VBoxContainer/HBoxContainer/MuteMusic
 @onready var local_label: Label = $"MarginContainer/VBoxContainer/Counter Container/VBoxContainer/Couner_Local/localLabel"
 @onready var convenient_label: Label = $"MarginContainer/VBoxContainer/Counter Container/VBoxContainer/Counter_Convenient/convenientLabel"
+@onready var level_label: Label = $MarginContainer/VBoxContainer/HBoxContainer/TextureRect/LevelLabel
 
 
 var level
@@ -15,6 +16,10 @@ func _ready() -> void:
 	back_to_menu.pressed.connect(_on_back_to_menu_pressed)
 	# Get reference to level (parent node)
 	level = get_tree().current_scene
+	if not GameManager.is_tutorial:
+		level_label.text = str(GameManager.current_level)
+	else:
+		level_label.text = "T" + str(GameManager.current_tutorial_level)
 	print(level)
 	
 	if level.has_signal("moves_changed"):

@@ -14,13 +14,19 @@ var story_moves := 0
 var is_casual_mode := false
 var casual_moves := 0
 
+var ending_type := 0
+# 0 = default
+# 1 = eco ending (80%+ local)
+# 2 = mixed ending (50–79% local)
+# 3 = convenience ending (<50% local)
+
 func start_story_mode():
 	is_story_mode = true
 	is_tutorial = false
 	is_casual_mode = false
 	current_level = 1
 	story_index = 0
-	story_moves = 255
+	story_moves = 230
 	reset_rewards()
 		
 	get_tree().change_scene_to_file("res://Scenes/menus/story_node.tscn")
@@ -100,3 +106,24 @@ func start_casual_mode():
 	reset_rewards()
 		
 	get_tree().change_scene_to_file("res://Scenes/menus/story_node.tscn")
+
+func calculate_ending():
+
+	var local_count = 0
+
+	for reward in reward_level_array:
+		if reward == 1:
+			local_count += 1
+
+
+	var ratio = float(local_count) / reward_level_array.size()
+
+
+	if ratio >= 0.8:
+		ending_type = 1
+
+	elif ratio >= 0.2:
+		ending_type = 2
+
+	else:
+		ending_type = 3
