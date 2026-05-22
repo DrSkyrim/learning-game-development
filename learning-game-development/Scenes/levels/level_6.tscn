@@ -29,3 +29,4 @@ position = Vector2(512, 704)
 
 [node name="Basket_Organic_L_Shape" parent="." index="8" unique_id=1853528694 instance=ExtResource("5_pyo1i")]
 position = Vector2(192, 640)
+rotation = 3.1415927

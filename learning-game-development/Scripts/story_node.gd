@@ -3,7 +3,7 @@ extends Control
 @onready var story_rect: TextureRect = $MarginContainer/story_rect
 
 func _ready() -> void:
-	if GameManager.is_story_mode or GameManager.is_casual_mode and GameManager.current_level == 10:
+	if (GameManager.is_story_mode or GameManager.is_casual_mode) and GameManager.current_level == 10:
 		load_ending()
 	elif GameManager.is_tutorial:
 		load_tutorial_image()
@@ -63,17 +63,24 @@ func load_tutorial_image():
 		print("Failed to load: ", path)
 
 func load_ending():
+	if GameManager.reward_level_array[9] == 2:
+		%market_sign.set_frame_and_progress(2,0.0)
+	elif GameManager.reward_level_array[9] == 1:
+		%market_sign.set_frame_and_progress(1,0.0)
+	else:
+		%market_sign.set_frame_and_progress(3,0.0)
+
 	if(GameManager.is_casual_mode):
-		if(GameManager.ending_type == 1):
+		if(GameManager.ending_type == 2):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_casual_local.png")
-		elif(GameManager.ending_type == 2):
+		elif(GameManager.ending_type == 3):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_casual_neutral.png")
 		else:
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_casual_convenientional.png")
 	else:
-		if(GameManager.ending_type == 1):
+		if(GameManager.ending_type == 2):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_challenge_local.png")
-		elif(GameManager.ending_type == 2):
+		elif(GameManager.ending_type == 3):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_challenge_neutral.png")
 		else:
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_challenge_convenientional.png")
