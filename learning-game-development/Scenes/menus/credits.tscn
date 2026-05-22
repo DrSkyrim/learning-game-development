@@ -4,7 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://b7db8fufdvuw8" path="res://Assets/Graphics/cutscenes/cutscene_credits.png" id="1_wnhpg"]
 [ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/fonts/HandwrittenMadness-Regular.ttf" id="2_ty7xb"]
 [ext_resource type="Texture2D" uid="uid://1fh8n73vtdsy" path="res://Assets/Graphics/UI/main menu screen/text_backdrop_credits.png" id="3_xpbbi"]
+[ext_resource type="FontFile" uid="uid://bj3sroqdfrh48" path="res://Assets/Graphics/UI/fonts/Handmade Alphabet.otf" id="4_6ssh5"]
 [ext_resource type="AudioStream" uid="uid://4fx5mm1p506g" path="res://Assets/Audio/Music/music_bg_hopeful cherry blossoms.mp3" id="5_kwbov"]
+[ext_resource type="FontFile" uid="uid://dj6nik0r10vnq" path="res://Assets/Graphics/UI/fonts/Vividly-Regular.ttf" id="5_otmcr"]
 
 [node name="Credits" type="Control" unique_id=827970156]
 layout_mode = 3
@@ -36,7 +38,271 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_xpbbi")
 
-[node name="Credits text" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=390433076]
+[node name="Role1" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=390433076]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 101.0
+offset_right = 15.0
+offset_bottom = 204.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_6ssh5")
+theme_override_font_sizes/font_size = 64
+text = "Lead Programmer"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Name1" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=1276708493]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 163.0
+offset_right = 15.0
+offset_bottom = 266.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 64
+text = "Martin \"Dr.Skyrim\" Lukas"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Role2" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=70030639]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 196.0
+offset_right = 15.0
+offset_bottom = 299.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_6ssh5")
+theme_override_font_sizes/font_size = 64
+text = "Lead Artist"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Name2" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=1641754570]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 254.0
+offset_right = 15.0
+offset_bottom = 357.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 64
+text = "Alesia Zhuli"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Role3" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=862336392]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 285.0
+offset_right = 15.0
+offset_bottom = 388.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_6ssh5")
+theme_override_font_sizes/font_size = 64
+text = "Game and Audio Designer"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Name3" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=1579348717]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 325.0
+offset_right = 15.0
+offset_bottom = 428.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 64
+text = "Çagdas \"Cagkar07\" Karatas"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Role4" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=2085354389]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 394.0
+offset_right = 15.0
+offset_bottom = 543.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_6ssh5")
+theme_override_font_sizes/font_size = 64
+text = "Producer"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Name4" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=486942948]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 456.0
+offset_right = 15.0
+offset_bottom = 559.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 64
+text = "Erik \"EniTheOne\" Nikiforov"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Music used" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=438337185]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 615.0
+offset_right = 15.0
+offset_bottom = 718.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 48
+text = "Music used in the game"
+autowrap_mode = 2
+
+[node name="Artist 1" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=865084627]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 650.0
+offset_right = 15.0
+offset_bottom = 753.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 36
+text = "\"Memories of Winter\", \"Footsteps in the Snow\", and \"Snowflake Dance\" by Crescendo"
+autowrap_mode = 2
+
+[node name="Artist 2" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=1932229618]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 720.0
+offset_right = 15.0
+offset_bottom = 823.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 36
+text = "\"A Sad Meme\" by David Renda (fesliyanstudios.com)"
+autowrap_mode = 2
+
+[node name="Artist 3" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=689678933]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 750.0
+offset_right = 15.0
+offset_bottom = 853.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 36
+text = "\"Myon Myon March~!\" and \"Hopeful Cherry Blossoms\" by Synthmusic Solstice"
+autowrap_mode = 2
+
+[node name="SFX used" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=1352603037]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 840.0
+offset_right = 15.0
+offset_bottom = 943.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 48
+text = "Sound Effects used in the game"
+autowrap_mode = 2
+
+[node name="Artist 4" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=816371920]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 865.0
+offset_right = 15.0
+offset_bottom = 968.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 36
+text = "\"Victory Sting 6\" by Victor_Natas (CC BY 4.0)"
+autowrap_mode = 2
+
+[node name="Artist 5" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=973041060]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 915.0
+offset_right = 15.0
+offset_bottom = 1018.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 36
+text = "\"Item Pickup\" by Strechy (CC BY 4.0)"
+autowrap_mode = 2
+
+[node name="Artist 6" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=135823909]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 950.0
+offset_right = 15.0
+offset_bottom = 1053.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 36
+text = "\"Itemize\" by Scrampunk (CC BY 4.0)"
+autowrap_mode = 2
+
+[node name="Artist 7" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=1432642997]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 15.0
+offset_top = 990.0
+offset_right = 15.0
+offset_bottom = 1093.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_otmcr")
+theme_override_font_sizes/font_size = 36
+text = "\"Modern UI Click\" by yuugfr1a (CC0)"
+autowrap_mode = 2
+
+[node name="Credits text3" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=961001892]
+visible = false
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -48,7 +314,8 @@ grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_ty7xb")
 theme_override_font_sizes/font_size = 64
-text = "Lead Programmer: Martin \"Dr.Skyrim\" Lukas
+text = "Lead Programmer: 
+Martin \"Dr.Skyrim\" Lukas
 Level Designer: Cagdas \"Cagkar07\" Karatas
 Lead Artist: Alesia Zhuli
 Producer:  Erik \"Enitheone\" Nikiforov
@@ -56,6 +323,7 @@ Outside Assets:"
 autowrap_mode = 2
 
 [node name="Credits text2" type="Label" parent="MarginContainer/TextureRect/TextureRect" unique_id=346745196]
+visible = false
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -68,11 +336,12 @@ offset_bottom = 550.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_ty7xb")
+theme_override_fonts/font = ExtResource("5_otmcr")
 theme_override_font_sizes/font_size = 46
-text = "Background Music:
-\"Memories of Winter\", \"Footsteps in the Snow\", \"Snowflake Dance\" by Crescendo
-Game Over Music:
+text = "Music used in our game:
+
+\"Memories of Winter\", \"Footsteps in the Snow\", and \"Snowflake Dance\" by Crescendo
+
 \"A Sad Meme\" by David Renda (fesliyanstudios.com)
 Sound Effects (SFX):
   * Victory Sting 6 by Victor_Natas (CC BY 4.0)
