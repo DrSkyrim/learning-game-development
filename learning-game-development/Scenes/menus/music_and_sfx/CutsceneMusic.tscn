@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://whpdxso7nndq"]
+
+[ext_resource type="AudioStream" uid="uid://dnoga3ejm7ej" path="res://Assets/Audio/Music/Synthmusic Solstice - Touhou Jam Jams - 33 Myon Myon March~!.mp3" id="1_qjpyw"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=858070053]
+stream = ExtResource("1_qjpyw")
+volume_db = -5.0
