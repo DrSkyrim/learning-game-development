@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://e6uoadrc62ww"
+path="res://.godot/imported/music_bg_myon myon march.mp3-8db89297e384e63dcb27526319ea3e8a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/music_bg_myon myon march.mp3"
+dest_files=["res://.godot/imported/music_bg_myon myon march.mp3-8db89297e384e63dcb27526319ea3e8a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
