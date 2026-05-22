@@ -108,7 +108,7 @@ func calculate_ending():
 	var local_count = 0
 
 	for reward in reward_level_array:
-		if reward == 2:
+		if reward == 1:
 			local_count += 1
 
 
