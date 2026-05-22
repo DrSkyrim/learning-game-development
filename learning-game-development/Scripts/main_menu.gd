@@ -26,7 +26,6 @@ func _ready() -> void:
 	exit.pressed.connect(_on_exit_pressed)
 	tutorial.pressed.connect(_on_tutorial_pressed)
 	credits.pressed.connect(_on_credits_pressed)
-	casual.pressed.connect(_on_casual_pressed)
 
 
 	# Hide exit button on web builds

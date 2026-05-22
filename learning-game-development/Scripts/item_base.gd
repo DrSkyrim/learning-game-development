@@ -40,6 +40,25 @@ func _input(event):
 		return
 
 	var is_mobile = OS.get_name() == "Android" or OS.get_name() == "iOS"
+	
+	
+	if selected_basket == self:
+
+		# PC
+		if event is InputEventMouseButton:
+			if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+				if not is_mouse_over():
+					selected_basket.scale = Vector2.ONE
+					selected_basket = null
+					return
+
+		# Mobile
+		elif event is InputEventScreenTouch:
+			if event.pressed:
+				if not is_touch_over(event.position):
+					selected_basket.scale = Vector2.ONE
+					selected_basket = null
+					return
 
 	# MOBILE INPUT
 	if is_mobile:

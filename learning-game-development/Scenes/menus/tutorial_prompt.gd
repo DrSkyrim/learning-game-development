@@ -14,7 +14,4 @@ func _on_yes_pressed():
 	GameManager.start_tutorial()
 
 func _on_no_pressed():
-	if (GameManager.is_casual_mode):
-		GameManager.start_casual_mode()
-	else: 
-		GameManager.start_story_mode()
+	get_tree().change_scene_to_file("res://Scenes/menus/difficulity_menu.tscn")
