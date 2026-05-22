@@ -13,9 +13,12 @@ func _ready() -> void:
 		capybara.set_frame_and_progress(2,0)
 	else:
 		capybara.set_frame_and_progress(1,0)
-	if(GameManager.current_level == 10):
+		
+	if GameManager.current_level == 10:
 		next_level.visible = false
 		back.visible = false
+	
+		GameManager.calculate_ending()
 
 	if(not GameManager.is_tutorial):
 		show_rewards()
@@ -90,7 +93,7 @@ func _story_check() -> bool:
 	
 func _input(event):
 	if event is InputEventMouseButton and event.pressed and GameManager.current_level == 10:
-		get_tree().change_scene_to_file("res://Scenes/menus/main_menu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/menus/story_node.tscn")
 
 	elif event is InputEventScreenTouch and event.pressed and GameManager.current_level == 10:
-		get_tree().change_scene_to_file("res://Scenes/menus/main_menu.tscn")
+		get_tree().change_scene_to_file("res://Scenes/menus/story_node.tscn")
