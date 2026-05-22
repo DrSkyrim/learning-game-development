@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dg45dao5xk5u6"]
+
+[ext_resource type="AudioStream" uid="uid://4fx5mm1p506g" path="res://Assets/Audio/Music/music_bg_hopeful cherry blossoms.mp3" id="1_omfwc"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=2122393231]
+stream = ExtResource("1_omfwc")
+autoplay = true
