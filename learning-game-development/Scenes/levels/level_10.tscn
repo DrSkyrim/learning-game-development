@@ -24,6 +24,7 @@ position = Vector2(256, 640)
 
 [node name="Basket_Organic_L_Shape" parent="." index="4" unique_id=1853528694 instance=ExtResource("3_yqpxt")]
 position = Vector2(448, 640)
+rotation = 1.5707964
 
 [node name="apple_o" parent="." index="5" unique_id=410173830 instance=ExtResource("4_ynvmg")]
 position = Vector2(608, 480)

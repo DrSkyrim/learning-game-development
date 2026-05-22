@@ -11,6 +11,7 @@ extends Control
 func _ready() -> void:
 	CoreGameplayMusic.stop()
 	GameManager.is_casual_mode = false
+	GameManager.is_story_mode = false
 
 	if not MenuMusic.playing:
 		MenuMusic.play()
@@ -26,7 +27,6 @@ func _ready() -> void:
 	exit.pressed.connect(_on_exit_pressed)
 	tutorial.pressed.connect(_on_tutorial_pressed)
 	credits.pressed.connect(_on_credits_pressed)
-	casual.pressed.connect(_on_casual_pressed)
 
 
 	# Hide exit button on web builds
