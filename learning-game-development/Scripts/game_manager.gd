@@ -106,20 +106,29 @@ func start_casual_mode():
 func calculate_ending():
 
 	var local_count = 0
+	var conventional_count = 0
 
 	for reward in reward_level_array:
 		if reward == 2:
 			local_count += 1
-
-
-	var ratio = float(local_count) / reward_level_array.size()
-
-
-	if ratio >= 0.8:
-		ending_type = 1
-
-	elif ratio >= 0.2:
+		elif reward == 1:
+			conventional_count += 1
+	if local_count >= 8:
 		ending_type = 2
-
+	elif conventional_count >= 8:
+		ending_type = 1
 	else:
 		ending_type = 3
+
+
+#	var ratio = float(local_count) / reward_level_array.size()
+#
+#
+#	if ratio >= 0.8:
+#		ending_type = 2
+#
+#	elif ratio >= 0.2:
+#		ending_type = 1
+#
+#	else:
+#		ending_type = 3

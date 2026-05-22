@@ -71,16 +71,16 @@ func load_ending():
 		%market_sign.set_frame_and_progress(3,0.0)
 
 	if(GameManager.is_casual_mode):
-		if(GameManager.ending_type == 1):
+		if(GameManager.ending_type == 2):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_casual_local.png")
-		elif(GameManager.ending_type == 2):
+		elif(GameManager.ending_type == 3):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_casual_neutral.png")
 		else:
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_casual_convenientional.png")
 	else:
-		if(GameManager.ending_type == 1):
+		if(GameManager.ending_type == 2):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_challenge_local.png")
-		elif(GameManager.ending_type == 2):
+		elif(GameManager.ending_type == 3):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_challenge_neutral.png")
 		else:
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_challenge_convenientional.png")
