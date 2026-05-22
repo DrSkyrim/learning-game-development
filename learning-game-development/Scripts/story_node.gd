@@ -10,7 +10,7 @@ func _ready() -> void:
 		%OutroMusic.play()
 	elif GameManager.is_tutorial:
 		load_tutorial_image()
-		%OutroMusic.play()
+		%IntroMusic.play()
 	else:
 		load_story_image()
 		%IntroMusic.play()

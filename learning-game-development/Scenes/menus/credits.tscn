@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b7db8fufdvuw8" path="res://Assets/Graphics/cutscenes/cutscene_credits.png" id="1_wnhpg"]
 [ext_resource type="FontFile" uid="uid://4jtpkl8gqi8q" path="res://Assets/Graphics/UI/fonts/HandwrittenMadness-Regular.ttf" id="2_ty7xb"]
 [ext_resource type="Texture2D" uid="uid://1fh8n73vtdsy" path="res://Assets/Graphics/UI/main menu screen/text_backdrop_credits.png" id="3_xpbbi"]
+[ext_resource type="AudioStream" uid="uid://4fx5mm1p506g" path="res://Assets/Audio/Music/music_bg_hopeful cherry blossoms.mp3" id="5_kwbov"]
 
 [node name="Credits" type="Control" unique_id=827970156]
 layout_mode = 3
@@ -79,3 +80,8 @@ Sound Effects (SFX):
   * Itemize by Scrampunk (CC BY 4.0)
   * Modern UI Click by yuugfr1a (CC0)"
 autowrap_mode = 2
+
+[node name="OutroMusic" type="AudioStreamPlayer" parent="." unique_id=1417295992]
+unique_name_in_owner = true
+stream = ExtResource("5_kwbov")
+volume_db = -15.0
