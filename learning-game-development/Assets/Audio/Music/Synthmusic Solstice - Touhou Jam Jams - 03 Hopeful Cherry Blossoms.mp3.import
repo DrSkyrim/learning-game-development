@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dfbpj5fk3i8nd"
+path="res://.godot/imported/Synthmusic Solstice - Touhou Jam Jams - 03 Hopeful Cherry Blossoms.mp3-57edd3e1ea86226207b49655ecab53bd.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Synthmusic Solstice - Touhou Jam Jams - 03 Hopeful Cherry Blossoms.mp3"
+dest_files=["res://.godot/imported/Synthmusic Solstice - Touhou Jam Jams - 03 Hopeful Cherry Blossoms.mp3-57edd3e1ea86226207b49655ecab53bd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
