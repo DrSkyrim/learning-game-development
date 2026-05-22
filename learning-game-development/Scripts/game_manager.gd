@@ -15,10 +15,6 @@ var is_casual_mode := false
 var casual_moves := 0
 
 var ending_type := 0
-# 0 = default
-# 1 = eco ending (80%+ local)
-# 2 = mixed ending (50–79% local)
-# 3 = convenience ending (<50% local)
 
 func start_story_mode():
 	is_story_mode = true

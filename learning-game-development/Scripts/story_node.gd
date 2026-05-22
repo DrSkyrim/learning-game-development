@@ -63,6 +63,13 @@ func load_tutorial_image():
 		print("Failed to load: ", path)
 
 func load_ending():
+	if GameManager.reward_level_array[9] == 2:
+		%market_sign.set_frame_and_progress(2,0.0)
+	elif GameManager.reward_level_array[9] == 1:
+		%market_sign.set_frame_and_progress(1,0.0)
+	else:
+		%market_sign.set_frame_and_progress(3,0.0)
+
 	if(GameManager.is_casual_mode):
 		if(GameManager.ending_type == 1):
 			story_rect.texture = load("res://Assets/Graphics/cutscenes/cutscene_end_casual_local.png")
