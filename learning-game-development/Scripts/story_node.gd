@@ -3,7 +3,7 @@ extends Control
 @onready var story_rect: TextureRect = $MarginContainer/story_rect
 
 func _ready() -> void:
-	if GameManager.is_story_mode or GameManager.is_casual_mode and GameManager.current_level == 10:
+	if (GameManager.is_story_mode or GameManager.is_casual_mode) and GameManager.current_level == 10:
 		load_ending()
 	elif GameManager.is_tutorial:
 		load_tutorial_image()
