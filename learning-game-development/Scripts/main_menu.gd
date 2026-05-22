@@ -11,6 +11,7 @@ extends Control
 func _ready() -> void:
 	CoreGameplayMusic.stop()
 	GameManager.is_casual_mode = false
+	GameManager.is_story_mode = false
 
 	if not MenuMusic.playing:
 		MenuMusic.play()
