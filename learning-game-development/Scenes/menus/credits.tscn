@@ -246,13 +246,12 @@ layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 offset_left = 15.0
-offset_top = 865.0
+offset_top = 872.0
 offset_right = 15.0
-offset_bottom = 968.0
+offset_bottom = 975.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_otmcr")
-theme_override_font_sizes/font_size = 36
+theme_override_font_sizes/font_size = 24
 text = "\"Victory Sting 6\" by Victor_Natas (CC BY 4.0)"
 autowrap_mode = 2
 
